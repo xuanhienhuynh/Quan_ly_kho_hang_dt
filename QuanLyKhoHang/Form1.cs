@@ -30,7 +30,8 @@ namespace QuanLyKhoHang
 
         private void btn_signin_Click_1(object sender, EventArgs e)
         {
-            SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\source 2013\QuanLyKhoHang\QuanLyKhoHang\App_Data\Kho (1).mdf;Integrated Security=True;");
+            SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|Kho (1).mdf;Integrated Security=True;");
+            //Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\Kho (1).mdf;Integrated Security=True;
             try
             {
                 cnn.Open();
