@@ -87,6 +87,11 @@ namespace QuanLyKhoHang
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         } 
 
 
