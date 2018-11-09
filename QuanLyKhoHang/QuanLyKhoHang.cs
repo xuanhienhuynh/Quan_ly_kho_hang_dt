@@ -15,6 +15,7 @@ namespace QuanLyKhoHang
 {
     public partial class QuanLyKhoHang : Form
     {
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|Kho (1).mdf;Integrated Security=True;");
         DataTable productTable; // khai báo producttable nhằm thêm dữ liệu vào datagridview
         public QuanLyKhoHang()
         {
@@ -38,6 +39,19 @@ namespace QuanLyKhoHang
             this.WindowState = FormWindowState.Maximized;
             DateTime today = DateTime.Today;
             txtNgayNhap.Text = today.ToString();
+
+            DataSet ds = getProduct();
+            productTable = ds.Tables[0];
+            dataGridView1.DataSource = productTable;
+        }
+
+        DataSet getProduct()
+        {
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM NhapHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
         }
 
         private void nhậpVàoKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,6 +76,7 @@ namespace QuanLyKhoHang
 
                 sqlcnn.Close();
                 /*Chỗ này t vẫn chưa thêm được vào datagridview, có gì biết làm dùm*/
+
                 dataGridView1.DataSource = productTable;
                 DataRow row = productTable.NewRow();
                 row["MaThung"] = this.txtMaThung1.Text;
@@ -80,6 +95,17 @@ namespace QuanLyKhoHang
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
