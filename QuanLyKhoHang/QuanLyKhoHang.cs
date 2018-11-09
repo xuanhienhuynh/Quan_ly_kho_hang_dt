@@ -59,10 +59,21 @@ namespace QuanLyKhoHang
             panel1.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\Kho (1).mdf;Integrated Security=True;");
-            SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|Kho (1).mdf;Integrated Security=True;");
+
+        }
+
+        private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            
+        }
+
+
+        private void btThem1_Click(object sender, EventArgs e)
+        {
             try
             {
                 sqlcnn.Open();
@@ -94,20 +105,9 @@ namespace QuanLyKhoHang
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btHuy1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            panel1.Hide();
-            
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
+            this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text =  "";
         }
 
 

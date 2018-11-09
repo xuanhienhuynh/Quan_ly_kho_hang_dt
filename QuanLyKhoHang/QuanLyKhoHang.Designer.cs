@@ -44,6 +44,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMaThung1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaThung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
@@ -59,18 +65,12 @@
             this.txtMaThung2 = new System.Windows.Forms.TextBox();
             this.btHuy2 = new System.Windows.Forms.Button();
             this.btThem2 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.nhậpVàoKhoHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sắpXếpHàngHóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTồnKhoĐịnhKìToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaThung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -78,15 +78,15 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -166,6 +166,7 @@
             this.btHuy1.TabIndex = 12;
             this.btHuy1.Text = "Hủy";
             this.btHuy1.UseVisualStyleBackColor = true;
+            this.btHuy1.Click += new System.EventHandler(this.btHuy1_Click);
             // 
             // btThem1
             // 
@@ -176,13 +177,14 @@
             this.btThem1.TabIndex = 11;
             this.btThem1.Text = "Thêm";
             this.btThem1.UseVisualStyleBackColor = true;
+            this.btThem1.Click += new System.EventHandler(this.btThem1_Click);
             // 
             // txtNgayNhap
             // 
             this.txtNgayNhap.Location = new System.Drawing.Point(1079, 63);
             this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayNhap.Name = "txtNgayNhap";
-            this.txtNgayNhap.Size = new System.Drawing.Size(100, 22);
+            this.txtNgayNhap.Size = new System.Drawing.Size(178, 22);
             this.txtNgayNhap.TabIndex = 10;
             // 
             // label5
@@ -199,7 +201,7 @@
             this.txtSL1.Location = new System.Drawing.Point(824, 64);
             this.txtSL1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSL1.Name = "txtSL1";
-            this.txtSL1.Size = new System.Drawing.Size(100, 22);
+            this.txtSL1.Size = new System.Drawing.Size(116, 22);
             this.txtSL1.TabIndex = 8;
             // 
             // label4
@@ -261,6 +263,58 @@
             this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã Thùng";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaThung,
+            this.MaSP,
+            this.TenSP,
+            this.SoLuong,
+            this.NgayNhap});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1357, 242);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // MaThung
+            // 
+            this.MaThung.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaThung.DataPropertyName = "MaThung";
+            this.MaThung.HeaderText = "Mã Thùng";
+            this.MaThung.Name = "MaThung";
+            // 
+            // MaSP
+            // 
+            this.MaSP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaSP.DataPropertyName = "MaSP";
+            this.MaSP.HeaderText = "Mã SP";
+            this.MaSP.Name = "MaSP";
+            // 
+            // TenSP
+            // 
+            this.TenSP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenSP.DataPropertyName = "TenSP";
+            this.TenSP.HeaderText = "Tên SP";
+            this.TenSP.Name = "TenSP";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayNhap.DataPropertyName = "NgayNhap";
+            this.NgayNhap.HeaderText = "Ngày Nhập";
+            this.NgayNhap.Name = "NgayNhap";
             // 
             // tabPage2
             // 
@@ -424,6 +478,15 @@
             this.btThem2.Text = "Thêm";
             this.btThem2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(148, 49);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.TabIndex = 1;
+            // 
             // tabPage3
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -469,64 +532,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaThung,
-            this.MaSP,
-            this.TenSP,
-            this.SoLuong,
-            this.NgayNhap});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1357, 242);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            // 
-            // MaThung
-            // 
-            this.MaThung.DataPropertyName = "MaThung";
-            this.MaThung.HeaderText = "Mã Thùng";
-            this.MaThung.Name = "MaThung";
-            this.MaThung.Width = 200;
-            // 
-            // MaSP
-            // 
-            this.MaSP.DataPropertyName = "MaSP";
-            this.MaSP.HeaderText = "Mã SP";
-            this.MaSP.Name = "MaSP";
-            // 
-            // TenSP
-            // 
-            this.TenSP.DataPropertyName = "TenSP";
-            this.TenSP.HeaderText = "Tên SP";
-            this.TenSP.Name = "TenSP";
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // NgayNhap
-            // 
-            this.NgayNhap.DataPropertyName = "NgayNhap";
-            this.NgayNhap.HeaderText = "Ngày Nhập";
-            this.NgayNhap.Name = "NgayNhap";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(148, 49);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView2.TabIndex = 1;
-            // 
             // QuanLyKhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -547,6 +552,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -554,10 +560,9 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -602,11 +607,11 @@
         private System.Windows.Forms.ToolStripMenuItem quảnLýTồnKhoĐịnhKìToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThung;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
-        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
