@@ -15,9 +15,9 @@ namespace QuanLyKhoHang
 {
     public partial class QuanLyKhoHang : Form
     {
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test2\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-        DataTable productTable, productTable2; // khai báo producttable nhằm thêm dữ liệu vào datagridview
-        DataSet ds1; 
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test3\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
+        DataTable productTable, LocationProduct; // khai báo producttable nhằm thêm dữ liệu vào datagridview
+        DataSet ds, ds1; 
         public QuanLyKhoHang()
         {
             InitializeComponent();
@@ -40,23 +40,33 @@ namespace QuanLyKhoHang
             this.WindowState = FormWindowState.Maximized;
             DateTime today = DateTime.Today;
             txtNgayNhap.Text = today.ToString();
+            txtNgayCat.Text = today.ToString();
 
-            DataSet ds = getProduct();
-
+            ds = getProduct();
             productTable = ds.Tables[0];
-            productTable2 = ds.Tables[0];
-
             dataGridView1.DataSource = productTable;
-            dataGridView2.DataSource = productTable2;
+
+            ds1 = getLocationProduct();
+            LocationProduct = ds1.Tables[0];
+            dataGridView2.DataSource = LocationProduct;
         }
 
         DataSet getProduct()
         {
-            DataSet ds = new DataSet();
+            ds = new DataSet();
             string sql = "SELECT * FROM NhapHang";
             SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
             int number = da.Fill(ds);
             return ds;
+        }
+
+        DataSet getLocationProduct()
+        {
+            ds1 = new DataSet();
+            string sql1 = "SELECT * FROM CatHang";
+            SqlDataAdapter da1 = new SqlDataAdapter(sql1, sqlcnn);
+            int number = da1.Fill(ds1);
+            return ds1;
         }
 
         private void nhậpVàoKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -103,8 +113,6 @@ namespace QuanLyKhoHang
 
                     productTable.Rows.Add(row);
                 }
-                
-
                 sqlcnn.Close();
             }
             catch
@@ -121,7 +129,7 @@ namespace QuanLyKhoHang
         private void btnTimThung_Click(object sender, EventArgs e)
         {
             int rowIndex = -1;
-            foreach (DataGridViewRow row in dataGridView2.Rows)
+            foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 if (row.Cells[0].Value.ToString().Trim().Equals(txtMaThung2.Text))
                 {
@@ -130,16 +138,51 @@ namespace QuanLyKhoHang
                     break;
                 }
             }
-            ds1 = getProduct();
-            txtMaSP2.Text = ds1.Tables[0].Rows[rowIndex][1].ToString();
-            txtTenSP2.Text = ds1.Tables[0].Rows[rowIndex][2].ToString();
-            txtSL2.Text = ds1.Tables[0].Rows[rowIndex][3].ToString();
+            ds = getProduct();
+            txtMaSP2.Text = ds.Tables[0].Rows[rowIndex][1].ToString();
+            txtTenSP2.Text = ds.Tables[0].Rows[rowIndex][2].ToString();
+            txtSL2.Text = ds.Tables[0].Rows[rowIndex][3].ToString();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btThem2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlcnn.Open();
+                if (txtTenSP2.Text == "" || txtMaSP2.Text == "" || txtSL2.Text == "" || txtMaKe.Text == "")
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ các ô");
+                }
+                else
+                {
+                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, SoLuong, NgayCat) "
+                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text + "','"
+                      + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
+                    SqlCommand sqlcmd2 = new SqlCommand(sql2, sqlcnn);
+                    sqlcmd2.ExecuteNonQuery();
+                    MessageBox.Show("Thanh cong");
+
+                    dataGridView1.DataSource = LocationProduct;
+                    DataRow row = LocationProduct.NewRow();
+                    row["MaThung"] = this.txtMaThung2.Text;
+                    row["MaKe"] = this.txtMaKe.Text;
+                    row["MaSP"] = this.txtMaSP2.Text;
+                    row["SoLuong"] = this.txtSL2.Text;
+                    row["NgayCat"] = this.txtNgayCat.Text;
+
+                    LocationProduct.Rows.Add(row);
+                }
+                sqlcnn.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi Kết Nối");
+            }
+        }
+
+        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
     }
 }

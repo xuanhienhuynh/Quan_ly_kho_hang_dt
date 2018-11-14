@@ -68,17 +68,13 @@
             this.txtMaThung2 = new System.Windows.Forms.TextBox();
             this.btHuy2 = new System.Windows.Forms.Button();
             this.btThem2 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.nhậpVàoKhoHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sắpXếpHàngHóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,7 +94,6 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -380,8 +375,8 @@
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.dataGridView3);
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
             this.splitContainer2.Size = new System.Drawing.Size(1357, 458);
             this.splitContainer2.SplitterDistance = 216;
             this.splitContainer2.TabIndex = 0;
@@ -392,7 +387,6 @@
             this.txtMaKe.Name = "txtMaKe";
             this.txtMaKe.Size = new System.Drawing.Size(161, 22);
             this.txtMaKe.TabIndex = 7;
-            this.txtMaKe.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbMaKe
             // 
@@ -522,59 +516,22 @@
             this.btThem2.TabIndex = 0;
             this.btThem2.Text = "Thêm";
             this.btThem2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridView3.Location = new System.Drawing.Point(707, 39);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView3.TabIndex = 2;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Mã Thùng";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Mã Kệ";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Mã SP";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Số Lượng";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Ngày Cất";
-            this.Column8.Name = "Column8";
+            this.btThem2.Click += new System.EventHandler(this.btThem2_Click);
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col1,
+            this.Column4,
             this.Column1,
             this.Column2,
-            this.Column3});
+            this.Column3,
+            this.Column5});
             this.dataGridView2.Location = new System.Drawing.Point(53, 39);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(506, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(1030, 150);
             this.dataGridView2.TabIndex = 1;
             // 
             // col1
@@ -583,6 +540,13 @@
             this.col1.DataPropertyName = "MaThung";
             this.col1.HeaderText = "Mã Thùng";
             this.col1.Name = "col1";
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "MaKe";
+            this.Column4.HeaderText = "Mã Kệ";
+            this.Column4.Name = "Column4";
             // 
             // Column1
             // 
@@ -604,6 +568,13 @@
             this.Column3.DataPropertyName = "SoLuong";
             this.Column3.HeaderText = "Số Lượng";
             this.Column3.Name = "Column3";
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column5.DataPropertyName = "NgayCat";
+            this.Column5.HeaderText = "Ngày Cất";
+            this.Column5.Name = "Column5";
             // 
             // tabPage3
             // 
@@ -678,7 +649,6 @@
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -733,17 +703,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
         private System.Windows.Forms.Button btnTimThung;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox txtMaKe;
+        private System.Windows.Forms.Label lbMaKe;
         private System.Windows.Forms.DataGridViewTextBoxColumn col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.TextBox txtMaKe;
-        private System.Windows.Forms.Label lbMaKe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
