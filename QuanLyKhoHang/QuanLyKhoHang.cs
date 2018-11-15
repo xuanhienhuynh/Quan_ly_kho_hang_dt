@@ -185,5 +185,25 @@ namespace QuanLyKhoHang
         {
 
         }
+
+        private void quảnLýTồnKhoĐịnhKìToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbNgayCat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNgayCat_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
