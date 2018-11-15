@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyKhoHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -391,25 +392,24 @@
             // 
             // txtMaKe
             // 
-            this.txtMaKe.Location = new System.Drawing.Point(527, 21);
+            this.txtMaKe.Location = new System.Drawing.Point(398, 21);
             this.txtMaKe.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaKe.Name = "txtMaKe";
-            this.txtMaKe.Size = new System.Drawing.Size(122, 26);
+            this.txtMaKe.Size = new System.Drawing.Size(207, 26);
             this.txtMaKe.TabIndex = 7;
             // 
             // lbMaKe
             // 
-            this.lbMaKe.AutoSize = true;
-            this.lbMaKe.Location = new System.Drawing.Point(425, 21);
+            this.lbMaKe.Location = new System.Drawing.Point(332, 24);
             this.lbMaKe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMaKe.Name = "lbMaKe";
-            this.lbMaKe.Size = new System.Drawing.Size(54, 18);
+            this.lbMaKe.Size = new System.Drawing.Size(62, 23);
             this.lbMaKe.TabIndex = 6;
-            this.lbMaKe.Text = "Mã Kệ";
+            this.lbMaKe.Text = "Mã Kệ:";
             // 
             // btnTimThung
             // 
-            this.btnTimThung.Location = new System.Drawing.Point(252, 21);
+            this.btnTimThung.Location = new System.Drawing.Point(521, 120);
             this.btnTimThung.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimThung.Name = "btnTimThung";
             this.btnTimThung.Size = new System.Drawing.Size(105, 34);
@@ -421,7 +421,7 @@
             // lbNgayCat
             // 
             this.lbNgayCat.AutoSize = true;
-            this.lbNgayCat.Location = new System.Drawing.Point(791, 87);
+            this.lbNgayCat.Location = new System.Drawing.Point(798, 76);
             this.lbNgayCat.Name = "lbNgayCat";
             this.lbNgayCat.Size = new System.Drawing.Size(73, 18);
             this.lbNgayCat.TabIndex = 4;
@@ -430,7 +430,7 @@
             // lbSL2
             // 
             this.lbSL2.AutoSize = true;
-            this.lbSL2.Location = new System.Drawing.Point(549, 84);
+            this.lbSL2.Location = new System.Drawing.Point(461, 76);
             this.lbSL2.Name = "lbSL2";
             this.lbSL2.Size = new System.Drawing.Size(80, 18);
             this.lbSL2.TabIndex = 4;
@@ -439,7 +439,7 @@
             // lbTenSP2
             // 
             this.lbTenSP2.AutoSize = true;
-            this.lbTenSP2.Location = new System.Drawing.Point(316, 84);
+            this.lbTenSP2.Location = new System.Drawing.Point(110, 76);
             this.lbTenSP2.Name = "lbTenSP2";
             this.lbTenSP2.Size = new System.Drawing.Size(60, 18);
             this.lbTenSP2.TabIndex = 4;
@@ -448,59 +448,60 @@
             // lbMaSP2
             // 
             this.lbMaSP2.AutoSize = true;
-            this.lbMaSP2.Location = new System.Drawing.Point(107, 83);
+            this.lbMaSP2.Location = new System.Drawing.Point(729, 24);
             this.lbMaSP2.Name = "lbMaSP2";
-            this.lbMaSP2.Size = new System.Drawing.Size(56, 18);
+            this.lbMaSP2.Size = new System.Drawing.Size(60, 18);
             this.lbMaSP2.TabIndex = 4;
-            this.lbMaSP2.Text = "Mã SP";
+            this.lbMaSP2.Text = "Mã SP:";
             // 
             // lbMaThung
             // 
-            this.lbMaThung.AutoSize = true;
-            this.lbMaThung.Location = new System.Drawing.Point(55, 26);
+            this.lbMaThung.Location = new System.Drawing.Point(6, 24);
             this.lbMaThung.Name = "lbMaThung";
-            this.lbMaThung.Size = new System.Drawing.Size(76, 18);
+            this.lbMaThung.Size = new System.Drawing.Size(88, 23);
             this.lbMaThung.TabIndex = 3;
-            this.lbMaThung.Text = "Mã Thùng";
+            this.lbMaThung.Text = "Mã Thùng:";
             // 
             // txtNgayCat
             // 
-            this.txtNgayCat.Location = new System.Drawing.Point(890, 76);
+            this.txtNgayCat.Location = new System.Drawing.Point(899, 73);
             this.txtNgayCat.Name = "txtNgayCat";
-            this.txtNgayCat.Size = new System.Drawing.Size(100, 26);
+            this.txtNgayCat.Size = new System.Drawing.Size(145, 26);
             this.txtNgayCat.TabIndex = 2;
             // 
             // txtSL2
             // 
-            this.txtSL2.Location = new System.Drawing.Point(635, 81);
+            this.txtSL2.Location = new System.Drawing.Point(566, 73);
             this.txtSL2.Name = "txtSL2";
-            this.txtSL2.Size = new System.Drawing.Size(100, 26);
+            this.txtSL2.Size = new System.Drawing.Size(151, 26);
             this.txtSL2.TabIndex = 2;
             // 
             // txtTenSP2
             // 
-            this.txtTenSP2.Location = new System.Drawing.Point(393, 84);
+            this.txtTenSP2.Location = new System.Drawing.Point(187, 73);
             this.txtTenSP2.Name = "txtTenSP2";
-            this.txtTenSP2.Size = new System.Drawing.Size(100, 26);
+            this.txtTenSP2.Size = new System.Drawing.Size(160, 26);
             this.txtTenSP2.TabIndex = 2;
             // 
             // txtMaSP2
             // 
-            this.txtMaSP2.Location = new System.Drawing.Point(169, 80);
+            this.txtMaSP2.Location = new System.Drawing.Point(801, 21);
+            this.txtMaSP2.Multiline = true;
             this.txtMaSP2.Name = "txtMaSP2";
-            this.txtMaSP2.Size = new System.Drawing.Size(100, 26);
+            this.txtMaSP2.Size = new System.Drawing.Size(172, 26);
             this.txtMaSP2.TabIndex = 2;
             // 
             // txtMaThung2
             // 
-            this.txtMaThung2.Location = new System.Drawing.Point(136, 24);
+            this.txtMaThung2.Location = new System.Drawing.Point(94, 21);
+            this.txtMaThung2.Multiline = true;
             this.txtMaThung2.Name = "txtMaThung2";
-            this.txtMaThung2.Size = new System.Drawing.Size(81, 26);
+            this.txtMaThung2.Size = new System.Drawing.Size(182, 26);
             this.txtMaThung2.TabIndex = 2;
             // 
             // btHuy2
             // 
-            this.btHuy2.Location = new System.Drawing.Point(296, 121);
+            this.btHuy2.Location = new System.Drawing.Point(310, 121);
             this.btHuy2.Name = "btHuy2";
             this.btHuy2.Size = new System.Drawing.Size(98, 33);
             this.btHuy2.TabIndex = 1;
@@ -579,8 +580,9 @@
             // nhậpVàoKhoHàngToolStripMenuItem
             // 
             this.nhậpVàoKhoHàngToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhậpVàoKhoHàngToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.Arrow;
             this.nhậpVàoKhoHàngToolStripMenuItem.Name = "nhậpVàoKhoHàngToolStripMenuItem";
-            this.nhậpVàoKhoHàngToolStripMenuItem.Size = new System.Drawing.Size(160, 26);
+            this.nhậpVàoKhoHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.nhậpVàoKhoHàngToolStripMenuItem.Text = "Nhập - Cất Hàng";
             this.nhậpVàoKhoHàngToolStripMenuItem.Click += new System.EventHandler(this.nhậpVàoKhoHàngToolStripMenuItem_Click);
             // 
@@ -610,9 +612,10 @@
             this.ClientSize = new System.Drawing.Size(1225, 422);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "QuanLyKhoHang";
-            this.Text = "QuanLyKhoHang";
+            this.Text = "Quản Lý Kho";
             this.Load += new System.EventHandler(this.QuanLyKhoHang_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
