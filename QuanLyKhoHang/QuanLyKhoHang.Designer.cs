@@ -363,6 +363,7 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.splitContainer2.Panel1.Controls.Add(this.txtMaKe);
             this.splitContainer2.Panel1.Controls.Add(this.lbMaKe);
             this.splitContainer2.Panel1.Controls.Add(this.btnTimThung);
@@ -390,7 +391,7 @@
             // 
             // txtMaKe
             // 
-            this.txtMaKe.Location = new System.Drawing.Point(478, 21);
+            this.txtMaKe.Location = new System.Drawing.Point(527, 21);
             this.txtMaKe.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaKe.Name = "txtMaKe";
             this.txtMaKe.Size = new System.Drawing.Size(122, 26);
@@ -411,7 +412,7 @@
             this.btnTimThung.Location = new System.Drawing.Point(252, 21);
             this.btnTimThung.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimThung.Name = "btnTimThung";
-            this.btnTimThung.Size = new System.Drawing.Size(56, 19);
+            this.btnTimThung.Size = new System.Drawing.Size(105, 34);
             this.btnTimThung.TabIndex = 5;
             this.btnTimThung.Text = "Enter";
             this.btnTimThung.UseVisualStyleBackColor = true;
@@ -420,7 +421,7 @@
             // lbNgayCat
             // 
             this.lbNgayCat.AutoSize = true;
-            this.lbNgayCat.Location = new System.Drawing.Point(694, 84);
+            this.lbNgayCat.Location = new System.Drawing.Point(791, 87);
             this.lbNgayCat.Name = "lbNgayCat";
             this.lbNgayCat.Size = new System.Drawing.Size(73, 18);
             this.lbNgayCat.TabIndex = 4;
@@ -429,7 +430,7 @@
             // lbSL2
             // 
             this.lbSL2.AutoSize = true;
-            this.lbSL2.Location = new System.Drawing.Point(499, 84);
+            this.lbSL2.Location = new System.Drawing.Point(549, 84);
             this.lbSL2.Name = "lbSL2";
             this.lbSL2.Size = new System.Drawing.Size(80, 18);
             this.lbSL2.TabIndex = 4;
@@ -447,7 +448,7 @@
             // lbMaSP2
             // 
             this.lbMaSP2.AutoSize = true;
-            this.lbMaSP2.Location = new System.Drawing.Point(138, 88);
+            this.lbMaSP2.Location = new System.Drawing.Point(107, 83);
             this.lbMaSP2.Name = "lbMaSP2";
             this.lbMaSP2.Size = new System.Drawing.Size(56, 18);
             this.lbMaSP2.TabIndex = 4;
@@ -464,28 +465,28 @@
             // 
             // txtNgayCat
             // 
-            this.txtNgayCat.Location = new System.Drawing.Point(752, 81);
+            this.txtNgayCat.Location = new System.Drawing.Point(890, 76);
             this.txtNgayCat.Name = "txtNgayCat";
             this.txtNgayCat.Size = new System.Drawing.Size(100, 26);
             this.txtNgayCat.TabIndex = 2;
             // 
             // txtSL2
             // 
-            this.txtSL2.Location = new System.Drawing.Point(558, 80);
+            this.txtSL2.Location = new System.Drawing.Point(635, 81);
             this.txtSL2.Name = "txtSL2";
             this.txtSL2.Size = new System.Drawing.Size(100, 26);
             this.txtSL2.TabIndex = 2;
             // 
             // txtTenSP2
             // 
-            this.txtTenSP2.Location = new System.Drawing.Point(367, 81);
+            this.txtTenSP2.Location = new System.Drawing.Point(393, 84);
             this.txtTenSP2.Name = "txtTenSP2";
             this.txtTenSP2.Size = new System.Drawing.Size(100, 26);
             this.txtTenSP2.TabIndex = 2;
             // 
             // txtMaSP2
             // 
-            this.txtMaSP2.Location = new System.Drawing.Point(183, 84);
+            this.txtMaSP2.Location = new System.Drawing.Point(169, 80);
             this.txtMaSP2.Name = "txtMaSP2";
             this.txtMaSP2.Size = new System.Drawing.Size(100, 26);
             this.txtMaSP2.TabIndex = 2;
