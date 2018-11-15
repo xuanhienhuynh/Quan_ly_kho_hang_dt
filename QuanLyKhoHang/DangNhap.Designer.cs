@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhoHang
 {
-    partial class Form1
+    partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.

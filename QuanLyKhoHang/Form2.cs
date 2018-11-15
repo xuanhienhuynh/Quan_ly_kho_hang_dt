@@ -28,7 +28,7 @@ namespace QuanLyKhoHang
         {
             this.Hide();
             panel1.Hide();
-            Form1 fm = new Form1();
+            DangNhap fm = new DangNhap();
             DialogResult result = fm.ShowDialog();
             if (result == DialogResult.OK)
             {
