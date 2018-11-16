@@ -155,18 +155,24 @@ namespace QuanLyKhoHang
                 }
                 else
                 {
-                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, SoLuong, NgayCat) "
-                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text + "','"
-                      + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
-                    SqlCommand sqlcmd2 = new SqlCommand(sql2, sqlcnn);
-                    sqlcmd2.ExecuteNonQuery();
+                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat) "
+                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text.Trim() + "','"
+                        + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');" ;
+                    SqlCommand cmd = new SqlCommand(sql2,sqlcnn);
+                    cmd.ExecuteNonQuery();
+
+
+                    // loi
+                    String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, GhiChu) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaKe.Text + "');";
+                    SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
+                    cmd1.ExecuteNonQuery(); // loi ngay day
                     MessageBox.Show("Thanh cong");
 
-                    dataGridView1.DataSource = LocationProduct;
                     DataRow row = LocationProduct.NewRow();
                     row["MaThung"] = this.txtMaThung2.Text;
                     row["MaKe"] = this.txtMaKe.Text;
                     row["MaSP"] = this.txtMaSP2.Text;
+                    row["TenSP"] = this.txtTenSP2.Text;
                     row["SoLuong"] = this.txtSL2.Text;
                     row["NgayCat"] = this.txtNgayCat.Text;
 
@@ -178,11 +184,6 @@ namespace QuanLyKhoHang
             {
                 MessageBox.Show("Lỗi Kết Nối");
             }
-        }
-
-        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
