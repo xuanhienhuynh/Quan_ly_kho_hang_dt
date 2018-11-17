@@ -26,7 +26,9 @@ namespace QuanLyKhoHang
         private void QuanLyKhoHang_Load(object sender, EventArgs e)
         {
             this.Hide();
-            panel1.Hide();
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl3.Hide();
             DangNhap fm = new DangNhap();
             DialogResult result = fm.ShowDialog();
             if (result == DialogResult.OK)
@@ -70,16 +72,29 @@ namespace QuanLyKhoHang
             return ds1;
         }
 
-        private void nhậpVàoKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        private void nhapVaoKhoHangToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Show();
+            //panel1.Show();
+            tabControl1.Show();
+            tabControl2.Hide();
+            tabControl3.Hide();
         }
 
-        private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void sapXepToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            panel1.Hide();
-            
+            //panel1.Hide();
+            tabControl2.Show();
+            tabControl1.Hide();
+            tabControl3.Hide();
         }
+
+        private void tonKhoDinhKiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl3.Show();
+            tabControl1.Hide();
+            tabControl2.Hide();
+        }
+        
 
         private void btThem1_Click(object sender, EventArgs e)
         {
@@ -186,10 +201,10 @@ namespace QuanLyKhoHang
 
         }
 
-        private void quảnLýTồnKhoĐịnhKìToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        //private void quảnLýTồnKhoĐịnhKìToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -205,5 +220,11 @@ namespace QuanLyKhoHang
         {
 
         }
+
+        
+
+        
+
+        
     }
 }
