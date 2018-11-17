@@ -16,7 +16,7 @@ namespace QuanLyKhoHang
     public partial class QLKhoHang : Form
     {
         //SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test 13\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
         DataTable productTable, LocationProduct; // khai báo producttable nhằm thêm dữ liệu vào datagridview
         DataSet ds, ds1; 
         public QLKhoHang()
@@ -94,7 +94,15 @@ namespace QuanLyKhoHang
             tabControl1.Hide();
             tabControl2.Hide();
         }
-        
+
+        public bool ktTrung(object a)
+        {
+            if (a != null)
+                return true;
+            else
+                return false;
+        }
+
 
         private void btThem1_Click(object sender, EventArgs e)
         {
@@ -102,16 +110,22 @@ namespace QuanLyKhoHang
             {
                 sqlcnn.Open();
                 string sq = "select * from NhapHang WHERE MaThung ='" + txtMaThung1.Text + "'";
+                string sq1 = "SELECT * FROM NhapHang WHERE MaSP ='" + txtMaSP1.Text + "'";
+                SqlCommand kt1 = new SqlCommand(sq1, sqlcnn);
                 SqlCommand kt = new SqlCommand(sq, sqlcnn);
                 object o = kt.ExecuteScalar();
-                if (o != null)
-                    MessageBox.Show("Lỗi trùng khóa chính");
-                else if(txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
+                object y = kt1.ExecuteScalar();
+                if (ktTrung(o) == true)
+                    MessageBox.Show("Mã thùng đã được sử dụng");
+                else if (txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ các ô");
                 }
+                else if (ktTrung(y) == true)
+                    MessageBox.Show("Mã sản phẩm bị trùng");
                 else
                 {
+                    txtNgayNhap.Text = (DateTime.Now).ToString();
                     String sql1 = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap) "
                         + "VALUES('" + this.txtMaThung1.Text + "','" + this.txtMaSP1.Text + "','" + this.txtTenSP1.Text + "','"
                       + this.txtSL1.Text + "','" + this.txtNgayNhap.Text + "');";
@@ -128,8 +142,10 @@ namespace QuanLyKhoHang
                     row["NgayNhap"] = this.txtNgayNhap.Text;
 
                     productTable.Rows.Add(row);
+                    this.Refresh();
                 }
                 sqlcnn.Close();
+                this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = this.txtNgayNhap.Text = "";
             }
             catch
             {
@@ -171,24 +187,48 @@ namespace QuanLyKhoHang
                 }
                 else
                 {
-                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, SoLuong, NgayCat) "
-                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text + "','"
-                      + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
-                    SqlCommand sqlcmd2 = new SqlCommand(sql2, sqlcnn);
-                    sqlcmd2.ExecuteNonQuery();
+                    this.txtNgayCat.Text = (DateTime.Now).ToString();
+                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat) "
+                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text.Trim() + "','"
+                        + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
+                    SqlCommand cmd = new SqlCommand(sql2, sqlcnn);
+                    cmd.ExecuteNonQuery();
+
+                    String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, SoLuong) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtSL2.Text + "');";
+                    SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
+                    cmd1.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
 
-                    dataGridView1.DataSource = LocationProduct;
                     DataRow row = LocationProduct.NewRow();
                     row["MaThung"] = this.txtMaThung2.Text;
                     row["MaKe"] = this.txtMaKe.Text;
                     row["MaSP"] = this.txtMaSP2.Text;
+                    row["TenSP"] = this.txtTenSP2.Text;
                     row["SoLuong"] = this.txtSL2.Text;
                     row["NgayCat"] = this.txtNgayCat.Text;
-
                     LocationProduct.Rows.Add(row);
+
+                    String delete = "DELETE FROM NhapHang WHERE MaThung = '" + txtMaThung2.Text + "';";
+                    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
+                    deleteCmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa thành công");
                 }
                 sqlcnn.Close();
+
+                int rowIndex = -1;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells[0].Value.ToString().Trim().Equals(txtMaThung2.Text))
+                    {
+                        rowIndex = row.Index;
+                        MessageBox.Show("success");
+                        break;
+                    }
+                }
+
+                dataGridView1.Rows.RemoveAt(rowIndex);
+
+                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text = "";
             }
             catch
             {
