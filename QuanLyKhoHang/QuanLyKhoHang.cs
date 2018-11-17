@@ -37,10 +37,7 @@ namespace QuanLyKhoHang
                 Application.Exit();
             }
 
-            this.WindowState = FormWindowState.Maximized;
-            DateTime today = DateTime.Today;
-            txtNgayNhap.Text = today.ToString();
-            txtNgayCat.Text = today.ToString();
+            
 
             ds = getProduct();
             productTable = ds.Tables[0];
@@ -86,22 +83,30 @@ namespace QuanLyKhoHang
             {
                 sqlcnn.Open();
                 string sq = "select * from NhapHang WHERE MaThung ='" + txtMaThung1.Text + "'";
+                string sq1 = "SELECT * FROM NhapHang WHERE MaSP ='" + txtMaSP1.Text + "'";
+                SqlCommand kt1 = new SqlCommand(sq1, sqlcnn);
                 SqlCommand kt = new SqlCommand(sq, sqlcnn);
                 object o = kt.ExecuteScalar();
+                object y = kt1.ExecuteScalar();
                 if (o != null)
-                    MessageBox.Show("Lỗi trùng khóa chính");
-                else if(txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
+                    MessageBox.Show("Mã thùng đã được sử dụng");
+                else if (txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ các ô");
                 }
+                else if (y != null)
+                    MessageBox.Show("Mã sản phẩm bị trùng");
                 else
                 {
+                    txtNgayNhap.Text = (DateTime.Now).ToString();
                     String sql1 = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap) "
                         + "VALUES('" + this.txtMaThung1.Text + "','" + this.txtMaSP1.Text + "','" + this.txtTenSP1.Text + "','"
                       + this.txtSL1.Text + "','" + this.txtNgayNhap.Text + "');";
                     SqlCommand sqlcmd = new SqlCommand(sql1, sqlcnn);
                     sqlcmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
+
+                    
 
                     dataGridView1.DataSource = productTable;
                     DataRow row = productTable.NewRow();
@@ -112,8 +117,13 @@ namespace QuanLyKhoHang
                     row["NgayNhap"] = this.txtNgayNhap.Text;
 
                     productTable.Rows.Add(row);
+
+                    
+
+                    this.Refresh();
                 }
                 sqlcnn.Close();
+                this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = this.txtNgayNhap.Text = "";
             }
             catch
             {
@@ -155,6 +165,7 @@ namespace QuanLyKhoHang
                 }
                 else
                 {
+                    this.txtNgayCat.Text = (DateTime.Now).ToString();
                     String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat) "
                         + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text.Trim() + "','"
                         + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');" ;
@@ -162,10 +173,9 @@ namespace QuanLyKhoHang
                     cmd.ExecuteNonQuery();
 
 
-                    // loi
                     String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, GhiChu) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaKe.Text + "');";
                     SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
-                    cmd1.ExecuteNonQuery(); // loi ngay day
+                    cmd1.ExecuteNonQuery(); 
                     MessageBox.Show("Thanh cong");
 
                     DataRow row = LocationProduct.NewRow();
@@ -177,8 +187,28 @@ namespace QuanLyKhoHang
                     row["NgayCat"] = this.txtNgayCat.Text;
 
                     LocationProduct.Rows.Add(row);
+
+                    String delete = "DELETE FROM NhapHang WHERE MaThung = '" + txtMaThung2.Text + "';";
+                    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
+                    deleteCmd.ExecuteNonQuery();
+                    MessageBox.Show("Xóa thành công");
                 }
                 sqlcnn.Close();
+
+                int rowIndex = -1;
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells[0].Value.ToString().Trim().Equals(txtMaThung2.Text))
+                    {
+                        rowIndex = row.Index;
+                        MessageBox.Show("success");
+                        break;
+                    }
+                }
+
+                dataGridView1.Rows.RemoveAt(rowIndex);
+
+                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = "";
             }
             catch
             {
