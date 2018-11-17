@@ -1,6 +1,6 @@
 ﻿namespace QuanLyKhoHang
 {
-    partial class QuanLyKhoHang
+    partial class QLKhoHang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyKhoHang));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLKhoHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -61,7 +61,6 @@
             this.lbSL2 = new System.Windows.Forms.Label();
             this.lbTenSP2 = new System.Windows.Forms.Label();
             this.lbMaSP2 = new System.Windows.Forms.Label();
-            this.lbMaThung = new System.Windows.Forms.Label();
             this.txtNgayCat = new System.Windows.Forms.TextBox();
             this.txtSL2 = new System.Windows.Forms.TextBox();
             this.txtTenSP2 = new System.Windows.Forms.TextBox();
@@ -77,6 +76,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.lbMaThung = new System.Windows.Forms.Label();
             this.nhậpVàoKhoHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýTồnKhoĐịnhKìToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -464,14 +464,6 @@
             this.lbMaSP2.TabIndex = 4;
             this.lbMaSP2.Text = "Mã SP:";
             // 
-            // lbMaThung
-            // 
-            this.lbMaThung.Location = new System.Drawing.Point(39, 58);
-            this.lbMaThung.Name = "lbMaThung";
-            this.lbMaThung.Size = new System.Drawing.Size(88, 23);
-            this.lbMaThung.TabIndex = 3;
-            this.lbMaThung.Text = "Mã Thùng:";
-            // 
             // txtNgayCat
             // 
             this.txtNgayCat.Location = new System.Drawing.Point(237, 107);
@@ -504,7 +496,7 @@
             // 
             // txtMaThung2
             // 
-            this.txtMaThung2.Location = new System.Drawing.Point(127, 55);
+            this.txtMaThung2.Location = new System.Drawing.Point(150, 55);
             this.txtMaThung2.Multiline = true;
             this.txtMaThung2.Name = "txtMaThung2";
             this.txtMaThung2.Size = new System.Drawing.Size(115, 26);
@@ -602,6 +594,14 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // lbMaThung
+            // 
+            this.lbMaThung.Location = new System.Drawing.Point(61, 58);
+            this.lbMaThung.Name = "lbMaThung";
+            this.lbMaThung.Size = new System.Drawing.Size(83, 30);
+            this.lbMaThung.TabIndex = 3;
+            this.lbMaThung.Text = "Mã Thùng:";
+            // 
             // nhậpVàoKhoHàngToolStripMenuItem
             // 
             this.nhậpVàoKhoHàngToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -689,7 +689,6 @@
         private System.Windows.Forms.Label lbSL2;
         private System.Windows.Forms.Label lbTenSP2;
         private System.Windows.Forms.Label lbMaSP2;
-        private System.Windows.Forms.Label lbMaThung;
         private System.Windows.Forms.TextBox txtNgayCat;
         private System.Windows.Forms.TextBox txtSL2;
         private System.Windows.Forms.TextBox txtTenSP2;
@@ -717,5 +716,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.ToolStripMenuItem thôngTinToolStripMenuItem;
+        private System.Windows.Forms.Label lbMaThung;
     }
 }
