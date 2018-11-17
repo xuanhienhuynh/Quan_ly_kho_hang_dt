@@ -15,7 +15,7 @@ namespace QuanLyKhoHang
 {
     public partial class QuanLyKhoHang : Form
     {
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test4\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
+        SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test5\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
         DataTable productTable, LocationProduct; // khai báo producttable nhằm thêm dữ liệu vào datagridview
         DataSet ds, ds1; 
         public QuanLyKhoHang()
@@ -37,6 +37,11 @@ namespace QuanLyKhoHang
                 Application.Exit();
             }
 
+            this.WindowState = FormWindowState.Maximized;
+            DateTime today = DateTime.Today;
+            txtNgayNhap.Text = today.ToString();
+            txtNgayCat.Text = today.ToString();
+
             ds = getProduct();
             productTable = ds.Tables[0];
             dataGridView1.DataSource = productTable;
@@ -44,16 +49,13 @@ namespace QuanLyKhoHang
             ds1 = getLocationProduct();
             LocationProduct = ds1.Tables[0];
             dataGridView2.DataSource = LocationProduct;
-
-            tabControl1.Hide();
-            tabControl2.Hide();
         }
 
         DataSet getProduct()
         {
             ds = new DataSet();
             string sql = "SELECT * FROM NhapHang";
-            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            SqlDataAdapter da = new SqlDataAdapter(sql, cnn);
             int number = da.Fill(ds);
             return ds;
         }
@@ -62,7 +64,7 @@ namespace QuanLyKhoHang
         {
             ds1 = new DataSet();
             string sql1 = "SELECT * FROM CatHang";
-            SqlDataAdapter da1 = new SqlDataAdapter(sql1, sqlcnn);
+            SqlDataAdapter da1 = new SqlDataAdapter(sql1, cnn);
             int number = da1.Fill(ds1);
             return ds1;
         }
@@ -76,8 +78,9 @@ namespace QuanLyKhoHang
 
         private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl2.Show();
             panel1.Hide();
+            tabControl1.Hide();
+            tabControl2.Show();
         }
 
         // Hàm kiểm tra xem object a có null hay không
@@ -88,17 +91,16 @@ namespace QuanLyKhoHang
             else
                 return false;
         }
-            
-        
+
         private void btThem1_Click(object sender, EventArgs e)
         {
             try
             {
-                sqlcnn.Open();
+                cnn.Open();
                 string sq = "select * from NhapHang WHERE MaThung ='" + txtMaThung1.Text + "'";
                 string sq1 = "SELECT * FROM NhapHang WHERE MaSP ='" + txtMaSP1.Text + "'";
-                SqlCommand kt1 = new SqlCommand(sq1, sqlcnn);
-                SqlCommand kt = new SqlCommand(sq, sqlcnn);
+                SqlCommand kt1 = new SqlCommand(sq1, cnn);
+                SqlCommand kt = new SqlCommand(sq, cnn);
                 object o = kt.ExecuteScalar();
                 object y = kt1.ExecuteScalar();
                 if (ktTrung(o) == true)
@@ -115,7 +117,7 @@ namespace QuanLyKhoHang
                     String sql1 = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap) "
                         + "VALUES('" + this.txtMaThung1.Text + "','" + this.txtMaSP1.Text + "','" + this.txtTenSP1.Text + "','"
                       + this.txtSL1.Text + "','" + this.txtNgayNhap.Text + "');";
-                    SqlCommand sqlcmd = new SqlCommand(sql1, sqlcnn);
+                    SqlCommand sqlcmd = new SqlCommand(sql1, cnn);
                     sqlcmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
 
@@ -130,7 +132,7 @@ namespace QuanLyKhoHang
                     productTable.Rows.Add(row);
                     this.Refresh();
                 }
-                sqlcnn.Close();
+                cnn.Close();
                 this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = this.txtNgayNhap.Text = "";
             }
             catch
@@ -141,7 +143,7 @@ namespace QuanLyKhoHang
 
         private void btHuy1_Click(object sender, EventArgs e)
         {
-            this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text =  "";
+            this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = "";
         }
 
         private void btnTimThung_Click(object sender, EventArgs e)
@@ -166,7 +168,7 @@ namespace QuanLyKhoHang
         {
             try
             {
-                sqlcnn.Open();
+                cnn.Open();
                 if (txtTenSP2.Text == "" || txtMaSP2.Text == "" || txtSL2.Text == "" || txtMaKe.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ các ô");
@@ -176,13 +178,13 @@ namespace QuanLyKhoHang
                     this.txtNgayCat.Text = (DateTime.Now).ToString();
                     String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat) "
                         + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text.Trim() + "','"
-                        + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');" ;
-                    SqlCommand cmd = new SqlCommand(sql2,sqlcnn);
+                        + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
+                    SqlCommand cmd = new SqlCommand(sql2, cnn);
                     cmd.ExecuteNonQuery();
 
-                    String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, GhiChu) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaKe.Text + "');";
-                    SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
-                    cmd1.ExecuteNonQuery(); 
+                    String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, SoLuong) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtSL2.Text + "');";
+                    SqlCommand cmd1 = new SqlCommand(sql3, cnn);
+                    cmd1.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
 
                     DataRow row = LocationProduct.NewRow();
@@ -195,11 +197,11 @@ namespace QuanLyKhoHang
                     LocationProduct.Rows.Add(row);
 
                     String delete = "DELETE FROM NhapHang WHERE MaThung = '" + txtMaThung2.Text + "';";
-                    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
+                    SqlCommand deleteCmd = new SqlCommand(delete, cnn);
                     deleteCmd.ExecuteNonQuery();
                     MessageBox.Show("Xóa thành công");
                 }
-                sqlcnn.Close();
+                cnn.Close();
 
                 int rowIndex = -1;
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -214,7 +216,7 @@ namespace QuanLyKhoHang
 
                 dataGridView1.Rows.RemoveAt(rowIndex);
 
-                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text ="";
+                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text = "";
             }
             catch
             {
@@ -222,12 +224,27 @@ namespace QuanLyKhoHang
             }
         }
 
-        private void btHuy2_Click(object sender, EventArgs e)
+        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
         {
-            this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text = "";
+
         }
 
-        private void splitContainer3_SplitterMoved(object sender, SplitterEventArgs e)
+        private void quảnLýTồnKhoĐịnhKìToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbNgayCat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNgayCat_TextChanged(object sender, EventArgs e)
         {
 
         }

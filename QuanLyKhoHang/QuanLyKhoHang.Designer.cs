@@ -168,7 +168,6 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tabControl2);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.splitContainer1.Size = new System.Drawing.Size(1357, 458);
@@ -297,7 +296,7 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(599, 12);
+            this.tabControl2.Location = new System.Drawing.Point(592, 28);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(601, 458);
@@ -323,15 +322,14 @@
             // 
             // splitContainer3.Panel1
             // 
-            this.splitContainer3.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer3.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.splitContainer3.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer3.Size = new System.Drawing.Size(587, 423);
             this.splitContainer3.SplitterDistance = 163;
             this.splitContainer3.TabIndex = 0;
-            this.splitContainer3.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer3_SplitterMoved);
             // 
             // tabPage4
             // 
@@ -576,7 +574,6 @@
             this.btHuy2.TabIndex = 1;
             this.btHuy2.Text = "Hủy";
             this.btHuy2.UseVisualStyleBackColor = true;
-            this.btHuy2.Click += new System.EventHandler(this.btHuy2_Click);
             // 
             // btThem2
             // 
@@ -687,6 +684,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1371, 519);
+            this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
