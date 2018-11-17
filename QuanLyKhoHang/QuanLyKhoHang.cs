@@ -15,7 +15,7 @@ namespace QuanLyKhoHang
 {
     public partial class QuanLyKhoHang : Form
     {
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test3\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test4\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
         DataTable productTable, LocationProduct; // khai báo producttable nhằm thêm dữ liệu vào datagridview
         DataSet ds, ds1; 
         public QuanLyKhoHang()
@@ -37,8 +37,6 @@ namespace QuanLyKhoHang
                 Application.Exit();
             }
 
-            
-
             ds = getProduct();
             productTable = ds.Tables[0];
             dataGridView1.DataSource = productTable;
@@ -46,6 +44,9 @@ namespace QuanLyKhoHang
             ds1 = getLocationProduct();
             LocationProduct = ds1.Tables[0];
             dataGridView2.DataSource = LocationProduct;
+
+            tabControl1.Hide();
+            tabControl2.Hide();
         }
 
         DataSet getProduct()
@@ -69,14 +70,26 @@ namespace QuanLyKhoHang
         private void nhậpVàoKhoHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Show();
+            tabControl1.Show();
+            tabControl2.Hide();
         }
 
         private void sắpXếpHàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            tabControl2.Show();
             panel1.Hide();
-            
         }
 
+        // Hàm kiểm tra xem object a có null hay không
+        public bool ktTrung(object a)
+        {
+            if (a != null)
+                return true;
+            else
+                return false;
+        }
+            
+        
         private void btThem1_Click(object sender, EventArgs e)
         {
             try
@@ -88,13 +101,13 @@ namespace QuanLyKhoHang
                 SqlCommand kt = new SqlCommand(sq, sqlcnn);
                 object o = kt.ExecuteScalar();
                 object y = kt1.ExecuteScalar();
-                if (o != null)
+                if (ktTrung(o) == true)
                     MessageBox.Show("Mã thùng đã được sử dụng");
                 else if (txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ các ô");
                 }
-                else if (y != null)
+                else if (ktTrung(y) == true)
                     MessageBox.Show("Mã sản phẩm bị trùng");
                 else
                 {
@@ -106,8 +119,6 @@ namespace QuanLyKhoHang
                     sqlcmd.ExecuteNonQuery();
                     MessageBox.Show("Thanh cong");
 
-                    
-
                     dataGridView1.DataSource = productTable;
                     DataRow row = productTable.NewRow();
                     row["MaThung"] = this.txtMaThung1.Text;
@@ -117,9 +128,6 @@ namespace QuanLyKhoHang
                     row["NgayNhap"] = this.txtNgayNhap.Text;
 
                     productTable.Rows.Add(row);
-
-                    
-
                     this.Refresh();
                 }
                 sqlcnn.Close();
@@ -172,7 +180,6 @@ namespace QuanLyKhoHang
                     SqlCommand cmd = new SqlCommand(sql2,sqlcnn);
                     cmd.ExecuteNonQuery();
 
-
                     String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, GhiChu) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaKe.Text + "');";
                     SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
                     cmd1.ExecuteNonQuery(); 
@@ -185,7 +192,6 @@ namespace QuanLyKhoHang
                     row["TenSP"] = this.txtTenSP2.Text;
                     row["SoLuong"] = this.txtSL2.Text;
                     row["NgayCat"] = this.txtNgayCat.Text;
-
                     LocationProduct.Rows.Add(row);
 
                     String delete = "DELETE FROM NhapHang WHERE MaThung = '" + txtMaThung2.Text + "';";
@@ -208,12 +214,22 @@ namespace QuanLyKhoHang
 
                 dataGridView1.Rows.RemoveAt(rowIndex);
 
-                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = "";
+                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text ="";
             }
             catch
             {
                 MessageBox.Show("Lỗi Kết Nối");
             }
+        }
+
+        private void btHuy2_Click(object sender, EventArgs e)
+        {
+            this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text = "";
+        }
+
+        private void splitContainer3_SplitterMoved(object sender, SplitterEventArgs e)
+        {
+
         }
     }
 }
