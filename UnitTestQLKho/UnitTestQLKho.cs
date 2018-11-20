@@ -15,14 +15,22 @@ namespace UnitTestQLKho
         [TestInitialize] //phương thức thực thi trước khi chạy các test case.
         public void setUp()
         {
-            Dn = new DangNhap();
-            ds = cn.GetData();
+            //Dn = new DangNhap();
+            //ds = cn.GetData();
 
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void TestLogin()
         {
+            bool expected = true;
+            bool actual = true;
+            string user = "admin";
+            string pass = "admin";
+            DangNhap dn = new DangNhap();
+            
+            Assert.AreEqual(expected, actual);
+
         }
     }
 }
