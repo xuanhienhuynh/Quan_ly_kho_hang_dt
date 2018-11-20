@@ -17,7 +17,7 @@ namespace QuanLyKhoHang
     public partial class QLKhoHang : Form
     {
         //SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Quan_ly_kho_hang_dt3\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
         DataTable productTable, LocationProduct, sapxep; // khai báo producttable nhằm thêm dữ liệu vào datagridview
         DataSet ds, ds1, ds2;
         public static string strUser;

@@ -31,6 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLKhoHang));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbgetUser = new System.Windows.Forms.Label();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtMaThung4 = new System.Windows.Forms.TextBox();
+            this.txtNgayXoa = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtMSP4 = new System.Windows.Forms.TextBox();
+            this.txtSL4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTenSP4 = new System.Windows.Forms.TextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -52,20 +66,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
-            this.btXoa = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtMaThung4 = new System.Windows.Forms.TextBox();
-            this.txtNgayXoa = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtMSP4 = new System.Windows.Forms.TextBox();
-            this.txtSL4 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtTenSP4 = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -118,6 +118,11 @@
             this.tonKhoDinhKiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.tabControl3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
@@ -125,11 +130,6 @@
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.tabControl3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
-            this.splitContainer4.Panel1.SuspendLayout();
-            this.splitContainer4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -170,6 +170,154 @@
             this.lbgetUser.Size = new System.Drawing.Size(92, 29);
             this.lbgetUser.TabIndex = 4;
             this.lbgetUser.Text = "label17";
+            // 
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Location = new System.Drawing.Point(601, 196);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1565, 605);
+            this.tabControl3.TabIndex = 3;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.splitContainer4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Size = new System.Drawing.Size(1557, 576);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "Tồn Kho";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer4
+            // 
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer4.Panel1
+            // 
+            this.splitContainer4.Panel1.Controls.Add(this.btXoa);
+            this.splitContainer4.Panel1.Controls.Add(this.label11);
+            this.splitContainer4.Panel1.Controls.Add(this.txtMaThung4);
+            this.splitContainer4.Panel1.Controls.Add(this.txtNgayXoa);
+            this.splitContainer4.Panel1.Controls.Add(this.label12);
+            this.splitContainer4.Panel1.Controls.Add(this.label13);
+            this.splitContainer4.Panel1.Controls.Add(this.txtMSP4);
+            this.splitContainer4.Panel1.Controls.Add(this.txtSL4);
+            this.splitContainer4.Panel1.Controls.Add(this.label14);
+            this.splitContainer4.Panel1.Controls.Add(this.label15);
+            this.splitContainer4.Panel1.Controls.Add(this.txtTenSP4);
+            this.splitContainer4.Size = new System.Drawing.Size(1549, 568);
+            this.splitContainer4.SplitterDistance = 261;
+            this.splitContainer4.SplitterWidth = 5;
+            this.splitContainer4.TabIndex = 0;
+            // 
+            // btXoa
+            // 
+            this.btXoa.Location = new System.Drawing.Point(123, 91);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(100, 28);
+            this.btXoa.TabIndex = 11;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(32, 16);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(97, 22);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Mã Thùng:";
+            // 
+            // txtMaThung4
+            // 
+            this.txtMaThung4.Location = new System.Drawing.Point(123, 12);
+            this.txtMaThung4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaThung4.Name = "txtMaThung4";
+            this.txtMaThung4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMaThung4.Size = new System.Drawing.Size(145, 22);
+            this.txtMaThung4.TabIndex = 2;
+            // 
+            // txtNgayXoa
+            // 
+            this.txtNgayXoa.Location = new System.Drawing.Point(783, 46);
+            this.txtNgayXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNgayXoa.Name = "txtNgayXoa";
+            this.txtNgayXoa.Size = new System.Drawing.Size(288, 22);
+            this.txtNgayXoa.TabIndex = 10;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(321, 16);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(53, 17);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Mã SP:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(664, 52);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(74, 17);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Ngày Hủy:";
+            // 
+            // txtMSP4
+            // 
+            this.txtMSP4.Location = new System.Drawing.Point(407, 12);
+            this.txtMSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMSP4.Name = "txtMSP4";
+            this.txtMSP4.Size = new System.Drawing.Size(145, 22);
+            this.txtMSP4.TabIndex = 4;
+            // 
+            // txtSL4
+            // 
+            this.txtSL4.Location = new System.Drawing.Point(484, 46);
+            this.txtSL4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSL4.Name = "txtSL4";
+            this.txtSL4.Size = new System.Drawing.Size(116, 22);
+            this.txtSL4.TabIndex = 8;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(32, 49);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label14.Size = new System.Drawing.Size(59, 17);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Tên SP:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(367, 49);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(73, 17);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Số Lượng:";
+            // 
+            // txtTenSP4
+            // 
+            this.txtTenSP4.Location = new System.Drawing.Point(123, 46);
+            this.txtTenSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenSP4.Name = "txtTenSP4";
+            this.txtTenSP4.Size = new System.Drawing.Size(172, 22);
+            this.txtTenSP4.TabIndex = 6;
             // 
             // tabControl2
             // 
@@ -382,154 +530,6 @@
             this.Column9.DataPropertyName = "SoLuong";
             this.Column9.HeaderText = "Số Lượng";
             this.Column9.Name = "Column9";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage4);
-            this.tabControl3.Location = new System.Drawing.Point(601, 196);
-            this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1565, 605);
-            this.tabControl3.TabIndex = 3;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.splitContainer4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1557, 576);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "Tồn Kho";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // splitContainer4
-            // 
-            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer4.Location = new System.Drawing.Point(4, 4);
-            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4);
-            this.splitContainer4.Name = "splitContainer4";
-            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer4.Panel1
-            // 
-            this.splitContainer4.Panel1.Controls.Add(this.btXoa);
-            this.splitContainer4.Panel1.Controls.Add(this.label11);
-            this.splitContainer4.Panel1.Controls.Add(this.txtMaThung4);
-            this.splitContainer4.Panel1.Controls.Add(this.txtNgayXoa);
-            this.splitContainer4.Panel1.Controls.Add(this.label12);
-            this.splitContainer4.Panel1.Controls.Add(this.label13);
-            this.splitContainer4.Panel1.Controls.Add(this.txtMSP4);
-            this.splitContainer4.Panel1.Controls.Add(this.txtSL4);
-            this.splitContainer4.Panel1.Controls.Add(this.label14);
-            this.splitContainer4.Panel1.Controls.Add(this.label15);
-            this.splitContainer4.Panel1.Controls.Add(this.txtTenSP4);
-            this.splitContainer4.Size = new System.Drawing.Size(1549, 568);
-            this.splitContainer4.SplitterDistance = 261;
-            this.splitContainer4.SplitterWidth = 5;
-            this.splitContainer4.TabIndex = 0;
-            // 
-            // btXoa
-            // 
-            this.btXoa.Location = new System.Drawing.Point(123, 91);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(100, 28);
-            this.btXoa.TabIndex = 11;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(32, 16);
-            this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label11.Size = new System.Drawing.Size(97, 22);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Mã Thùng:";
-            // 
-            // txtMaThung4
-            // 
-            this.txtMaThung4.Location = new System.Drawing.Point(123, 12);
-            this.txtMaThung4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaThung4.Name = "txtMaThung4";
-            this.txtMaThung4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtMaThung4.Size = new System.Drawing.Size(145, 22);
-            this.txtMaThung4.TabIndex = 2;
-            // 
-            // txtNgayXoa
-            // 
-            this.txtNgayXoa.Location = new System.Drawing.Point(783, 46);
-            this.txtNgayXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNgayXoa.Name = "txtNgayXoa";
-            this.txtNgayXoa.Size = new System.Drawing.Size(288, 22);
-            this.txtNgayXoa.TabIndex = 10;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(321, 16);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label12.Size = new System.Drawing.Size(53, 17);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Mã SP:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(664, 52);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label13.Size = new System.Drawing.Size(74, 17);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Ngày Hủy:";
-            // 
-            // txtMSP4
-            // 
-            this.txtMSP4.Location = new System.Drawing.Point(407, 12);
-            this.txtMSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMSP4.Name = "txtMSP4";
-            this.txtMSP4.Size = new System.Drawing.Size(145, 22);
-            this.txtMSP4.TabIndex = 4;
-            // 
-            // txtSL4
-            // 
-            this.txtSL4.Location = new System.Drawing.Point(484, 46);
-            this.txtSL4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSL4.Name = "txtSL4";
-            this.txtSL4.Size = new System.Drawing.Size(116, 22);
-            this.txtSL4.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(32, 49);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label14.Size = new System.Drawing.Size(59, 17);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Tên SP:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(367, 49);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(73, 17);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Số Lượng:";
-            // 
-            // txtTenSP4
-            // 
-            this.txtTenSP4.Location = new System.Drawing.Point(123, 46);
-            this.txtTenSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenSP4.Name = "txtTenSP4";
-            this.txtTenSP4.Size = new System.Drawing.Size(172, 22);
-            this.txtTenSP4.TabIndex = 6;
             // 
             // tabControl1
             // 
@@ -1076,6 +1076,12 @@
             this.Load += new System.EventHandler(this.QuanLyKhoHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
@@ -1084,12 +1090,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.splitContainer4.Panel1.ResumeLayout(false);
-            this.splitContainer4.Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
-            this.splitContainer4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);

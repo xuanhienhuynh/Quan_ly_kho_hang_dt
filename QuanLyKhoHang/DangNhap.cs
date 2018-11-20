@@ -34,7 +34,7 @@ namespace QuanLyKhoHang
 
         private void btn_signin_Click_1(object sender, EventArgs e)
         {
-            SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Quan_ly_kho_hang_dt3\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
+            SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
             //SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test3\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
             //Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test2\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;
             try
