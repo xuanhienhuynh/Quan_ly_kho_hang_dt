@@ -8,36 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 /*m sửa chỗ nào thì đóng băng lại chứ đừng xóa nha*/
 /*m đóng băng đường dẫn SQL của t lại rồi sửa lại đường dẫn của m mới chạy đc nha*/
 
 namespace QuanLyKhoHang
 {
-    public partial class Form1 : Form
+    public partial class DangNhap : Form
     {
-        public Form1()
+        public DangNhap()
         {
             InitializeComponent();
         }
 
+        
+
         public void Form1_Load(object sender, EventArgs e)
         {
+        }
 
+        public void ktRong(String a, String b)
+        {
+ 
         }
 
 
         private void btn_signin_Click_1(object sender, EventArgs e)
         {
-            //Ket Noi Cua Hien//SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-            SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test5\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHangCSDL.mdf;Integrated Security=True;");
+            SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
+            //SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test3\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
+            //Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test2\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;
             try
             {
-                cnn.Open();
+                sqlcnn.Open();
                 String tk = txt_username.Text;
                 String mk = txt_password.Text;
+                QLKhoHang.strUser = txt_username.Text;
                 String sql = "SELECT * FROM NguoiDung WHERE TaiKhoan = '" + tk + "' AND MatKhau = '" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, cnn);
+                SqlCommand cmd = new SqlCommand(sql, sqlcnn);
                 SqlDataReader data = cmd.ExecuteReader();
                 if (data.Read() == true)
                 {
@@ -50,7 +57,7 @@ namespace QuanLyKhoHang
                     txt_username.Text = txt_password.Text = "";
                     txt_username.Focus();
                 }
-                cnn.Close();
+                sqlcnn.Close();
             }
             catch
             {
