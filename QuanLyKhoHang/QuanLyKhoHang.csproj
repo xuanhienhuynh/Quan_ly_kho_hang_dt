@@ -135,6 +135,18 @@
   <ItemGroup>
     <None Include="Resources\Sort.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\Home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\Arrow-Up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\Increase.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon\Log-Off.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

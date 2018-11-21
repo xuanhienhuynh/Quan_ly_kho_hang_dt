@@ -3,9 +3,5 @@ obj
 .vs
 .csproj
 .mdf
-<<<<<<< HEAD
-.ldf
-=======
 .ldf
 .suo
->>>>>>> feature-fontend
