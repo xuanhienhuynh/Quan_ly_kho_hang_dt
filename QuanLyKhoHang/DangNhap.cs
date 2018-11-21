@@ -49,7 +49,7 @@ namespace QuanLyKhoHang
                 if (data.Read() == true)
                 {
                     MessageBox.Show("Success");
-                    this.DialogResult = DialogResult.OK;
+                    this.DialogResult = DialogResult.Yes;
                 }
                 else
                 {
