@@ -147,6 +147,12 @@
   <ItemGroup>
     <None Include="icon\Log-Off.ico" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <None Include="icon\Statistics.ico" />
+  </ItemGroup>
+>>>>>>> feature-fontend
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
