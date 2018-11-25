@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DTO;
+using BUS;
 /*m sửa chỗ nào thì đóng băng lại chứ đừng xóa nha*/
 /*m đóng băng đường dẫn SQL của t lại rồi sửa lại đường dẫn của m mới chạy đc nha*/
 
@@ -20,10 +22,13 @@ namespace QuanLyKhoHang
             InitializeComponent();
         }
 
-        
+        LoginBus lgBUS;
 
         public void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'khoHangCSDLDataSet.NguoiDung' table. You can move, or remove it, as needed.
+            this.nguoiDungTableAdapter.Fill(this.khoHangCSDLDataSet.NguoiDung);
+            lgBUS = new LoginBus();
         }
 
         public void ktRong(String a, String b)
@@ -34,35 +39,51 @@ namespace QuanLyKhoHang
 
         private void btn_signin_Click_1(object sender, EventArgs e)
         {
-            SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
-            //SqlConnection cnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test3\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-            //Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\cuong\OneDrive\Máy tính\Test2\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;
-            try
+            string name = txt_username.Text, pass = txt_password.Text;
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(pass))
             {
-                sqlcnn.Open();
-                String tk = txt_username.Text;
-                String mk = txt_password.Text;
+                MessageBox.Show("ban phai nhap day du thong tin ", "chua nhap thong tin", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
                 QLKhoHang.strUser = txt_username.Text;
-                String sql = "SELECT * FROM NguoiDung WHERE TaiKhoan = '" + tk + "' AND MatKhau = '" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, sqlcnn);
-                SqlDataReader data = cmd.ExecuteReader();
-                if (data.Read() == true)
+                bool b = false;
+                try
                 {
-                    MessageBox.Show("Success");
-                    this.DialogResult = DialogResult.Yes;
+                    Account acc = new Account(name, pass);
+                    b = lgBUS.loginbus(acc);
+                }
+                catch (SqlException ex)
+                {
+
+                    MessageBox.Show("may ngu qua \n" + ex.Message);
+                }
+                if (b) // 
+                {
+                    
+                    this.DialogResult = DialogResult.Yes; // dong lenh nay dung de gan gia tri ok vo form 2
+                    this.Close();
+                    // neu nhap dung mat khau thi form 2 se co gia tri dialog la ok, form 1 se xet gia tri
+                    // neu bang ok thi tat form 2, mo form 1 , va enable cac gia tri ca form 1
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thất bại, thử lại!!!", "Đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txt_username.Text = txt_password.Text = "";
-                    txt_username.Focus();
+                    DialogResult result = MessageBox.Show("ban nhap sai tai khoan hoac mat khau !", "wrong", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    if (result == DialogResult.Cancel)
+                        Application.Exit();
+                    else
+                        if (result == DialogResult.Retry)
+                        {
+                            txt_password.Text = "";
+                            txt_password.Focus();
+                        }
                 }
-                sqlcnn.Close();
             }
-            catch
-            {
-                MessageBox.Show("Lỗi kết nối");
-            }
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
     }

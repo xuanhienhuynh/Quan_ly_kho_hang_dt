@@ -55,9 +55,9 @@
     <Compile Include="UnitTestQLKho.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\QuanLyKhoHang\QuanLyKhoHang.csproj">
+    <ProjectReference Include="..\QuanLyKhoHang\1QuanLyKhoHang.csproj">
       <Project>{e741036d-51b9-4324-98c6-19944db4593b}</Project>
-      <Name>QuanLyKhoHang</Name>
+      <Name>1QuanLyKhoHang</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

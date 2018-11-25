@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyKhoHang", "QuanLyKhoHang\QuanLyKhoHang.csproj", "{E741036D-51B9-4324-98C6-19944DB4593B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1QuanLyKhoHang", "QuanLyKhoHang\1QuanLyKhoHang.csproj", "{E741036D-51B9-4324-98C6-19944DB4593B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestQLKho", "UnitTestQLKho\UnitTestQLKho.csproj", "{3149AD25-C644-4A30-AA79-1BC41798EA65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{33997DF7-97B8-45C5-9F3D-F733E8BFDE99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{A255BBEE-1965-460F-915C-7F5E1B4305A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{93CEABA6-FB71-4775-9B40-3AD02896CDDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{3149AD25-C644-4A30-AA79-1BC41798EA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3149AD25-C644-4A30-AA79-1BC41798EA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3149AD25-C644-4A30-AA79-1BC41798EA65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33997DF7-97B8-45C5-9F3D-F733E8BFDE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33997DF7-97B8-45C5-9F3D-F733E8BFDE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33997DF7-97B8-45C5-9F3D-F733E8BFDE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33997DF7-97B8-45C5-9F3D-F733E8BFDE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A255BBEE-1965-460F-915C-7F5E1B4305A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A255BBEE-1965-460F-915C-7F5E1B4305A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A255BBEE-1965-460F-915C-7F5E1B4305A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A255BBEE-1965-460F-915C-7F5E1B4305A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CEABA6-FB71-4775-9B40-3AD02896CDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CEABA6-FB71-4775-9B40-3AD02896CDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CEABA6-FB71-4775-9B40-3AD02896CDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CEABA6-FB71-4775-9B40-3AD02896CDDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
