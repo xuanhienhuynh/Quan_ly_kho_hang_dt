@@ -44,7 +44,10 @@ namespace QuanLyKhoHang
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl3.Hide();
+<<<<<<< HEAD
                 tabControl4.Hide();
+=======
+>>>>>>> feature-backend
                 tabControlHistory.Hide();
                 fm = new DangNhap();
                 result = fm.ShowDialog();
@@ -57,7 +60,11 @@ namespace QuanLyKhoHang
                     this.Hide();
                 }
 
+<<<<<<< HEAD
                 lbgetUser.Text =  strUser;
+=======
+                lbgetUser.Text = "Xin chào " + strUser;
+>>>>>>> feature-backend
                 this.WindowState = FormWindowState.Maximized;
                 DateTime today = DateTime.Today;
                 txtNgayNhap.Text = today.ToString();
@@ -72,11 +79,29 @@ namespace QuanLyKhoHang
                 CHTable = ds.Tables[0];
                 dataGridView2.DataSource = CHTable;
                 dataGridView6.DataSource = CHTable;
+<<<<<<< HEAD
                 
+=======
+                //ds1 = getLocationProduct();
+                //LocationProduct = ds1.Tables[0];
+                //dataGridView2.DataSource = LocationProduct;
+                //dataGridView6.DataSource = LocationProduct;
+
+>>>>>>> feature-backend
                 ds = getSanPham();
                 SPTable = ds.Tables[0];
                 dataGridView3.DataSource = SPTable;
                 dataGridView5.DataSource = SPTable;
+<<<<<<< HEAD
+=======
+                //ds2 = SapXep();
+                //sapxep = ds2.Tables[0];
+                //dataGridView3.DataSource = sapxep;
+                //dataGridView4.DataSource = sapxep;
+                //dataGridView5.DataSource = sapxep;
+                //dataGridView7.DataSource = pick;
+                
+>>>>>>> feature-backend
                 
             }
             else
@@ -271,7 +296,11 @@ namespace QuanLyKhoHang
             }
         }
 
+<<<<<<< HEAD
         private void LogOutToolStripMenuItem_Click(object sender, EventArgs e)
+=======
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+>>>>>>> feature-backend
         {
             this.Hide();
             fm = new DangNhap();
@@ -285,6 +314,11 @@ namespace QuanLyKhoHang
                 tabControl2.Hide();
                 tabControl3.Hide();
                 tabControlHistory.Hide();
+<<<<<<< HEAD
+=======
+                //fm = new DangNhap();
+                //result = fm.ShowDialog();
+>>>>>>> feature-backend
                 if (result == DialogResult.Yes)
                 {
                     this.Show();
@@ -293,6 +327,46 @@ namespace QuanLyKhoHang
                 {
                     this.Hide();
                 }
+<<<<<<< HEAD
+=======
+
+                lbgetUser.Text = "Xin chào " + strUser;
+                this.WindowState = FormWindowState.Maximized;
+                DateTime today = DateTime.Today;
+                txtNgayNhap.Text = today.ToString();
+                txtNgayCat.Text = today.ToString();
+
+                ds = getNhapHang();
+                productTable = ds.Tables[0];
+                dataGridView1.DataSource = productTable;
+                dataGridViewInPut.DataSource = productTable;
+
+                ds = getCatHang();
+                CHTable = ds.Tables[0];
+                dataGridView2.DataSource = CHTable;
+                dataGridView6.DataSource = CHTable;
+                //ds1 = getLocationProduct();
+                //LocationProduct = ds1.Tables[0];
+                //dataGridView2.DataSource = LocationProduct;
+                //dataGridView6.DataSource = LocationProduct;
+
+                ds = getSanPham();
+                SPTable = ds.Tables[0];
+                dataGridView3.DataSource = SPTable;
+                //ds2 = SapXep();
+                //sapxep = ds2.Tables[0];
+                //dataGridView3.DataSource = sapxep;
+                //dataGridView4.DataSource = sapxep;
+                //dataGridView5.DataSource = sapxep;
+                //dataGridView7.DataSource = pick;
+
+
+            }
+            else
+            {
+                MessageBox.Show("Chưa kết nối với CSDL");
+            }
+>>>>>>> feature-backend
 
                 lbgetUser.Text = strUser;
                 this.WindowState = FormWindowState.Maximized;
@@ -324,6 +398,50 @@ namespace QuanLyKhoHang
 
         private void btnLayHang_Click(object sender, EventArgs e)
         {
+            //sqlcnn.Open();
+            //String a;
+            //int total;
+            //String select = "SELECT SoLuong FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
+            //SqlCommand selectcmd = new SqlCommand(select, sqlcnn);
+            //a = selectcmd.ExecuteScalar().ToString();
+            //if (int.Parse(txtSL5.Text) < int.Parse(a))
+            //{
+            //    this.textBox3.Text = txtSL5.Text;
+            //    this.textBox4.Text = a;
+            //    int x = int.Parse(textBox3.Text);
+            //    int y = int.Parse(textBox4.Text);
+            //    total = y - x;
+            //    String update = "UPDATE SanPham SET SoLuong = '" + total.ToString() + "' WHERE MaSP = '" + txtMaSP5.Text + "';";
+            //    SqlCommand updatecmd = new SqlCommand(update, sqlcnn);
+            //    updatecmd.ExecuteNonQuery();
+            //    this.textBox1.Text = (DateTime.Now).ToString();
+            //    MessageBox.Show("Cap nhap thành công");
+            //    String insert = "INSERT INTO XuatHang (MaKe, MaSP, SoLuong, NgayLay, NguoiLay) "
+            //            + "VALUES('" + this.txtMaKe5.Text + "','" + this.txtMaSP5.Text + "','" + this.txtSL5.Text + "','"
+            //            + this.textBox1.Text + "','" + this.lbgetUser.Text + "');";
+            //    SqlCommand insertcmd = new SqlCommand(insert, sqlcnn);
+            //    insertcmd.ExecuteNonQuery();
+            //    loadData();
+            //}
+            //else if (int.Parse(txtSL5.Text) == int.Parse(a))
+            //{
+            //    String delete = "DELETE FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
+            //    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
+            //    deleteCmd.ExecuteNonQuery();
+            //    MessageBox.Show("Xóa thành công");
+            //    String insert = "INSERT INTO XuatHang (MaKe, MaSP, SoLuong, NgayLay, NguoiLay) "
+            //            + "VALUES('" + this.txtMaKe5.Text + "','" + this.txtMaSP5.Text + "','" + this.txtSL5.Text + "','"
+            //            + this.textBox1.Text + "','" + this.lbgetUser.Text + "');";
+            //    SqlCommand insertcmd = new SqlCommand(insert, sqlcnn);
+            //    insertcmd.ExecuteNonQuery();
+            //    loadData();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("số lượng cần lấy lớn hơn SP đang tồn");
+            //}
+            //sqlcnn.Close();
+
             sqlcnn.Open();
             String a;
             String select = "SELECT SoLuong FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
@@ -402,6 +520,7 @@ namespace QuanLyKhoHang
             tabControl1.Hide();
             tabControl2.Hide();
             tabControl4.Show();
+<<<<<<< HEAD
             tabControlHistory.Hide();
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
@@ -422,8 +541,19 @@ namespace QuanLyKhoHang
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+=======
+        }
+        private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
-
+            tabControl3.Show();
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl4.Hide();
+        }
+        private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
+>>>>>>> feature-backend
+        {
+            tabControlHistory.Show();
         }
 
         private void lbgetUser_Click(object sender, EventArgs e)
@@ -431,10 +561,18 @@ namespace QuanLyKhoHang
 
         }
 
+<<<<<<< HEAD
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+=======
+        private void dataGridViewInPut_CellContentClick(object sender, DataGridViewCellEventArgs e)
+>>>>>>> feature-backend
         {
 
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature-backend
     }
 }

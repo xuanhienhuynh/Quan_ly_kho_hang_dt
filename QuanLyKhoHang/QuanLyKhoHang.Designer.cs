@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLKhoHang));
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.tabControlHistory = new System.Windows.Forms.TabControl();
             this.tabPageInput = new System.Windows.Forms.TabPage();
             this.dataGridViewInPut = new System.Windows.Forms.DataGridView();
@@ -53,6 +54,8 @@
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+>>>>>>> feature-backend
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
@@ -72,6 +75,7 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -91,6 +95,9 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+            this.panel3 = new System.Windows.Forms.Panel();
+>>>>>>> feature-backend
             this.lbgetUser = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -116,6 +123,29 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tabControlHistory = new System.Windows.Forms.TabControl();
+            this.tabPageInput = new System.Windows.Forms.TabPage();
+            this.dataGridViewInPut = new System.Windows.Forms.DataGridView();
+            this.MaThung1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenSP1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageHidden = new System.Windows.Forms.TabPage();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageOutput = new System.Windows.Forms.TabPage();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btHuy1 = new System.Windows.Forms.Button();
             this.btThem1 = new System.Windows.Forms.Button();
             this.txtNgayNhap = new System.Windows.Forms.TextBox();
@@ -159,6 +189,28 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
+=======
+            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.btXoa = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtMaThung4 = new System.Windows.Forms.TextBox();
+            this.txtNgayXoa = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtMSP4 = new System.Windows.Forms.TextBox();
+            this.txtSL4 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTenSP4 = new System.Windows.Forms.TextBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> feature-backend
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemInput = new System.Windows.Forms.ToolStripMenuItem();
@@ -170,6 +222,7 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LogOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControlHistory.SuspendLayout();
@@ -179,6 +232,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPageOutput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+=======
+            this.panel1.SuspendLayout();
+>>>>>>> feature-backend
             this.tabControl4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
@@ -186,6 +242,7 @@
             this.splitContainer5.Panel2.SuspendLayout();
             this.splitContainer5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+<<<<<<< HEAD
             this.tabControl3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
@@ -193,6 +250,9 @@
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+=======
+            this.panel3.SuspendLayout();
+>>>>>>> feature-backend
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
@@ -206,6 +266,13 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.tabControlHistory.SuspendLayout();
+            this.tabPageInput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPut)).BeginInit();
+            this.tabPageHidden.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.tabPageOutput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -214,17 +281,35 @@
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+<<<<<<< HEAD
+=======
+            this.tabControl3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
+            this.splitContainer4.Panel1.SuspendLayout();
+            this.splitContainer4.Panel2.SuspendLayout();
+            this.splitContainer4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+>>>>>>> feature-backend
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+<<<<<<< HEAD
             this.panel1.Controls.Add(this.tabControlHistory);
             this.panel1.Controls.Add(this.tabControl4);
             this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.tabControl3);
+=======
+            this.panel1.Controls.Add(this.tabControl4);
+            this.panel1.Controls.Add(this.panel3);
+>>>>>>> feature-backend
             this.panel1.Controls.Add(this.tabControl2);
+            this.panel1.Controls.Add(this.tabControl1);
+            this.panel1.Controls.Add(this.tabControl3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 30);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
@@ -343,107 +428,32 @@
             this.Column17.DataPropertyName = "MaSP";
             this.Column17.HeaderText = "Mã Sản Phẩm";
             this.Column17.Name = "Column17";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "TenSP";
-            this.Column16.HeaderText = "Tên Sản Phẩm";
-            this.Column16.Name = "Column16";
-            // 
-            // Column18
-            // 
-            this.Column18.DataPropertyName = "SoLuong";
-            this.Column18.HeaderText = "Số Lượng";
-            this.Column18.Name = "Column18";
-            // 
-            // Column19
-            // 
-            this.Column19.DataPropertyName = "NgayCat";
-            this.Column19.HeaderText = "Ngày Cất";
-            this.Column19.Name = "Column19";
-            // 
-            // Column24
-            // 
-            this.Column24.DataPropertyName = "NguoiCat";
-            this.Column24.HeaderText = "Người Cất";
-            this.Column24.Name = "Column24";
-            // 
-            // tabPageOutput
-            // 
-            this.tabPageOutput.Controls.Add(this.dataGridView7);
-            this.tabPageOutput.Location = new System.Drawing.Point(4, 27);
-            this.tabPageOutput.Name = "tabPageOutput";
-            this.tabPageOutput.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageOutput.Size = new System.Drawing.Size(1027, 688);
-            this.tabPageOutput.TabIndex = 2;
-            this.tabPageOutput.Text = "Lấy Hàng";
-            this.tabPageOutput.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column20,
-            this.Column21,
-            this.Column23,
-            this.Column22,
-            this.Column25});
-            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView7.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(1021, 682);
-            this.dataGridView7.TabIndex = 0;
-            // 
-            // Column20
-            // 
-            this.Column20.DataPropertyName = "MaKe";
-            this.Column20.HeaderText = "Mã Kệ";
-            this.Column20.Name = "Column20";
-            // 
-            // Column21
-            // 
-            this.Column21.DataPropertyName = "MaSP";
-            this.Column21.HeaderText = "Mã Sản Phẩm";
-            this.Column21.Name = "Column21";
-            // 
-            // Column23
-            // 
-            this.Column23.DataPropertyName = "SoLuong";
-            this.Column23.HeaderText = "Số Lượng";
-            this.Column23.Name = "Column23";
-            // 
-            // Column22
-            // 
-            this.Column22.DataPropertyName = "NgayLay";
-            this.Column22.HeaderText = "Ngày Lấy";
-            this.Column22.Name = "Column22";
-            // 
-            // Column25
-            // 
-            this.Column25.DataPropertyName = "NguoiLay";
-            this.Column25.HeaderText = "Người Lấy";
-            this.Column25.Name = "Column25";
+=======
+            this.panel1.Location = new System.Drawing.Point(0, 35);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1816, 777);
+            this.panel1.TabIndex = 2;
             // 
             // tabControl4
             // 
             this.tabControl4.Controls.Add(this.tabPage5);
-            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl4.Location = new System.Drawing.Point(0, 0);
-            this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl4.Location = new System.Drawing.Point(655, 54);
+            this.tabControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(1035, 719);
-            this.tabControl4.TabIndex = 4;
+            this.tabControl4.Size = new System.Drawing.Size(1590, 304);
+            this.tabControl4.TabIndex = 5;
             // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.splitContainer5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 27);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Location = new System.Drawing.Point(4, 32);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(1027, 688);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Size = new System.Drawing.Size(1582, 268);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Lấy Hàng";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -451,8 +461,8 @@
             // splitContainer5
             // 
             this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer5.Location = new System.Drawing.Point(2, 2);
-            this.splitContainer5.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer5.Location = new System.Drawing.Point(3, 2);
+            this.splitContainer5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer5.Name = "splitContainer5";
             this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -474,31 +484,488 @@
             // splitContainer5.Panel2
             // 
             this.splitContainer5.Panel2.Controls.Add(this.dataGridView5);
-            this.splitContainer5.Size = new System.Drawing.Size(1023, 684);
-            this.splitContainer5.SplitterDistance = 170;
-            this.splitContainer5.SplitterWidth = 3;
+            this.splitContainer5.Size = new System.Drawing.Size(1576, 264);
+            this.splitContainer5.SplitterDistance = 121;
             this.splitContainer5.TabIndex = 0;
             // 
             // textBox4
             // 
+            this.textBox4.Location = new System.Drawing.Point(807, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 30);
+            this.textBox4.TabIndex = 10;
+            this.textBox4.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(913, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 30);
+            this.textBox3.TabIndex = 9;
+            this.textBox3.Visible = false;
+            // 
+            // btnLayHang
+            // 
+            this.btnLayHang.Location = new System.Drawing.Point(407, 127);
+            this.btnLayHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLayHang.Name = "btnLayHang";
+            this.btnLayHang.Size = new System.Drawing.Size(127, 41);
+            this.btnLayHang.TabIndex = 8;
+            this.btnLayHang.Text = "Lấy Hàng";
+            this.btnLayHang.UseVisualStyleBackColor = true;
+            this.btnLayHang.Click += new System.EventHandler(this.btnLayHang_Click);
+            // 
+            // txtSL5
+            // 
+            this.txtSL5.Location = new System.Drawing.Point(1055, 59);
+            this.txtSL5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSL5.Name = "txtSL5";
+            this.txtSL5.Size = new System.Drawing.Size(116, 30);
+            this.txtSL5.TabIndex = 7;
+            // 
+            // txtTenSP5
+            // 
+            this.txtTenSP5.Location = new System.Drawing.Point(693, 59);
+            this.txtTenSP5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenSP5.Name = "txtTenSP5";
+            this.txtTenSP5.Size = new System.Drawing.Size(172, 30);
+            this.txtTenSP5.TabIndex = 6;
+            // 
+            // txtMaSP5
+            // 
+            this.txtMaSP5.Location = new System.Drawing.Point(407, 59);
+            this.txtMaSP5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaSP5.Name = "txtMaSP5";
+            this.txtMaSP5.Size = new System.Drawing.Size(100, 30);
+            this.txtMaSP5.TabIndex = 5;
+            // 
+            // txtMaKe5
+            // 
+            this.txtMaKe5.Location = new System.Drawing.Point(151, 59);
+            this.txtMaKe5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaKe5.Name = "txtMaKe5";
+            this.txtMaKe5.Size = new System.Drawing.Size(145, 30);
+            this.txtMaKe5.TabIndex = 4;
+            // 
+            // lbSoLuong5
+            // 
+            this.lbSoLuong5.AutoSize = true;
+            this.lbSoLuong5.Location = new System.Drawing.Point(937, 63);
+            this.lbSoLuong5.Name = "lbSoLuong5";
+            this.lbSoLuong5.Size = new System.Drawing.Size(104, 23);
+            this.lbSoLuong5.TabIndex = 3;
+            this.lbSoLuong5.Text = "Số Lượng:";
+            // 
+            // lbTenSP5
+            // 
+            this.lbTenSP5.AutoSize = true;
+            this.lbTenSP5.Location = new System.Drawing.Point(603, 63);
+            this.lbTenSP5.Name = "lbTenSP5";
+            this.lbTenSP5.Size = new System.Drawing.Size(81, 23);
+            this.lbTenSP5.TabIndex = 2;
+            this.lbTenSP5.Text = "Tên SP:";
+            // 
+            // lbMaSP5
+            // 
+            this.lbMaSP5.AutoSize = true;
+            this.lbMaSP5.Location = new System.Drawing.Point(321, 63);
+            this.lbMaSP5.Name = "lbMaSP5";
+            this.lbMaSP5.Size = new System.Drawing.Size(76, 23);
+            this.lbMaSP5.TabIndex = 1;
+            this.lbMaSP5.Text = "Mã SP:";
+            // 
+            // lbMaKe5
+            // 
+            this.lbMaKe5.AutoSize = true;
+            this.lbMaKe5.Location = new System.Drawing.Point(32, 63);
+            this.lbMaKe5.Name = "lbMaKe5";
+            this.lbMaKe5.Size = new System.Drawing.Size(74, 23);
+            this.lbMaKe5.TabIndex = 0;
+            this.lbMaKe5.Text = "Mã Kệ:";
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView5.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowTemplate.Height = 24;
+            this.dataGridView5.Size = new System.Drawing.Size(1576, 139);
+            this.dataGridView5.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaSP";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã SP";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenSP";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tên SP";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "MaKe";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Mã Kệ";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "SoLuong";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Số Lượng";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lbgetUser);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1816, 34);
+            this.panel3.TabIndex = 6;
+            // 
+            // lbgetUser
+            // 
+            this.lbgetUser.AutoSize = true;
+            this.lbgetUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lbgetUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbgetUser.Location = new System.Drawing.Point(1741, 0);
+            this.lbgetUser.Name = "lbgetUser";
+            this.lbgetUser.Size = new System.Drawing.Size(75, 29);
+            this.lbgetUser.TabIndex = 4;
+            this.lbgetUser.Text = "lbbbb";
+            this.lbgetUser.Click += new System.EventHandler(this.lbgetUser_Click);
+>>>>>>> feature-backend
+            // 
+            // Column16
+            // 
+<<<<<<< HEAD
+            this.Column16.DataPropertyName = "TenSP";
+            this.Column16.HeaderText = "Tên Sản Phẩm";
+            this.Column16.Name = "Column16";
+=======
+            this.tabControl2.Controls.Add(this.tabPage3);
+            this.tabControl2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl2.Location = new System.Drawing.Point(84, 63);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(1590, 464);
+            this.tabControl2.TabIndex = 3;
+>>>>>>> feature-backend
+            // 
+            // Column18
+            // 
+<<<<<<< HEAD
+            this.Column18.DataPropertyName = "SoLuong";
+            this.Column18.HeaderText = "Số Lượng";
+            this.Column18.Name = "Column18";
+=======
+            this.tabPage3.Controls.Add(this.splitContainer3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Size = new System.Drawing.Size(1582, 428);
+            this.tabPage3.TabIndex = 0;
+            this.tabPage3.Text = "Sắp Xếp";
+            this.tabPage3.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
+            // 
+            // Column19
+            // 
+<<<<<<< HEAD
+            this.Column19.DataPropertyName = "NgayCat";
+            this.Column19.HeaderText = "Ngày Cất";
+            this.Column19.Name = "Column19";
+=======
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+>>>>>>> feature-backend
+            // 
+            // Column24
+            // 
+            this.Column24.DataPropertyName = "NguoiCat";
+            this.Column24.HeaderText = "Người Cất";
+            this.Column24.Name = "Column24";
+            // 
+            // tabPageOutput
+            // 
+<<<<<<< HEAD
+            this.tabPageOutput.Controls.Add(this.dataGridView7);
+            this.tabPageOutput.Location = new System.Drawing.Point(4, 27);
+            this.tabPageOutput.Name = "tabPageOutput";
+            this.tabPageOutput.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageOutput.Size = new System.Drawing.Size(1027, 688);
+            this.tabPageOutput.TabIndex = 2;
+            this.tabPageOutput.Text = "Lấy Hàng";
+            this.tabPageOutput.UseVisualStyleBackColor = true;
+=======
+            this.splitContainer3.Panel2.Controls.Add(this.dataGridView3);
+            this.splitContainer3.Size = new System.Drawing.Size(1574, 420);
+            this.splitContainer3.SplitterDistance = 192;
+            this.splitContainer3.TabIndex = 0;
+>>>>>>> feature-backend
+            // 
+            // dataGridView7
+            // 
+<<<<<<< HEAD
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column20,
+            this.Column21,
+            this.Column23,
+            this.Column22,
+            this.Column25});
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView7.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(1021, 682);
+            this.dataGridView7.TabIndex = 0;
+=======
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox2.Location = new System.Drawing.Point(1263, 126);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 30);
+            this.textBox2.TabIndex = 13;
+            this.textBox2.Visible = false;
+>>>>>>> feature-backend
+            // 
+            // Column20
+            // 
+<<<<<<< HEAD
+            this.Column20.DataPropertyName = "MaKe";
+            this.Column20.HeaderText = "Mã Kệ";
+            this.Column20.Name = "Column20";
+=======
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.textBox1.Location = new System.Drawing.Point(1263, 63);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 30);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.Visible = false;
+>>>>>>> feature-backend
+            // 
+            // Column21
+            // 
+<<<<<<< HEAD
+            this.Column21.DataPropertyName = "MaSP";
+            this.Column21.HeaderText = "Mã Sản Phẩm";
+            this.Column21.Name = "Column21";
+=======
+            this.btSapXep.Location = new System.Drawing.Point(407, 127);
+            this.btSapXep.Margin = new System.Windows.Forms.Padding(4);
+            this.btSapXep.Name = "btSapXep";
+            this.btSapXep.Size = new System.Drawing.Size(264, 41);
+            this.btSapXep.TabIndex = 11;
+            this.btSapXep.Text = "Lấy hàng khỏi kệ";
+            this.btSapXep.UseVisualStyleBackColor = true;
+            this.btSapXep.Click += new System.EventHandler(this.btSapXep_Click);
+>>>>>>> feature-backend
+            // 
+            // Column23
+            // 
+<<<<<<< HEAD
+            this.Column23.DataPropertyName = "SoLuong";
+            this.Column23.HeaderText = "Số Lượng";
+            this.Column23.Name = "Column23";
+=======
+            this.label7.Location = new System.Drawing.Point(32, 63);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label7.Size = new System.Drawing.Size(113, 37);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Mã Thùng:";
+>>>>>>> feature-backend
+            // 
+            // Column22
+            // 
+<<<<<<< HEAD
+            this.Column22.DataPropertyName = "NgayLay";
+            this.Column22.HeaderText = "Ngày Lấy";
+            this.Column22.Name = "Column22";
+=======
+            this.txtMaThung3.Location = new System.Drawing.Point(151, 59);
+            this.txtMaThung3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaThung3.Name = "txtMaThung3";
+            this.txtMaThung3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMaThung3.Size = new System.Drawing.Size(145, 30);
+            this.txtMaThung3.TabIndex = 2;
+>>>>>>> feature-backend
+            // 
+            // Column25
+            // 
+<<<<<<< HEAD
+            this.Column25.DataPropertyName = "NguoiLay";
+            this.Column25.HeaderText = "Người Lấy";
+            this.Column25.Name = "Column25";
+=======
+            this.txtMaKe3.Location = new System.Drawing.Point(141, 132);
+            this.txtMaKe3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaKe3.Name = "txtMaKe3";
+            this.txtMaKe3.Size = new System.Drawing.Size(145, 30);
+            this.txtMaKe3.TabIndex = 10;
+>>>>>>> feature-backend
+            // 
+            // tabControl4
+            // 
+<<<<<<< HEAD
+            this.tabControl4.Controls.Add(this.tabPage5);
+            this.tabControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl4.Location = new System.Drawing.Point(0, 0);
+            this.tabControl4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(1035, 719);
+            this.tabControl4.TabIndex = 4;
+=======
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(321, 63);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label8.Size = new System.Drawing.Size(76, 23);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Mã SP:";
+>>>>>>> feature-backend
+            // 
+            // tabPage5
+            // 
+<<<<<<< HEAD
+            this.tabPage5.Controls.Add(this.splitContainer5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 27);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(1027, 688);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Lấy Hàng";
+            this.tabPage5.UseVisualStyleBackColor = true;
+=======
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(32, 135);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label10.Size = new System.Drawing.Size(74, 23);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Mã Kệ:";
+>>>>>>> feature-backend
+            // 
+            // splitContainer5
+            // 
+<<<<<<< HEAD
+            this.splitContainer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer5.Location = new System.Drawing.Point(2, 2);
+            this.splitContainer5.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer5.Name = "splitContainer5";
+            this.splitContainer5.Orientation = System.Windows.Forms.Orientation.Horizontal;
+=======
+            this.txtMaSP3.Location = new System.Drawing.Point(407, 59);
+            this.txtMaSP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaSP3.Name = "txtMaSP3";
+            this.txtMaSP3.Size = new System.Drawing.Size(145, 30);
+            this.txtMaSP3.TabIndex = 4;
+>>>>>>> feature-backend
+            // 
+            // splitContainer5.Panel1
+            // 
+<<<<<<< HEAD
+            this.splitContainer5.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.splitContainer5.Panel1.Controls.Add(this.textBox4);
+            this.splitContainer5.Panel1.Controls.Add(this.textBox3);
+            this.splitContainer5.Panel1.Controls.Add(this.btnLayHang);
+            this.splitContainer5.Panel1.Controls.Add(this.txtSL5);
+            this.splitContainer5.Panel1.Controls.Add(this.txtTenSP5);
+            this.splitContainer5.Panel1.Controls.Add(this.txtMaSP5);
+            this.splitContainer5.Panel1.Controls.Add(this.txtMaKe5);
+            this.splitContainer5.Panel1.Controls.Add(this.lbSoLuong5);
+            this.splitContainer5.Panel1.Controls.Add(this.lbTenSP5);
+            this.splitContainer5.Panel1.Controls.Add(this.lbMaSP5);
+            this.splitContainer5.Panel1.Controls.Add(this.lbMaKe5);
+=======
+            this.txtSL3.Location = new System.Drawing.Point(1055, 59);
+            this.txtSL3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSL3.Name = "txtSL3";
+            this.txtSL3.Size = new System.Drawing.Size(116, 30);
+            this.txtSL3.TabIndex = 8;
+>>>>>>> feature-backend
+            // 
+            // splitContainer5.Panel2
+            // 
+<<<<<<< HEAD
+            this.splitContainer5.Panel2.Controls.Add(this.dataGridView5);
+            this.splitContainer5.Size = new System.Drawing.Size(1023, 684);
+            this.splitContainer5.SplitterDistance = 170;
+            this.splitContainer5.SplitterWidth = 3;
+            this.splitContainer5.TabIndex = 0;
+=======
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(603, 63);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label6.Size = new System.Drawing.Size(81, 23);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Tên SP:";
+>>>>>>> feature-backend
+            // 
+            // textBox4
+            // 
+<<<<<<< HEAD
             this.textBox4.Location = new System.Drawing.Point(605, 2);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(76, 26);
             this.textBox4.TabIndex = 10;
             this.textBox4.Visible = false;
+=======
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(937, 63);
+            this.label9.Name = "label9";
+            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label9.Size = new System.Drawing.Size(104, 23);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Số Lượng:";
+>>>>>>> feature-backend
             // 
             // textBox3
             // 
+<<<<<<< HEAD
             this.textBox3.Location = new System.Drawing.Point(685, 2);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 26);
             this.textBox3.TabIndex = 9;
             this.textBox3.Visible = false;
+=======
+            this.txtTenSP3.Location = new System.Drawing.Point(693, 59);
+            this.txtTenSP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenSP3.Name = "txtTenSP3";
+            this.txtTenSP3.Size = new System.Drawing.Size(172, 30);
+            this.txtTenSP3.TabIndex = 6;
+>>>>>>> feature-backend
             // 
             // btnLayHang
             // 
+<<<<<<< HEAD
             this.btnLayHang.Location = new System.Drawing.Point(305, 103);
             this.btnLayHang.Margin = new System.Windows.Forms.Padding(2);
             this.btnLayHang.Name = "btnLayHang";
@@ -507,6 +974,21 @@
             this.btnLayHang.Text = "Lấy Hàng";
             this.btnLayHang.UseVisualStyleBackColor = true;
             this.btnLayHang.Click += new System.EventHandler(this.btnLayHang_Click);
+=======
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column6,
+            this.Column7,
+            this.Column8,
+            this.Column9});
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(1574, 224);
+            this.dataGridView3.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             // txtSL5
             // 
@@ -542,6 +1024,7 @@
             // 
             // lbSoLuong5
             // 
+<<<<<<< HEAD
             this.lbSoLuong5.AutoSize = true;
             this.lbSoLuong5.Location = new System.Drawing.Point(703, 51);
             this.lbSoLuong5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -549,9 +1032,21 @@
             this.lbSoLuong5.Size = new System.Drawing.Size(84, 18);
             this.lbSoLuong5.TabIndex = 3;
             this.lbSoLuong5.Text = "Số Lượng:";
+=======
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(41, 408);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1590, 531);
+            this.tabControl1.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             // lbTenSP5
             // 
+<<<<<<< HEAD
             this.lbTenSP5.AutoSize = true;
             this.lbTenSP5.Location = new System.Drawing.Point(452, 51);
             this.lbTenSP5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -559,9 +1054,22 @@
             this.lbTenSP5.Size = new System.Drawing.Size(64, 18);
             this.lbTenSP5.TabIndex = 2;
             this.lbTenSP5.Text = "Tên SP:";
+=======
+            this.tabPage1.Controls.Add(this.splitContainer1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.tabPage1.Size = new System.Drawing.Size(1582, 495);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Nhập hàng từ phiếu";
+            this.tabPage1.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
             // 
             // lbMaSP5
             // 
+<<<<<<< HEAD
             this.lbMaSP5.AutoSize = true;
             this.lbMaSP5.Location = new System.Drawing.Point(241, 51);
             this.lbMaSP5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -569,9 +1077,17 @@
             this.lbMaSP5.Size = new System.Drawing.Size(60, 18);
             this.lbMaSP5.TabIndex = 1;
             this.lbMaSP5.Text = "Mã SP:";
+=======
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+>>>>>>> feature-backend
             // 
             // lbMaKe5
             // 
+<<<<<<< HEAD
             this.lbMaKe5.AutoSize = true;
             this.lbMaKe5.Location = new System.Drawing.Point(24, 51);
             this.lbMaKe5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -579,9 +1095,27 @@
             this.lbMaKe5.Size = new System.Drawing.Size(58, 18);
             this.lbMaKe5.TabIndex = 0;
             this.lbMaKe5.Text = "Mã Kệ:";
+=======
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.splitContainer1.Panel1.Controls.Add(this.tabControlHistory);
+            this.splitContainer1.Panel1.Controls.Add(this.btHuy1);
+            this.splitContainer1.Panel1.Controls.Add(this.btThem1);
+            this.splitContainer1.Panel1.Controls.Add(this.txtNgayNhap);
+            this.splitContainer1.Panel1.Controls.Add(this.label5);
+            this.splitContainer1.Panel1.Controls.Add(this.txtSL1);
+            this.splitContainer1.Panel1.Controls.Add(this.label4);
+            this.splitContainer1.Panel1.Controls.Add(this.txtTenSP1);
+            this.splitContainer1.Panel1.Controls.Add(this.label3);
+            this.splitContainer1.Panel1.Controls.Add(this.txtMaSP1);
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.txtMaThung1);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+>>>>>>> feature-backend
             // 
             // dataGridView5
             // 
+<<<<<<< HEAD
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -703,17 +1237,248 @@
             this.txtMaThung4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtMaThung4.Size = new System.Drawing.Size(110, 26);
             this.txtMaThung4.TabIndex = 2;
+=======
+            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer1.Size = new System.Drawing.Size(1576, 491);
+            this.splitContainer1.SplitterDistance = 230;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // tabControlHistory
+            // 
+            this.tabControlHistory.Controls.Add(this.tabPageInput);
+            this.tabControlHistory.Controls.Add(this.tabPageHidden);
+            this.tabControlHistory.Controls.Add(this.tabPageOutput);
+            this.tabControlHistory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControlHistory.Location = new System.Drawing.Point(335, 127);
+            this.tabControlHistory.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControlHistory.Name = "tabControlHistory";
+            this.tabControlHistory.SelectedIndex = 0;
+            this.tabControlHistory.Size = new System.Drawing.Size(1590, 252);
+            this.tabControlHistory.TabIndex = 1;
+            // 
+            // tabPageInput
+            // 
+            this.tabPageInput.Controls.Add(this.dataGridViewInPut);
+            this.tabPageInput.Location = new System.Drawing.Point(4, 32);
+            this.tabPageInput.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageInput.Name = "tabPageInput";
+            this.tabPageInput.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageInput.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageInput.TabIndex = 0;
+            this.tabPageInput.Text = "Nhập Hàng";
+            this.tabPageInput.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewInPut
+            // 
+            this.dataGridViewInPut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInPut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaThung1,
+            this.MaSP1,
+            this.TenSP1,
+            this.NgayNhap1});
+            this.dataGridViewInPut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewInPut.Location = new System.Drawing.Point(4, 4);
+            this.dataGridViewInPut.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewInPut.Name = "dataGridViewInPut";
+            this.dataGridViewInPut.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridViewInPut.TabIndex = 6;
+            this.dataGridViewInPut.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewInPut_CellContentClick);
+            // 
+            // MaThung1
+            // 
+            this.MaThung1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaThung1.DataPropertyName = "MaThung";
+            this.MaThung1.HeaderText = "Mã Thùng";
+            this.MaThung1.Name = "MaThung1";
+            // 
+            // MaSP1
+            // 
+            this.MaSP1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaSP1.DataPropertyName = "MaSP";
+            this.MaSP1.HeaderText = "Mã Sản Phẩm";
+            this.MaSP1.Name = "MaSP1";
+            // 
+            // TenSP1
+            // 
+            this.TenSP1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenSP1.DataPropertyName = "TenSP";
+            this.TenSP1.HeaderText = "Tên Sản Phẩm";
+            this.TenSP1.Name = "TenSP1";
+            // 
+            // NgayNhap1
+            // 
+            this.NgayNhap1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayNhap1.DataPropertyName = "NgayNhap";
+            this.NgayNhap1.HeaderText = "Ngày Nhập";
+            this.NgayNhap1.Name = "NgayNhap1";
+            // 
+            // tabPageHidden
+            // 
+            this.tabPageHidden.Controls.Add(this.dataGridView6);
+            this.tabPageHidden.Location = new System.Drawing.Point(4, 32);
+            this.tabPageHidden.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageHidden.Name = "tabPageHidden";
+            this.tabPageHidden.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageHidden.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageHidden.TabIndex = 1;
+            this.tabPageHidden.Text = "Cất Hàng";
+            this.tabPageHidden.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column14,
+            this.Column15,
+            this.Column17,
+            this.Column16,
+            this.Column18,
+            this.Column19,
+            this.Column24});
+            this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView6.Location = new System.Drawing.Point(4, 4);
+            this.dataGridView6.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridView6.TabIndex = 0;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "MaThung";
+            this.Column14.HeaderText = "Mã Thùng";
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "MaKe";
+            this.Column15.HeaderText = "Mã Kệ";
+            this.Column15.Name = "Column15";
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "MaSP";
+            this.Column17.HeaderText = "Mã Sản Phẩm";
+            this.Column17.Name = "Column17";
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "TenSP";
+            this.Column16.HeaderText = "Tên Sản Phẩm";
+            this.Column16.Name = "Column16";
+            // 
+            // Column18
+            // 
+            this.Column18.DataPropertyName = "SoLuong";
+            this.Column18.HeaderText = "Số Lượng";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.DataPropertyName = "NgayCat";
+            this.Column19.HeaderText = "Ngày Cất";
+            this.Column19.Name = "Column19";
+            // 
+            // Column24
+            // 
+            this.Column24.DataPropertyName = "NguoiCat";
+            this.Column24.HeaderText = "Người Cất";
+            this.Column24.Name = "Column24";
+            // 
+            // tabPageOutput
+            // 
+            this.tabPageOutput.Controls.Add(this.dataGridView7);
+            this.tabPageOutput.Location = new System.Drawing.Point(4, 32);
+            this.tabPageOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageOutput.Name = "tabPageOutput";
+            this.tabPageOutput.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageOutput.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageOutput.TabIndex = 2;
+            this.tabPageOutput.Text = "Lấy Hàng";
+            this.tabPageOutput.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column20,
+            this.Column21,
+            this.Column23,
+            this.Column22,
+            this.Column25});
+            this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView7.Location = new System.Drawing.Point(4, 4);
+            this.dataGridView7.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridView7.TabIndex = 0;
+            // 
+            // Column20
+            // 
+            this.Column20.DataPropertyName = "MaKe";
+            this.Column20.HeaderText = "Mã Kệ";
+            this.Column20.Name = "Column20";
+            // 
+            // Column21
+            // 
+            this.Column21.DataPropertyName = "MaSP";
+            this.Column21.HeaderText = "Mã Sản Phẩm";
+            this.Column21.Name = "Column21";
+            // 
+            // Column23
+            // 
+            this.Column23.DataPropertyName = "SoLuong";
+            this.Column23.HeaderText = "Số Lượng";
+            this.Column23.Name = "Column23";
+            // 
+            // Column22
+            // 
+            this.Column22.DataPropertyName = "NgayLay";
+            this.Column22.HeaderText = "Ngày Lấy";
+            this.Column22.Name = "Column22";
+            // 
+            // Column25
+            // 
+            this.Column25.DataPropertyName = "NguoiLay";
+            this.Column25.HeaderText = "Người Lấy";
+            this.Column25.Name = "Column25";
+            // 
+            // btHuy1
+            // 
+            this.btHuy1.Location = new System.Drawing.Point(693, 127);
+            this.btHuy1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btHuy1.Name = "btHuy1";
+            this.btHuy1.Size = new System.Drawing.Size(127, 41);
+            this.btHuy1.TabIndex = 12;
+            this.btHuy1.Text = "Hủy";
+            this.btHuy1.UseVisualStyleBackColor = true;
+            this.btHuy1.Click += new System.EventHandler(this.btHuy1_Click);
+>>>>>>> feature-backend
             // 
             // txtNgayXoa
             // 
+<<<<<<< HEAD
             this.txtNgayXoa.Location = new System.Drawing.Point(1015, 48);
             this.txtNgayXoa.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgayXoa.Name = "txtNgayXoa";
             this.txtNgayXoa.Size = new System.Drawing.Size(217, 26);
             this.txtNgayXoa.TabIndex = 10;
+=======
+            this.btThem1.Location = new System.Drawing.Point(407, 127);
+            this.btThem1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btThem1.Name = "btThem1";
+            this.btThem1.Size = new System.Drawing.Size(127, 41);
+            this.btThem1.TabIndex = 11;
+            this.btThem1.Text = "Thêm";
+            this.btThem1.UseVisualStyleBackColor = true;
+            this.btThem1.Click += new System.EventHandler(this.btThem1_Click);
+>>>>>>> feature-backend
             // 
             // label12
             // 
+<<<<<<< HEAD
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(241, 51);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -722,9 +1487,17 @@
             this.label12.Size = new System.Drawing.Size(60, 18);
             this.label12.TabIndex = 3;
             this.label12.Text = "Mã SP:";
+=======
+            this.txtNgayNhap.Location = new System.Drawing.Point(1353, 59);
+            this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNgayNhap.Name = "txtNgayNhap";
+            this.txtNgayNhap.Size = new System.Drawing.Size(288, 30);
+            this.txtNgayNhap.TabIndex = 10;
+>>>>>>> feature-backend
             // 
             // label13
             // 
+<<<<<<< HEAD
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(926, 51);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -733,25 +1506,53 @@
             this.label13.Size = new System.Drawing.Size(78, 18);
             this.label13.TabIndex = 9;
             this.label13.Text = "Ngày Hủy:";
+=======
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(1235, 63);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(112, 23);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Ngày Nhập:";
+>>>>>>> feature-backend
             // 
             // txtMSP4
             // 
+<<<<<<< HEAD
             this.txtMSP4.Location = new System.Drawing.Point(305, 48);
             this.txtMSP4.Margin = new System.Windows.Forms.Padding(2);
             this.txtMSP4.Name = "txtMSP4";
             this.txtMSP4.Size = new System.Drawing.Size(110, 26);
             this.txtMSP4.TabIndex = 4;
+=======
+            this.txtSL1.Location = new System.Drawing.Point(1055, 59);
+            this.txtSL1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSL1.Name = "txtSL1";
+            this.txtSL1.Size = new System.Drawing.Size(116, 30);
+            this.txtSL1.TabIndex = 8;
+>>>>>>> feature-backend
             // 
             // txtSL4
             // 
+<<<<<<< HEAD
             this.txtSL4.Location = new System.Drawing.Point(791, 48);
             this.txtSL4.Margin = new System.Windows.Forms.Padding(2);
             this.txtSL4.Name = "txtSL4";
             this.txtSL4.Size = new System.Drawing.Size(88, 26);
             this.txtSL4.TabIndex = 8;
+=======
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(937, 63);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label4.Size = new System.Drawing.Size(104, 23);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Số Lượng:";
+>>>>>>> feature-backend
             // 
             // label14
             // 
+<<<<<<< HEAD
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(452, 51);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -760,9 +1561,17 @@
             this.label14.Size = new System.Drawing.Size(64, 18);
             this.label14.TabIndex = 5;
             this.label14.Text = "Tên SP:";
+=======
+            this.txtTenSP1.Location = new System.Drawing.Point(693, 59);
+            this.txtTenSP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenSP1.Name = "txtTenSP1";
+            this.txtTenSP1.Size = new System.Drawing.Size(172, 30);
+            this.txtTenSP1.TabIndex = 6;
+>>>>>>> feature-backend
             // 
             // label15
             // 
+<<<<<<< HEAD
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(703, 51);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -771,17 +1580,35 @@
             this.label15.Size = new System.Drawing.Size(84, 18);
             this.label15.TabIndex = 7;
             this.label15.Text = "Số Lượng:";
+=======
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(603, 63);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label3.Size = new System.Drawing.Size(81, 23);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tên SP:";
+>>>>>>> feature-backend
             // 
             // txtTenSP4
             // 
+<<<<<<< HEAD
             this.txtTenSP4.Location = new System.Drawing.Point(520, 48);
             this.txtTenSP4.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenSP4.Name = "txtTenSP4";
             this.txtTenSP4.Size = new System.Drawing.Size(130, 26);
             this.txtTenSP4.TabIndex = 6;
+=======
+            this.txtMaSP1.Location = new System.Drawing.Point(407, 59);
+            this.txtMaSP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaSP1.Name = "txtMaSP1";
+            this.txtMaSP1.Size = new System.Drawing.Size(145, 30);
+            this.txtMaSP1.TabIndex = 4;
+>>>>>>> feature-backend
             // 
             // dataGridView4
             // 
+<<<<<<< HEAD
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column10,
@@ -795,27 +1622,73 @@
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.Size = new System.Drawing.Size(1021, 509);
             this.dataGridView4.TabIndex = 0;
+=======
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(321, 63);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(76, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Mã SP:";
+>>>>>>> feature-backend
             // 
             // Column10
             // 
+<<<<<<< HEAD
             this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column10.DataPropertyName = "MaSP";
             this.Column10.HeaderText = "MaSP";
             this.Column10.Name = "Column10";
+=======
+            this.txtMaThung1.Location = new System.Drawing.Point(151, 59);
+            this.txtMaThung1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaThung1.Name = "txtMaThung1";
+            this.txtMaThung1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMaThung1.Size = new System.Drawing.Size(145, 30);
+            this.txtMaThung1.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             // Column11
             // 
+<<<<<<< HEAD
             this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column11.DataPropertyName = "TenSP";
             this.Column11.HeaderText = "TenSP";
             this.Column11.Name = "Column11";
+=======
+            this.label1.Location = new System.Drawing.Point(32, 63);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(120, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Mã Thùng:";
+>>>>>>> feature-backend
             // 
             // Column12
             // 
+<<<<<<< HEAD
             this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column12.DataPropertyName = "MaKe";
             this.Column12.HeaderText = "MaKe";
             this.Column12.Name = "Column12";
+=======
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaThung,
+            this.MaSP,
+            this.TenSP,
+            this.SoLuong,
+            this.NgayNhap});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1576, 257);
+            this.dataGridView1.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             // Column13
             // 
@@ -882,7 +1755,19 @@
             this.splitContainer3.Panel1.Controls.Add(this.label9);
             this.splitContainer3.Panel1.Controls.Add(this.txtTenSP3);
             // 
+<<<<<<< HEAD
             // splitContainer3.Panel2
+=======
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1582, 495);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Cất hàng từ phiếu";
+            this.tabPage2.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
             // 
             this.splitContainer3.Panel2.Controls.Add(this.dataGridView3);
             this.splitContainer3.Size = new System.Drawing.Size(1021, 682);
@@ -890,7 +1775,17 @@
             this.splitContainer3.SplitterWidth = 3;
             this.splitContainer3.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // textBox2
+=======
+            this.panel2.Controls.Add(this.splitContainer2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1576, 491);
+            this.panel2.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textBox2.Location = new System.Drawing.Point(947, 102);
@@ -900,7 +1795,15 @@
             this.textBox2.TabIndex = 13;
             this.textBox2.Visible = false;
             // 
+<<<<<<< HEAD
             // textBox1
+=======
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer2.Name = "splitContainer2";
+            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
+>>>>>>> feature-backend
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.textBox1.Location = new System.Drawing.Point(947, 51);
@@ -920,7 +1823,14 @@
             this.btSapXep.UseVisualStyleBackColor = true;
             this.btSapXep.Click += new System.EventHandler(this.btSapXep_Click);
             // 
+<<<<<<< HEAD
             // label7
+=======
+            this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
+            this.splitContainer2.Size = new System.Drawing.Size(1576, 491);
+            this.splitContainer2.SplitterDistance = 162;
+            this.splitContainer2.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             this.label7.Location = new System.Drawing.Point(24, 51);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -930,7 +1840,15 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Mã Thùng:";
             // 
+<<<<<<< HEAD
             // txtMaThung3
+=======
+            this.txtMaKe.Location = new System.Drawing.Point(141, 132);
+            this.txtMaKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaKe.Name = "txtMaKe";
+            this.txtMaKe.Size = new System.Drawing.Size(145, 30);
+            this.txtMaKe.TabIndex = 7;
+>>>>>>> feature-backend
             // 
             this.txtMaThung3.Location = new System.Drawing.Point(113, 48);
             this.txtMaThung3.Margin = new System.Windows.Forms.Padding(2);
@@ -939,7 +1857,15 @@
             this.txtMaThung3.Size = new System.Drawing.Size(110, 26);
             this.txtMaThung3.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // txtMaKe3
+=======
+            this.lbMaKe.Location = new System.Drawing.Point(32, 135);
+            this.lbMaKe.Name = "lbMaKe";
+            this.lbMaKe.Size = new System.Drawing.Size(79, 28);
+            this.lbMaKe.TabIndex = 6;
+            this.lbMaKe.Text = "Mã Kệ:";
+>>>>>>> feature-backend
             // 
             this.txtMaKe3.Location = new System.Drawing.Point(106, 107);
             this.txtMaKe3.Margin = new System.Windows.Forms.Padding(2);
@@ -947,7 +1873,18 @@
             this.txtMaKe3.Size = new System.Drawing.Size(110, 26);
             this.txtMaKe3.TabIndex = 10;
             // 
+<<<<<<< HEAD
             // label8
+=======
+            this.btnTimThung.Location = new System.Drawing.Point(407, 127);
+            this.btnTimThung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTimThung.Name = "btnTimThung";
+            this.btnTimThung.Size = new System.Drawing.Size(127, 41);
+            this.btnTimThung.TabIndex = 5;
+            this.btnTimThung.Text = "Enter";
+            this.btnTimThung.UseVisualStyleBackColor = true;
+            this.btnTimThung.Click += new System.EventHandler(this.btnTimThung_Click);
+>>>>>>> feature-backend
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(241, 51);
@@ -958,7 +1895,17 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Mã SP:";
             // 
+<<<<<<< HEAD
             // label10
+=======
+            this.lbNgayCat.AutoSize = true;
+            this.lbNgayCat.Location = new System.Drawing.Point(1235, 63);
+            this.lbNgayCat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNgayCat.Name = "lbNgayCat";
+            this.lbNgayCat.Size = new System.Drawing.Size(98, 23);
+            this.lbNgayCat.TabIndex = 4;
+            this.lbNgayCat.Text = "Ngày Cất:";
+>>>>>>> feature-backend
             // 
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(24, 110);
@@ -969,7 +1916,17 @@
             this.label10.TabIndex = 9;
             this.label10.Text = "Mã Kệ:";
             // 
+<<<<<<< HEAD
             // txtMaSP3
+=======
+            this.lbSL2.AutoSize = true;
+            this.lbSL2.Location = new System.Drawing.Point(937, 63);
+            this.lbSL2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSL2.Name = "lbSL2";
+            this.lbSL2.Size = new System.Drawing.Size(98, 23);
+            this.lbSL2.TabIndex = 4;
+            this.lbSL2.Text = "Số Lượng";
+>>>>>>> feature-backend
             // 
             this.txtMaSP3.Location = new System.Drawing.Point(305, 48);
             this.txtMaSP3.Margin = new System.Windows.Forms.Padding(2);
@@ -977,7 +1934,17 @@
             this.txtMaSP3.Size = new System.Drawing.Size(110, 26);
             this.txtMaSP3.TabIndex = 4;
             // 
+<<<<<<< HEAD
             // txtSL3
+=======
+            this.lbTenSP2.AutoSize = true;
+            this.lbTenSP2.Location = new System.Drawing.Point(603, 63);
+            this.lbTenSP2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenSP2.Name = "lbTenSP2";
+            this.lbTenSP2.Size = new System.Drawing.Size(81, 23);
+            this.lbTenSP2.TabIndex = 4;
+            this.lbTenSP2.Text = "Tên SP:";
+>>>>>>> feature-backend
             // 
             this.txtSL3.Location = new System.Drawing.Point(791, 48);
             this.txtSL3.Margin = new System.Windows.Forms.Padding(2);
@@ -985,7 +1952,17 @@
             this.txtSL3.Size = new System.Drawing.Size(88, 26);
             this.txtSL3.TabIndex = 8;
             // 
+<<<<<<< HEAD
             // label6
+=======
+            this.lbMaSP2.AutoSize = true;
+            this.lbMaSP2.Location = new System.Drawing.Point(321, 63);
+            this.lbMaSP2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaSP2.Name = "lbMaSP2";
+            this.lbMaSP2.Size = new System.Drawing.Size(76, 23);
+            this.lbMaSP2.TabIndex = 4;
+            this.lbMaSP2.Text = "Mã SP:";
+>>>>>>> feature-backend
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(452, 51);
@@ -996,7 +1973,16 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Tên SP:";
             // 
+<<<<<<< HEAD
             // label9
+=======
+            this.lbMaThung.Location = new System.Drawing.Point(32, 63);
+            this.lbMaThung.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaThung.Name = "lbMaThung";
+            this.lbMaThung.Size = new System.Drawing.Size(111, 37);
+            this.lbMaThung.TabIndex = 3;
+            this.lbMaThung.Text = "Mã Thùng:";
+>>>>>>> feature-backend
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(703, 51);
@@ -1007,7 +1993,15 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "Số Lượng:";
             // 
+<<<<<<< HEAD
             // txtTenSP3
+=======
+            this.txtNgayCat.Location = new System.Drawing.Point(1353, 59);
+            this.txtNgayCat.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNgayCat.Name = "txtNgayCat";
+            this.txtNgayCat.Size = new System.Drawing.Size(288, 30);
+            this.txtNgayCat.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.txtTenSP3.Location = new System.Drawing.Point(520, 48);
             this.txtTenSP3.Margin = new System.Windows.Forms.Padding(2);
@@ -1015,7 +2009,15 @@
             this.txtTenSP3.Size = new System.Drawing.Size(130, 26);
             this.txtTenSP3.TabIndex = 6;
             // 
+<<<<<<< HEAD
             // dataGridView3
+=======
+            this.txtSL2.Location = new System.Drawing.Point(1055, 59);
+            this.txtSL2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSL2.Name = "txtSL2";
+            this.txtSL2.Size = new System.Drawing.Size(116, 30);
+            this.txtSL2.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1031,35 +2033,82 @@
             this.dataGridView3.Size = new System.Drawing.Size(1021, 509);
             this.dataGridView3.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // Column6
+=======
+            this.txtTenSP2.Location = new System.Drawing.Point(693, 59);
+            this.txtTenSP2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenSP2.Name = "txtTenSP2";
+            this.txtTenSP2.Size = new System.Drawing.Size(172, 30);
+            this.txtTenSP2.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column6.DataPropertyName = "MaSP";
             this.Column6.HeaderText = "Mã SP";
             this.Column6.Name = "Column6";
             // 
+<<<<<<< HEAD
             // Column7
+=======
+            this.txtMaSP2.Location = new System.Drawing.Point(407, 59);
+            this.txtMaSP2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaSP2.Multiline = true;
+            this.txtMaSP2.Name = "txtMaSP2";
+            this.txtMaSP2.Size = new System.Drawing.Size(145, 31);
+            this.txtMaSP2.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column7.DataPropertyName = "TenSP";
             this.Column7.HeaderText = "Tên SP";
             this.Column7.Name = "Column7";
             // 
+<<<<<<< HEAD
             // Column8
+=======
+            this.txtMaThung2.Location = new System.Drawing.Point(151, 59);
+            this.txtMaThung2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaThung2.Multiline = true;
+            this.txtMaThung2.Name = "txtMaThung2";
+            this.txtMaThung2.Size = new System.Drawing.Size(145, 31);
+            this.txtMaThung2.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column8.DataPropertyName = "MaKe";
             this.Column8.HeaderText = "Mã Kệ";
             this.Column8.Name = "Column8";
             // 
+<<<<<<< HEAD
             // Column9
+=======
+            this.btHuy2.Location = new System.Drawing.Point(961, 127);
+            this.btHuy2.Margin = new System.Windows.Forms.Padding(4);
+            this.btHuy2.Name = "btHuy2";
+            this.btHuy2.Size = new System.Drawing.Size(127, 41);
+            this.btHuy2.TabIndex = 1;
+            this.btHuy2.Text = "Hủy";
+            this.btHuy2.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
             // 
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column9.DataPropertyName = "SoLuong";
             this.Column9.HeaderText = "Số Lượng";
             this.Column9.Name = "Column9";
             // 
+<<<<<<< HEAD
             // tabControl1
+=======
+            this.btThem2.Location = new System.Drawing.Point(693, 127);
+            this.btThem2.Margin = new System.Windows.Forms.Padding(4);
+            this.btThem2.Name = "btThem2";
+            this.btThem2.Size = new System.Drawing.Size(127, 41);
+            this.btThem2.TabIndex = 0;
+            this.btThem2.Text = "Thêm";
+            this.btThem2.UseVisualStyleBackColor = true;
+            this.btThem2.Click += new System.EventHandler(this.btThem2_Click);
+>>>>>>> feature-backend
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -1072,7 +2121,25 @@
             this.tabControl1.Size = new System.Drawing.Size(1035, 719);
             this.tabControl1.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // tabPage1
+=======
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col1,
+            this.Column4,
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5});
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(1576, 325);
+            this.dataGridView2.TabIndex = 1;
+>>>>>>> feature-backend
             // 
             this.tabPage1.Controls.Add(this.splitContainer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 27);
@@ -1144,6 +2211,7 @@
             // 
             // txtNgayNhap
             // 
+<<<<<<< HEAD
             this.txtNgayNhap.Location = new System.Drawing.Point(1015, 48);
             this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgayNhap.Name = "txtNgayNhap";
@@ -1361,6 +2429,18 @@
             this.txtMaKe.TabIndex = 7;
             // 
             // lbMaKe
+=======
+            // tabControl3
+            // 
+            this.tabControl3.Controls.Add(this.tabPage4);
+            this.tabControl3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl3.Location = new System.Drawing.Point(957, 54);
+            this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1590, 441);
+            this.tabControl3.TabIndex = 3;
+>>>>>>> feature-backend
             // 
             this.lbMaKe.Location = new System.Drawing.Point(24, 110);
             this.lbMaKe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1369,7 +2449,19 @@
             this.lbMaKe.TabIndex = 6;
             this.lbMaKe.Text = "Mã Kệ:";
             // 
+<<<<<<< HEAD
             // btnTimThung
+=======
+            this.tabPage4.Controls.Add(this.splitContainer4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 32);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Size = new System.Drawing.Size(1582, 405);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "Tồn Kho";
+            this.tabPage4.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
             // 
             this.btnTimThung.Location = new System.Drawing.Point(305, 103);
             this.btnTimThung.Margin = new System.Windows.Forms.Padding(2);
@@ -1380,7 +2472,15 @@
             this.btnTimThung.UseVisualStyleBackColor = true;
             this.btnTimThung.Click += new System.EventHandler(this.btnTimThung_Click);
             // 
+<<<<<<< HEAD
             // lbNgayCat
+=======
+            this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer4.Location = new System.Drawing.Point(4, 4);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer4.Name = "splitContainer4";
+            this.splitContainer4.Orientation = System.Windows.Forms.Orientation.Horizontal;
+>>>>>>> feature-backend
             // 
             this.lbNgayCat.AutoSize = true;
             this.lbNgayCat.Location = new System.Drawing.Point(926, 51);
@@ -1398,7 +2498,14 @@
             this.lbSL2.TabIndex = 4;
             this.lbSL2.Text = "Số Lượng";
             // 
+<<<<<<< HEAD
             // lbTenSP2
+=======
+            this.splitContainer4.Panel2.Controls.Add(this.dataGridView4);
+            this.splitContainer4.Size = new System.Drawing.Size(1574, 397);
+            this.splitContainer4.SplitterDistance = 183;
+            this.splitContainer4.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             this.lbTenSP2.AutoSize = true;
             this.lbTenSP2.Location = new System.Drawing.Point(452, 51);
@@ -1407,7 +2514,17 @@
             this.lbTenSP2.TabIndex = 4;
             this.lbTenSP2.Text = "Tên SP:";
             // 
+<<<<<<< HEAD
             // lbMaSP2
+=======
+            this.btXoa.Location = new System.Drawing.Point(407, 127);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btXoa.Name = "btXoa";
+            this.btXoa.Size = new System.Drawing.Size(127, 41);
+            this.btXoa.TabIndex = 11;
+            this.btXoa.Text = "Xóa";
+            this.btXoa.UseVisualStyleBackColor = true;
+>>>>>>> feature-backend
             // 
             this.lbMaSP2.AutoSize = true;
             this.lbMaSP2.Location = new System.Drawing.Point(241, 51);
@@ -1416,7 +2533,16 @@
             this.lbMaSP2.TabIndex = 4;
             this.lbMaSP2.Text = "Mã SP:";
             // 
+<<<<<<< HEAD
             // lbMaThung
+=======
+            this.label11.Location = new System.Drawing.Point(32, 63);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label11.Size = new System.Drawing.Size(117, 22);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Mã Thùng:";
+>>>>>>> feature-backend
             // 
             this.lbMaThung.Location = new System.Drawing.Point(24, 51);
             this.lbMaThung.Name = "lbMaThung";
@@ -1424,28 +2550,65 @@
             this.lbMaThung.TabIndex = 3;
             this.lbMaThung.Text = "Mã Thùng:";
             // 
+<<<<<<< HEAD
             // txtNgayCat
+=======
+            this.txtMaThung4.Location = new System.Drawing.Point(151, 59);
+            this.txtMaThung4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaThung4.Name = "txtMaThung4";
+            this.txtMaThung4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMaThung4.Size = new System.Drawing.Size(145, 30);
+            this.txtMaThung4.TabIndex = 2;
+>>>>>>> feature-backend
             // 
             this.txtNgayCat.Location = new System.Drawing.Point(1015, 48);
             this.txtNgayCat.Name = "txtNgayCat";
             this.txtNgayCat.Size = new System.Drawing.Size(217, 26);
             this.txtNgayCat.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // txtSL2
+=======
+            this.txtNgayXoa.Location = new System.Drawing.Point(1353, 59);
+            this.txtNgayXoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNgayXoa.Name = "txtNgayXoa";
+            this.txtNgayXoa.Size = new System.Drawing.Size(288, 30);
+            this.txtNgayXoa.TabIndex = 10;
+>>>>>>> feature-backend
             // 
             this.txtSL2.Location = new System.Drawing.Point(791, 48);
             this.txtSL2.Name = "txtSL2";
             this.txtSL2.Size = new System.Drawing.Size(88, 26);
             this.txtSL2.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // txtTenSP2
+=======
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(321, 63);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(76, 23);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Mã SP:";
+>>>>>>> feature-backend
             // 
             this.txtTenSP2.Location = new System.Drawing.Point(520, 48);
             this.txtTenSP2.Name = "txtTenSP2";
             this.txtTenSP2.Size = new System.Drawing.Size(130, 26);
             this.txtTenSP2.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // txtMaSP2
+=======
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(1235, 63);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(100, 23);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Ngày Hủy:";
+>>>>>>> feature-backend
             // 
             this.txtMaSP2.Location = new System.Drawing.Point(305, 48);
             this.txtMaSP2.Multiline = true;
@@ -1453,7 +2616,15 @@
             this.txtMaSP2.Size = new System.Drawing.Size(110, 26);
             this.txtMaSP2.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // txtMaThung2
+=======
+            this.txtMSP4.Location = new System.Drawing.Point(407, 59);
+            this.txtMSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMSP4.Name = "txtMSP4";
+            this.txtMSP4.Size = new System.Drawing.Size(145, 30);
+            this.txtMSP4.TabIndex = 4;
+>>>>>>> feature-backend
             // 
             this.txtMaThung2.Location = new System.Drawing.Point(113, 48);
             this.txtMaThung2.Multiline = true;
@@ -1461,7 +2632,15 @@
             this.txtMaThung2.Size = new System.Drawing.Size(110, 26);
             this.txtMaThung2.TabIndex = 2;
             // 
+<<<<<<< HEAD
             // btHuy2
+=======
+            this.txtSL4.Location = new System.Drawing.Point(1055, 59);
+            this.txtSL4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSL4.Name = "txtSL4";
+            this.txtSL4.Size = new System.Drawing.Size(116, 30);
+            this.txtSL4.TabIndex = 8;
+>>>>>>> feature-backend
             // 
             this.btHuy2.Location = new System.Drawing.Point(721, 103);
             this.btHuy2.Name = "btHuy2";
@@ -1470,7 +2649,17 @@
             this.btHuy2.Text = "Hủy";
             this.btHuy2.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // btThem2
+=======
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(603, 63);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label14.Size = new System.Drawing.Size(81, 23);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Tên SP:";
+>>>>>>> feature-backend
             // 
             this.btThem2.Location = new System.Drawing.Point(520, 103);
             this.btThem2.Name = "btThem2";
@@ -1480,7 +2669,17 @@
             this.btThem2.UseVisualStyleBackColor = true;
             this.btThem2.Click += new System.EventHandler(this.btThem2_Click);
             // 
+<<<<<<< HEAD
             // dataGridView2
+=======
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(937, 63);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(104, 23);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Số Lượng:";
+>>>>>>> feature-backend
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1498,14 +2697,37 @@
             this.dataGridView2.Size = new System.Drawing.Size(1023, 511);
             this.dataGridView2.TabIndex = 1;
             // 
+<<<<<<< HEAD
             // col1
+=======
+            this.txtTenSP4.Location = new System.Drawing.Point(693, 59);
+            this.txtTenSP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenSP4.Name = "txtTenSP4";
+            this.txtTenSP4.Size = new System.Drawing.Size(172, 30);
+            this.txtTenSP4.TabIndex = 6;
+>>>>>>> feature-backend
             // 
             this.col1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.col1.DataPropertyName = "MaThung";
             this.col1.HeaderText = "Mã Thùng";
             this.col1.Name = "col1";
             // 
+<<<<<<< HEAD
             // Column4
+=======
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13});
+            this.dataGridView4.Location = new System.Drawing.Point(77, 46);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(559, 150);
+            this.dataGridView4.TabIndex = 0;
+>>>>>>> feature-backend
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column4.DataPropertyName = "MaKe";
@@ -1550,7 +2772,12 @@
             this.AboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+<<<<<<< HEAD
             this.menuStrip1.Size = new System.Drawing.Size(1035, 30);
+=======
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1816, 35);
+>>>>>>> feature-backend
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -1565,14 +2792,18 @@
             this.MenuToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MenuToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.Home;
             this.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem";
-            this.MenuToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
+            this.MenuToolStripMenuItem.Size = new System.Drawing.Size(168, 31);
             this.MenuToolStripMenuItem.Text = "Chức Năng";
             // 
             // ToolStripMenuItemInput
             // 
             this.ToolStripMenuItemInput.Image = global::QuanLyKhoHang.Properties.Resources.Arrow;
             this.ToolStripMenuItemInput.Name = "ToolStripMenuItemInput";
+<<<<<<< HEAD
             this.ToolStripMenuItemInput.Size = new System.Drawing.Size(222, 26);
+=======
+            this.ToolStripMenuItemInput.Size = new System.Drawing.Size(272, 32);
+>>>>>>> feature-backend
             this.ToolStripMenuItemInput.Text = "Nhập - Cất Hàng";
             this.ToolStripMenuItemInput.Click += new System.EventHandler(this.ToolStripMenuItemInput_Click);
             // 
@@ -1580,7 +2811,11 @@
             // 
             this.ToolStripMenuItemSort.Image = global::QuanLyKhoHang.Properties.Resources.Sort;
             this.ToolStripMenuItemSort.Name = "ToolStripMenuItemSort";
+<<<<<<< HEAD
             this.ToolStripMenuItemSort.Size = new System.Drawing.Size(222, 26);
+=======
+            this.ToolStripMenuItemSort.Size = new System.Drawing.Size(272, 32);
+>>>>>>> feature-backend
             this.ToolStripMenuItemSort.Text = "Sắp Xếp Hàng";
             this.ToolStripMenuItemSort.Click += new System.EventHandler(this.ToolStripMenuItemSort_Click);
             // 
@@ -1588,7 +2823,11 @@
             // 
             this.ToolStripMenuItemTonKho.Image = global::QuanLyKhoHang.Properties.Resources.Inventory;
             this.ToolStripMenuItemTonKho.Name = "ToolStripMenuItemTonKho";
+<<<<<<< HEAD
             this.ToolStripMenuItemTonKho.Size = new System.Drawing.Size(222, 26);
+=======
+            this.ToolStripMenuItemTonKho.Size = new System.Drawing.Size(272, 32);
+>>>>>>> feature-backend
             this.ToolStripMenuItemTonKho.Text = "Tồn Kho";
             this.ToolStripMenuItemTonKho.Click += new System.EventHandler(this.ToolStripMenuItemTonKho_Click);
             // 
@@ -1596,7 +2835,11 @@
             // 
             this.ToolStripMenuItemOutput.Image = global::QuanLyKhoHang.Properties.Resources.Arrow_Up;
             this.ToolStripMenuItemOutput.Name = "ToolStripMenuItemOutput";
+<<<<<<< HEAD
             this.ToolStripMenuItemOutput.Size = new System.Drawing.Size(222, 26);
+=======
+            this.ToolStripMenuItemOutput.Size = new System.Drawing.Size(272, 32);
+>>>>>>> feature-backend
             this.ToolStripMenuItemOutput.Text = "Xuất Hàng";
             this.ToolStripMenuItemOutput.Click += new System.EventHandler(this.ToolStripMenuItemOutput_Click);
             // 
@@ -1605,7 +2848,7 @@
             this.StatisticalToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StatisticalToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.Statistics;
             this.StatisticalToolStripMenuItem.Name = "StatisticalToolStripMenuItem";
-            this.StatisticalToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+            this.StatisticalToolStripMenuItem.Size = new System.Drawing.Size(149, 31);
             this.StatisticalToolStripMenuItem.Text = "Thống Kê";
             // 
             // PrintReportToolStripMenuItem
@@ -1613,7 +2856,7 @@
             this.PrintReportToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrintReportToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.Increase;
             this.PrintReportToolStripMenuItem.Name = "PrintReportToolStripMenuItem";
-            this.PrintReportToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
+            this.PrintReportToolStripMenuItem.Size = new System.Drawing.Size(192, 31);
             this.PrintReportToolStripMenuItem.Text = "Xuất Báo Cáo";
             // 
             // AboutToolStripMenuItem
@@ -1624,14 +2867,18 @@
             this.AboutToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.About;
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 31);
             this.AboutToolStripMenuItem.Text = "Thông Tin";
             // 
             // LogOutToolStripMenuItem
             // 
             this.LogOutToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.Log_Off;
             this.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem";
+<<<<<<< HEAD
             this.LogOutToolStripMenuItem.Size = new System.Drawing.Size(168, 26);
+=======
+            this.LogOutToolStripMenuItem.Size = new System.Drawing.Size(204, 32);
+>>>>>>> feature-backend
             this.LogOutToolStripMenuItem.Text = "Đăng Xuất";
             this.LogOutToolStripMenuItem.Click += new System.EventHandler(this.LogOutToolStripMenuItem_Click);
             // 
@@ -1653,23 +2900,36 @@
             this.label16.TabIndex = 3;
             this.label16.Text = "Xin Chào : ";
             // 
+            // HistoryToolStripMenuItem
+            // 
+            this.HistoryToolStripMenuItem.Name = "HistoryToolStripMenuItem";
+            this.HistoryToolStripMenuItem.Size = new System.Drawing.Size(204, 32);
+            this.HistoryToolStripMenuItem.Text = "Lịch Sử";
+            this.HistoryToolStripMenuItem.Click += new System.EventHandler(this.HistoryToolStripMenuItem_Click);
+            // 
             // QLKhoHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1035, 749);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lbgetUser);
+=======
+            this.ClientSize = new System.Drawing.Size(1816, 812);
+>>>>>>> feature-backend
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QLKhoHang";
             this.Text = "Quản Lý Kho";
             this.Load += new System.EventHandler(this.QuanLyKhoHang_Load);
             this.panel1.ResumeLayout(false);
+<<<<<<< HEAD
             this.tabControlHistory.ResumeLayout(false);
             this.tabPageInput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPut)).EndInit();
@@ -1677,6 +2937,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPageOutput.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+=======
+>>>>>>> feature-backend
             this.tabControl4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.splitContainer5.Panel1.ResumeLayout(false);
@@ -1685,6 +2947,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).EndInit();
             this.splitContainer5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+<<<<<<< HEAD
             this.tabControl3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
@@ -1693,6 +2956,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
             this.splitContainer4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+=======
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+>>>>>>> feature-backend
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
@@ -1708,6 +2975,13 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.tabControlHistory.ResumeLayout(false);
+            this.tabPageInput.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPut)).EndInit();
+            this.tabPageHidden.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            this.tabPageOutput.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1717,6 +2991,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+<<<<<<< HEAD
+=======
+            this.tabControl3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.splitContainer4.Panel1.ResumeLayout(false);
+            this.splitContainer4.Panel1.PerformLayout();
+            this.splitContainer4.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
+            this.splitContainer4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+>>>>>>> feature-backend
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1863,10 +3148,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
+<<<<<<< HEAD
+=======
+        private System.Windows.Forms.Panel panel3;
+>>>>>>> feature-backend
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThung1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP1;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap1;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label16;
+=======
+>>>>>>> feature-backend
     }
 }

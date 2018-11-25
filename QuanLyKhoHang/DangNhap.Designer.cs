@@ -100,7 +100,10 @@
             this.txt_password.Size = new System.Drawing.Size(319, 46);
             this.txt_password.TabIndex = 5;
             this.txt_password.UseSystemPasswordChar = true;
+<<<<<<< HEAD
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
+=======
+>>>>>>> feature-backend
             // 
             // label1
             // 

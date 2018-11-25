@@ -48,11 +48,19 @@ namespace QuanLyKhoHang
             return ds;
         }
 
+<<<<<<< HEAD
         public void INSERTNhapHang(DataTable table, string mathung, string masp, string tensp, string soluong, string ngaynhap, string nguoinhap)
         {
             foreach (DataRow r in table.Rows)
             {
                 if (string.Compare(r["MaThung"].ToString(), mathung) == 0)
+=======
+        public void INSERTNhapHang (DataTable table, string mathung, string masp, string tensp, string soluong, string ngaynhap, string nguoinhap)
+        {
+            foreach(DataRow r in table.Rows)
+            {
+                if (string.Compare(r["MaThung"].ToString(),mathung) == 0)
+>>>>>>> feature-backend
                 {
                     MessageBox.Show("Trùng mã thùng");
                     return;
@@ -67,7 +75,11 @@ namespace QuanLyKhoHang
             table.Rows.Add(row);
         }
 
+<<<<<<< HEAD
         public void INSERTCatHang(DataTable table, string mathung, string make, string masp, string tensp, int soluong, string ngaycat)
+=======
+        public void INSERTCatHang (DataTable table, string mathung, string make, string masp, string tensp, int soluong, string ngaycat)
+>>>>>>> feature-backend
         {
             DataRow row = table.NewRow();
             row["MaThung"] = mathung;
@@ -77,7 +89,11 @@ namespace QuanLyKhoHang
             row["NgayNhap"] = ngaycat;
             table.Rows.Add(row);
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> feature-backend
         public bool KetNoi(SqlConnection cnn)
         {
             try
@@ -106,6 +122,10 @@ namespace QuanLyKhoHang
                 return false;
         }
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> feature-backend
     }
 }

@@ -8,6 +8,11 @@ namespace DTO
 {
     public class Account
     {
+<<<<<<< HEAD
+=======
+        
+        
+>>>>>>> feature-backend
             public string UserName { get; set; }
             public string Password { get; set; }
             public Account(string userName, string password)
@@ -15,5 +20,9 @@ namespace DTO
                 UserName = userName;
                 Password = password;
             }
+<<<<<<< HEAD
+=======
+        
+>>>>>>> feature-backend
     }
 }

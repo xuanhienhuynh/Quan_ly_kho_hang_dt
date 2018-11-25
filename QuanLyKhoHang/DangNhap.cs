@@ -21,22 +21,19 @@ namespace QuanLyKhoHang
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         LoginBus lgBUS;
 
+=======
+        LoginBus lgBUS;
+>>>>>>> feature-backend
         public void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'khoHangCSDLDataSet.NguoiDung' table. You can move, or remove it, as needed.
             this.nguoiDungTableAdapter.Fill(this.khoHangCSDLDataSet.NguoiDung);
             lgBUS = new LoginBus();
         }
-
-        public void ktRong(String a, String b)
-        {
- 
-        }
-
-
         private void btn_signin_Click_1(object sender, EventArgs e)
         {
             string name = txt_username.Text, pass = txt_password.Text;
@@ -47,6 +44,7 @@ namespace QuanLyKhoHang
             else
             {
                 QLKhoHang.strUser = txt_username.Text;
+<<<<<<< HEAD
                 bool b = false;
                 try
                 {
@@ -60,6 +58,23 @@ namespace QuanLyKhoHang
                 }
                 if (b) // 
                 {
+=======
+                //if (txtUseName.Text == "admin" && txtPassWord.Text == "123")\
+                //if (name == "admin" && pass == "123")
+                bool b = false;
+                try
+                {
+                    Account acc = new Account(name, pass);
+                    b = lgBUS.loginbus(acc);
+                }
+                catch (SqlException ex)
+                {
+
+                    MessageBox.Show("may ngu qua \n" + ex.Message);
+                }
+                if (b) // 
+                {
+>>>>>>> feature-backend
                     
                     this.DialogResult = DialogResult.Yes; // dong lenh nay dung de gan gia tri ok vo form 2
                     this.Close();
@@ -71,6 +86,7 @@ namespace QuanLyKhoHang
                     DialogResult result = MessageBox.Show("ban nhap sai tai khoan hoac mat khau !", "wrong", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                     if (result == DialogResult.Cancel)
                         Application.Exit();
+<<<<<<< HEAD
                     else
                         if (result == DialogResult.Retry)
                         {
@@ -86,5 +102,10 @@ namespace QuanLyKhoHang
 
         }
 
+=======
+                }
+            }
+        }
+>>>>>>> feature-backend
     }
 }
