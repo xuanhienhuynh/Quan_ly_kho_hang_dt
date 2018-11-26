@@ -60,7 +60,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -76,7 +76,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -92,7 +92,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -108,7 +108,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -124,7 +124,7 @@ namespace UnitTestQLKho
             string ngaynhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -140,7 +140,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -159,7 +159,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -175,7 +175,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -191,7 +191,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -207,7 +207,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -223,7 +223,7 @@ namespace UnitTestQLKho
             string ngaynhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -239,7 +239,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -255,7 +255,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -271,7 +271,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -287,7 +287,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -303,7 +303,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -319,7 +319,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -335,7 +335,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -351,7 +351,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -367,7 +367,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -386,7 +386,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -402,7 +402,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -418,7 +418,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -434,7 +434,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -450,7 +450,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -466,7 +466,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -482,7 +482,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -498,7 +498,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -514,7 +514,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -530,7 +530,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -549,7 +549,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -565,7 +565,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -581,7 +581,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -597,7 +597,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -613,7 +613,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -629,7 +629,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -648,7 +648,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -664,7 +664,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -680,7 +680,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -696,7 +696,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -712,7 +712,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -728,7 +728,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -747,7 +747,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -791,7 +791,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -807,7 +807,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -823,7 +823,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -839,7 +839,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -855,7 +855,7 @@ namespace UnitTestQLKho
             string ngaynhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -871,7 +871,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -890,7 +890,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -906,7 +906,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -922,7 +922,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -938,7 +938,7 @@ namespace UnitTestQLKho
             string ngaynhap = (DateTime.Now).ToString();
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -954,7 +954,7 @@ namespace UnitTestQLKho
             string ngaynhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -970,7 +970,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -986,7 +986,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1002,7 +1002,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1018,7 +1018,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1034,7 +1034,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1050,7 +1050,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1066,7 +1066,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1082,7 +1082,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1098,7 +1098,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -1117,7 +1117,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1133,7 +1133,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1149,7 +1149,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1165,7 +1165,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1181,7 +1181,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1197,7 +1197,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1213,7 +1213,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1229,7 +1229,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1245,7 +1245,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1261,7 +1261,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -1280,7 +1280,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1296,7 +1296,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1312,7 +1312,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1328,7 +1328,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1344,7 +1344,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1360,7 +1360,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -1379,7 +1379,7 @@ namespace UnitTestQLKho
             string nguoinhap = "hien";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1395,7 +1395,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1411,7 +1411,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1427,7 +1427,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1443,7 +1443,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -1459,7 +1459,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -1478,7 +1478,7 @@ namespace UnitTestQLKho
             string nguoinhap = "";
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
             a = NHBus.them(NH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>

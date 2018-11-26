@@ -47,9 +47,6 @@ namespace UnitTestQLKho
 
 
 
-
-
-
         /// <summary>
         /// Thiếu 1 đối tượng
         /// </summary>
@@ -66,7 +63,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -82,7 +79,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -99,7 +96,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -115,7 +112,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -132,7 +129,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -148,7 +145,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -168,7 +165,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -184,7 +181,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -201,7 +198,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -217,7 +214,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -234,7 +231,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -250,7 +247,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -266,7 +263,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -282,7 +279,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -298,7 +295,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -314,7 +311,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -330,7 +327,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -346,7 +343,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -362,7 +359,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -378,7 +375,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -394,7 +391,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -414,7 +411,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -430,7 +427,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -446,7 +443,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -462,7 +459,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -478,7 +475,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -494,7 +491,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -510,7 +507,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -526,7 +523,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -542,7 +539,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -558,7 +555,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -578,7 +575,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -594,7 +591,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -610,7 +607,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -626,7 +623,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -642,7 +639,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -658,7 +655,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -678,7 +675,7 @@ namespace UnitTestQLKho
             string nguoilay = "hien";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -694,7 +691,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -710,7 +707,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -726,7 +723,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         [TestMethod]
@@ -742,7 +739,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
 
@@ -759,7 +756,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
 
         /// <summary>
@@ -778,7 +775,7 @@ namespace UnitTestQLKho
             string nguoilay = "";
             LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
             a = LHBus.Xoa(LH);
-            Assert.AreEqual(1, a);
+            Assert.AreEqual(0, a);
         }
     }
 }
