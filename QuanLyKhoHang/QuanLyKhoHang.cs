@@ -45,8 +45,12 @@ namespace QuanLyKhoHang
                 tabControl2.Hide();
                 tabControl3.Hide();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 tabControl4.Hide();
 =======
+>>>>>>> feature-backend
+=======
+                tabControl4.Hide();
 >>>>>>> feature-backend
                 tabControlHistory.Hide();
                 fm = new DangNhap();
@@ -61,9 +65,13 @@ namespace QuanLyKhoHang
                 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 lbgetUser.Text =  strUser;
 =======
                 lbgetUser.Text = "Xin chào " + strUser;
+>>>>>>> feature-backend
+=======
+                lbgetUser.Text =strUser;
 >>>>>>> feature-backend
                 this.WindowState = FormWindowState.Maximized;
                 DateTime today = DateTime.Today;
@@ -168,6 +176,10 @@ namespace QuanLyKhoHang
                 string soluong = this.txtSL1.Text;
                 string ngaynhap = this.txtNgayNhap.Text;
                 string nguoinhap = this.lbgetUser.Text;
+                if(mathung == "" || masp == "" || tensp == "" || soluong == "" || ngaynhap == "" || nguoinhap == "")
+                {
+                    MessageBox.Show("Vui Lòng Nhập đầy đủ Các Ô");
+                }
                 NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
                 int SoDong = new NhapHangBUS().them(NH);
                 SoDong = new NhapHangBUS().themLS(NH);
@@ -211,11 +223,13 @@ namespace QuanLyKhoHang
             string soluong = this.txtSL2.Text;
             string ngaycat = this.txtNgayCat.Text;
             string nguoicat = this.lbgetUser.Text;
+            NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaycat, nguoicat);
             CatHang CH = new CatHang(mathung, make, masp, tensp, soluong, ngaycat, nguoicat);
             SanPham SP = new SanPham(masp, tensp, make, soluong);
             int SoDong = new CatHangDAO().Them(CH);
             SoDong = new CatHangDAO().ThemLS(CH);
             SoDong = new SanPhamDAO().Them(SP);
+            SoDong = new NhapHangDAO().Xoa(NH);
             MessageBox.Show("success");
             int rowIndex = -1;
             foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -521,6 +535,7 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Show();
 <<<<<<< HEAD
+<<<<<<< HEAD
             tabControlHistory.Hide();
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
@@ -542,6 +557,9 @@ namespace QuanLyKhoHang
 
         private void panel3_Paint(object sender, PaintEventArgs e)
 =======
+=======
+            tabControlHistory.Hide();
+>>>>>>> feature-backend
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
@@ -549,10 +567,15 @@ namespace QuanLyKhoHang
             tabControl1.Hide();
             tabControl2.Hide();
             tabControl4.Hide();
+            tabControlHistory.Hide();
         }
         private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
 >>>>>>> feature-backend
         {
+            tabControl3.Hide();
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl4.Hide();
             tabControlHistory.Show();
         }
 
@@ -571,7 +594,20 @@ namespace QuanLyKhoHang
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+>>>>>>> feature-backend
 
 >>>>>>> feature-backend
     }

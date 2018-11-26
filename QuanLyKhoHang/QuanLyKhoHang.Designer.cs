@@ -76,6 +76,7 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -97,6 +98,8 @@
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 =======
             this.panel3 = new System.Windows.Forms.Panel();
+>>>>>>> feature-backend
+=======
 >>>>>>> feature-backend
             this.lbgetUser = new System.Windows.Forms.Label();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -132,20 +135,8 @@
             this.NgayNhap1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageHidden = new System.Windows.Forms.TabPage();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageOutput = new System.Windows.Forms.TabPage();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btHuy1 = new System.Windows.Forms.Button();
             this.btThem1 = new System.Windows.Forms.Button();
             this.txtNgayNhap = new System.Windows.Forms.TextBox();
@@ -193,6 +184,7 @@
 =======
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.btXoa = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -211,6 +203,8 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 >>>>>>> feature-backend
+=======
+>>>>>>> feature-backend
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemInput = new System.Windows.Forms.ToolStripMenuItem();
@@ -223,6 +217,7 @@
             this.LogOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControlHistory.SuspendLayout();
@@ -233,6 +228,27 @@
             this.tabPageOutput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
 =======
+=======
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> feature-backend
             this.panel1.SuspendLayout();
 >>>>>>> feature-backend
             this.tabControl4.SuspendLayout();
@@ -243,6 +259,7 @@
             this.splitContainer5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.tabControl3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
@@ -252,6 +269,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
 =======
             this.panel3.SuspendLayout();
+>>>>>>> feature-backend
+=======
 >>>>>>> feature-backend
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -285,17 +304,23 @@
 =======
             this.tabControl3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
             this.splitContainer4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
 >>>>>>> feature-backend
+=======
+>>>>>>> feature-backend
             this.menuStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.panel1.Controls.Add(this.tabControlHistory);
             this.panel1.Controls.Add(this.tabControl4);
@@ -305,9 +330,14 @@
             this.panel1.Controls.Add(this.tabControl4);
             this.panel1.Controls.Add(this.panel3);
 >>>>>>> feature-backend
+=======
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.tabControl3);
+            this.panel1.Controls.Add(this.tabControlHistory);
+            this.panel1.Controls.Add(this.tabControl4);
+>>>>>>> feature-backend
             this.panel1.Controls.Add(this.tabControl2);
             this.panel1.Controls.Add(this.tabControl1);
-            this.panel1.Controls.Add(this.tabControl3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
 <<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 30);
@@ -439,7 +469,7 @@
             // 
             this.tabControl4.Controls.Add(this.tabPage5);
             this.tabControl4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl4.Location = new System.Drawing.Point(655, 54);
+            this.tabControl4.Location = new System.Drawing.Point(394, 264);
             this.tabControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl4.Name = "tabControl4";
             this.tabControl4.SelectedIndex = 0;
@@ -629,25 +659,15 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Số Lượng";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.lbgetUser);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1816, 34);
-            this.panel3.TabIndex = 6;
-            // 
             // lbgetUser
             // 
-            this.lbgetUser.AutoSize = true;
             this.lbgetUser.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbgetUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbgetUser.Location = new System.Drawing.Point(1741, 0);
+            this.lbgetUser.Location = new System.Drawing.Point(1615, 0);
             this.lbgetUser.Name = "lbgetUser";
-            this.lbgetUser.Size = new System.Drawing.Size(75, 29);
+            this.lbgetUser.Size = new System.Drawing.Size(201, 28);
             this.lbgetUser.TabIndex = 4;
-            this.lbgetUser.Text = "lbbbb";
+            this.lbgetUser.Text = "lbbb";
             this.lbgetUser.Click += new System.EventHandler(this.lbgetUser_Click);
 >>>>>>> feature-backend
             // 
@@ -660,7 +680,7 @@
 =======
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl2.Location = new System.Drawing.Point(84, 63);
+            this.tabControl2.Location = new System.Drawing.Point(158, 323);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -988,6 +1008,10 @@
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.Size = new System.Drawing.Size(1574, 224);
             this.dataGridView3.TabIndex = 0;
+<<<<<<< HEAD
+>>>>>>> feature-backend
+=======
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
 >>>>>>> feature-backend
             // 
             // txtSL5
@@ -1097,7 +1121,6 @@
             this.lbMaKe5.Text = "Mã Kệ:";
 =======
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.splitContainer1.Panel1.Controls.Add(this.tabControlHistory);
             this.splitContainer1.Panel1.Controls.Add(this.btHuy1);
             this.splitContainer1.Panel1.Controls.Add(this.btThem1);
             this.splitContainer1.Panel1.Controls.Add(this.txtNgayNhap);
@@ -1251,11 +1274,11 @@
             this.tabControlHistory.Controls.Add(this.tabPageHidden);
             this.tabControlHistory.Controls.Add(this.tabPageOutput);
             this.tabControlHistory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlHistory.Location = new System.Drawing.Point(335, 127);
+            this.tabControlHistory.Location = new System.Drawing.Point(581, 63);
             this.tabControlHistory.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlHistory.Name = "tabControlHistory";
             this.tabControlHistory.SelectedIndex = 0;
-            this.tabControlHistory.Size = new System.Drawing.Size(1590, 252);
+            this.tabControlHistory.Size = new System.Drawing.Size(991, 252);
             this.tabControlHistory.TabIndex = 1;
             // 
             // tabPageInput
@@ -1265,7 +1288,7 @@
             this.tabPageInput.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageInput.Name = "tabPageInput";
             this.tabPageInput.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageInput.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageInput.Size = new System.Drawing.Size(983, 216);
             this.tabPageInput.TabIndex = 0;
             this.tabPageInput.Text = "Nhập Hàng";
             this.tabPageInput.UseVisualStyleBackColor = true;
@@ -1282,7 +1305,7 @@
             this.dataGridViewInPut.Location = new System.Drawing.Point(4, 4);
             this.dataGridViewInPut.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewInPut.Name = "dataGridViewInPut";
-            this.dataGridViewInPut.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridViewInPut.Size = new System.Drawing.Size(975, 208);
             this.dataGridViewInPut.TabIndex = 6;
             this.dataGridViewInPut.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewInPut_CellContentClick);
             // 
@@ -1321,7 +1344,7 @@
             this.tabPageHidden.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageHidden.Name = "tabPageHidden";
             this.tabPageHidden.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageHidden.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageHidden.Size = new System.Drawing.Size(983, 216);
             this.tabPageHidden.TabIndex = 1;
             this.tabPageHidden.Text = "Cất Hàng";
             this.tabPageHidden.UseVisualStyleBackColor = true;
@@ -1342,50 +1365,8 @@
             this.dataGridView6.Location = new System.Drawing.Point(4, 4);
             this.dataGridView6.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridView6.Size = new System.Drawing.Size(975, 208);
             this.dataGridView6.TabIndex = 0;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "MaThung";
-            this.Column14.HeaderText = "Mã Thùng";
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "MaKe";
-            this.Column15.HeaderText = "Mã Kệ";
-            this.Column15.Name = "Column15";
-            // 
-            // Column17
-            // 
-            this.Column17.DataPropertyName = "MaSP";
-            this.Column17.HeaderText = "Mã Sản Phẩm";
-            this.Column17.Name = "Column17";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "TenSP";
-            this.Column16.HeaderText = "Tên Sản Phẩm";
-            this.Column16.Name = "Column16";
-            // 
-            // Column18
-            // 
-            this.Column18.DataPropertyName = "SoLuong";
-            this.Column18.HeaderText = "Số Lượng";
-            this.Column18.Name = "Column18";
-            // 
-            // Column19
-            // 
-            this.Column19.DataPropertyName = "NgayCat";
-            this.Column19.HeaderText = "Ngày Cất";
-            this.Column19.Name = "Column19";
-            // 
-            // Column24
-            // 
-            this.Column24.DataPropertyName = "NguoiCat";
-            this.Column24.HeaderText = "Người Cất";
-            this.Column24.Name = "Column24";
             // 
             // tabPageOutput
             // 
@@ -1394,7 +1375,7 @@
             this.tabPageOutput.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageOutput.Name = "tabPageOutput";
             this.tabPageOutput.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageOutput.Size = new System.Drawing.Size(1582, 216);
+            this.tabPageOutput.Size = new System.Drawing.Size(983, 216);
             this.tabPageOutput.TabIndex = 2;
             this.tabPageOutput.Text = "Lấy Hàng";
             this.tabPageOutput.UseVisualStyleBackColor = true;
@@ -1412,38 +1393,8 @@
             this.dataGridView7.Location = new System.Drawing.Point(4, 4);
             this.dataGridView7.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(1574, 208);
+            this.dataGridView7.Size = new System.Drawing.Size(975, 208);
             this.dataGridView7.TabIndex = 0;
-            // 
-            // Column20
-            // 
-            this.Column20.DataPropertyName = "MaKe";
-            this.Column20.HeaderText = "Mã Kệ";
-            this.Column20.Name = "Column20";
-            // 
-            // Column21
-            // 
-            this.Column21.DataPropertyName = "MaSP";
-            this.Column21.HeaderText = "Mã Sản Phẩm";
-            this.Column21.Name = "Column21";
-            // 
-            // Column23
-            // 
-            this.Column23.DataPropertyName = "SoLuong";
-            this.Column23.HeaderText = "Số Lượng";
-            this.Column23.Name = "Column23";
-            // 
-            // Column22
-            // 
-            this.Column22.DataPropertyName = "NgayLay";
-            this.Column22.HeaderText = "Ngày Lấy";
-            this.Column22.Name = "Column22";
-            // 
-            // Column25
-            // 
-            this.Column25.DataPropertyName = "NguoiLay";
-            this.Column25.HeaderText = "Người Lấy";
-            this.Column25.Name = "Column25";
             // 
             // btHuy1
             // 
@@ -1828,7 +1779,7 @@
 =======
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView2);
             this.splitContainer2.Size = new System.Drawing.Size(1576, 491);
-            this.splitContainer2.SplitterDistance = 162;
+            this.splitContainer2.SplitterDistance = 155;
             this.splitContainer2.TabIndex = 0;
 >>>>>>> feature-backend
             // 
@@ -2137,7 +2088,7 @@
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1576, 325);
+            this.dataGridView2.Size = new System.Drawing.Size(1576, 332);
             this.dataGridView2.TabIndex = 1;
 >>>>>>> feature-backend
             // 
@@ -2434,11 +2385,11 @@
             // 
             this.tabControl3.Controls.Add(this.tabPage4);
             this.tabControl3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl3.Location = new System.Drawing.Point(957, 54);
+            this.tabControl3.Location = new System.Drawing.Point(1078, 52);
             this.tabControl3.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1590, 441);
+            this.tabControl3.Size = new System.Drawing.Size(696, 441);
             this.tabControl3.TabIndex = 3;
 >>>>>>> feature-backend
             // 
@@ -2450,19 +2401,24 @@
             this.lbMaKe.Text = "Mã Kệ:";
             // 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // btnTimThung
 =======
             this.tabPage4.Controls.Add(this.splitContainer4);
+=======
+            this.tabPage4.Controls.Add(this.dataGridView4);
+>>>>>>> feature-backend
             this.tabPage4.Location = new System.Drawing.Point(4, 32);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1582, 405);
+            this.tabPage4.Size = new System.Drawing.Size(688, 405);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Tồn Kho";
             this.tabPage4.UseVisualStyleBackColor = true;
 >>>>>>> feature-backend
             // 
+<<<<<<< HEAD
             this.btnTimThung.Location = new System.Drawing.Point(305, 103);
             this.btnTimThung.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimThung.Name = "btnTimThung";
@@ -2762,6 +2718,8 @@
             this.Column5.HeaderText = "Ngày Cất";
             this.Column5.Name = "Column5";
             // 
+=======
+>>>>>>> feature-backend
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -2862,8 +2820,8 @@
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LogOutToolStripMenuItem,
-            this.HistoryToolStripMenuItem});
+            this.HistoryToolStripMenuItem,
+            this.LogOutToolStripMenuItem});
             this.AboutToolStripMenuItem.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutToolStripMenuItem.Image = global::QuanLyKhoHang.Properties.Resources.About;
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
@@ -2907,6 +2865,156 @@
             this.HistoryToolStripMenuItem.Text = "Lịch Sử";
             this.HistoryToolStripMenuItem.Click += new System.EventHandler(this.HistoryToolStripMenuItem_Click);
             // 
+            // label16
+            // 
+            this.label16.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1494, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(121, 28);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Xin Chào";
+            this.label16.UseMnemonic = false;
+            this.label16.Click += new System.EventHandler(this.lbgetUser_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.lbgetUser);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1816, 28);
+            this.panel3.TabIndex = 6;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column10,
+            this.Column11,
+            this.Column12,
+            this.Column13});
+            this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView4.Location = new System.Drawing.Point(4, 4);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(680, 397);
+            this.dataGridView4.TabIndex = 1;
+            // 
+            // Column10
+            // 
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column10.DataPropertyName = "MaSP";
+            this.Column10.HeaderText = "MaSP";
+            this.Column10.Name = "Column10";
+            // 
+            // Column11
+            // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column11.DataPropertyName = "TenSP";
+            this.Column11.HeaderText = "TenSP";
+            this.Column11.Name = "Column11";
+            // 
+            // Column12
+            // 
+            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column12.DataPropertyName = "MaKe";
+            this.Column12.HeaderText = "MaKe";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column13.DataPropertyName = "SoLuong";
+            this.Column13.HeaderText = "SoLuong";
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column14.DataPropertyName = "MaThung";
+            this.Column14.HeaderText = "Mã Thùng";
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column15.DataPropertyName = "MaKe";
+            this.Column15.HeaderText = "Mã Kệ";
+            this.Column15.Name = "Column15";
+            // 
+            // Column17
+            // 
+            this.Column17.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column17.DataPropertyName = "MaSP";
+            this.Column17.HeaderText = "Mã Sản Phẩm";
+            this.Column17.Name = "Column17";
+            // 
+            // Column16
+            // 
+            this.Column16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column16.DataPropertyName = "TenSP";
+            this.Column16.HeaderText = "Tên Sản Phẩm";
+            this.Column16.Name = "Column16";
+            // 
+            // Column18
+            // 
+            this.Column18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column18.DataPropertyName = "SoLuong";
+            this.Column18.HeaderText = "Số Lượng";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column19.DataPropertyName = "NgayCat";
+            this.Column19.HeaderText = "Ngày Cất";
+            this.Column19.Name = "Column19";
+            // 
+            // Column24
+            // 
+            this.Column24.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column24.DataPropertyName = "NguoiCat";
+            this.Column24.HeaderText = "Người Cất";
+            this.Column24.Name = "Column24";
+            // 
+            // Column20
+            // 
+            this.Column20.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column20.DataPropertyName = "MaKe";
+            this.Column20.HeaderText = "Mã Kệ";
+            this.Column20.Name = "Column20";
+            // 
+            // Column21
+            // 
+            this.Column21.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column21.DataPropertyName = "MaSP";
+            this.Column21.HeaderText = "Mã Sản Phẩm";
+            this.Column21.Name = "Column21";
+            // 
+            // Column23
+            // 
+            this.Column23.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column23.DataPropertyName = "SoLuong";
+            this.Column23.HeaderText = "Số Lượng";
+            this.Column23.Name = "Column23";
+            // 
+            // Column22
+            // 
+            this.Column22.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column22.DataPropertyName = "NgayLay";
+            this.Column22.HeaderText = "Ngày Lấy";
+            this.Column22.Name = "Column22";
+            // 
+            // Column25
+            // 
+            this.Column25.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column25.DataPropertyName = "NguoiLay";
+            this.Column25.HeaderText = "Người Lấy";
+            this.Column25.Name = "Column25";
+            // 
             // QLKhoHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2948,6 +3056,7 @@
             this.splitContainer5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.tabControl3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
@@ -2959,6 +3068,8 @@
 =======
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+>>>>>>> feature-backend
+=======
 >>>>>>> feature-backend
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -2995,6 +3106,7 @@
 =======
             this.tabControl3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
+<<<<<<< HEAD
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel1.PerformLayout();
             this.splitContainer4.Panel2.ResumeLayout(false);
@@ -3002,8 +3114,12 @@
             this.splitContainer4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
 >>>>>>> feature-backend
+=======
+>>>>>>> feature-backend
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3077,18 +3193,6 @@
         private System.Windows.Forms.TextBox txtTenSP3;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.SplitContainer splitContainer4;
-        private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtMaThung4;
-        private System.Windows.Forms.TextBox txtNgayXoa;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtMSP4;
-        private System.Windows.Forms.TextBox txtSL4;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtTenSP4;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
@@ -3098,11 +3202,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbgetUser;
         private System.Windows.Forms.ToolStripMenuItem LogOutToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.SplitContainer splitContainer5;
@@ -3136,6 +3235,17 @@
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.TabPage tabPageOutput;
         private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaThung1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenSP1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap1;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
@@ -3149,6 +3259,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         private System.Windows.Forms.Panel panel3;
 >>>>>>> feature-backend
@@ -3158,6 +3269,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap1;
 <<<<<<< HEAD
         private System.Windows.Forms.Label label16;
+=======
+>>>>>>> feature-backend
 =======
 >>>>>>> feature-backend
     }

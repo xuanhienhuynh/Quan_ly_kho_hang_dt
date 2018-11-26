@@ -55,13 +55,19 @@ namespace DAO
             string select = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap, NguoiNhap) "
                         + "VALUES('" + NH.MaThung + "','" + NH.MaSP + "','" + NH.TenSP + "','"
                       + NH.SoLuong + "','" + NH.NgayNhap + "','" + NH.NguoiNhap + "');";
-            try
+            if (NH.MaThung == "" || NH.MaSP == "" || NH.TenSP == "" || NH.SoLuong == "" || NH.NgayNhap == "" ||
+                 NH.NguoiNhap == "")
+                return 0;
+            else
             {
-                return myExcuteNoneQuery(select);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
+                try
+                {
+                    return myExcuteNoneQuery(select);
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
             }
         }
 
@@ -70,16 +76,42 @@ namespace DAO
             string select = "INSERT INTO LSNhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap, NguoiNhap) "
                         + "VALUES('" + NH.MaThung + "','" + NH.MaSP + "','" + NH.TenSP + "','"
                       + NH.SoLuong + "','" + NH.NgayNhap + "','" + NH.NguoiNhap + "');";
-            try
+            if (NH.MaThung == "" || NH.MaSP == "" || NH.TenSP == "" || NH.SoLuong == "" || NH.NgayNhap == "" ||
+                 NH.NguoiNhap == "")
+                return 0;
+            else
             {
-                return myExcuteNoneQuery(select);
+                try
+                {
+                    return myExcuteNoneQuery(select);
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
             }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
+            
         }
 
-        
+        public int Xoa(NhapHang NH)
+        {
+            string delete = "DELETE FROM NhapHang WHERE MaThung = '" + NH.MaThung + "';";
+            if (NH.MaThung == "" || NH.MaSP == "" || NH.TenSP == "" || NH.SoLuong == "" || NH.NgayNhap == "" ||
+                 NH.NguoiNhap == "")
+            {
+                return 1;
+            }
+            else
+            {
+                try
+                {
+                    return myExcuteNoneQuery(delete);
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
+            }
+        }
     }
 }

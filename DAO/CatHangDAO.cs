@@ -57,14 +57,22 @@ namespace DAO
         {
             string select = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat, NguoiCat) "
                         + "VALUES('" + CH.MaThung + "','" + CH.MaKe + "','" + CH.MaSP + "','" + CH.TenSP + "','"
-                      + CH.SoLuong + "','" + CH.NgayCat + "','" + CH.NgayCat + "');";
-            try
+                      + CH.SoLuong + "','" + CH.NgayCat + "','" + CH.NguoiCat + "');";
+            if (CH.MaThung == "" || CH.MaKe == "" || CH.MaSP == "" || CH.TenSP == "" || CH.SoLuong == "" ||
+                CH.NgayCat == "" || CH.NguoiCat == "")
             {
-                return myExcuteNoneQuery(select);
+                return 0;
             }
-            catch (SqlException ex)
+            else
             {
-                throw ex;
+                try
+                {
+                    return myExcuteNoneQuery(select);
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
             }
         }
 
@@ -73,13 +81,19 @@ namespace DAO
             string select = "INSERT INTO LSCatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat, NguoiCat) "
                         + "VALUES('" + CH.MaThung + "','" + CH.MaKe + "','" + CH.MaSP + "','" + CH.TenSP + "','"
                       + CH.SoLuong + "','" + CH.NgayCat + "','" + CH.NgayCat + "');";
-            try
+            if (CH.MaThung == "" || CH.MaKe == "" || CH.MaSP == "" || CH.TenSP == "" || CH.SoLuong == "" ||
+                CH.NgayCat == "" || CH.NguoiCat == "")
+                return 0;
+            else
             {
-                return myExcuteNoneQuery(select);
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
+                try
+                {
+                    return myExcuteNoneQuery(select);
+                }
+                catch (SqlException ex)
+                {
+                    throw ex;
+                }
             }
         }
 
