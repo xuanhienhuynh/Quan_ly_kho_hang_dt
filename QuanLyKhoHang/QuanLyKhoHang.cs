@@ -46,9 +46,9 @@ namespace QuanLyKhoHang
                 tabControl3.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-                this.dataGridView10.Hide();
+                this.tabControl6.Hide();
                 label11.Hide();
-                panel4.Hide();
+                tabControl5.Hide();
                 fm = new DangNhap();
                 result = fm.ShowDialog();
                 if (result == DialogResult.Yes)
@@ -342,8 +342,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-            panel4.Hide();
-            dataGridView10.Hide();
+            tabControl5.Hide();
+            tabControl6.Hide();
         }
 
         private void btnLayHang_Click(object sender, EventArgs e)
@@ -416,8 +416,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-            this.dataGridView10.Hide();
-            panel4.Hide();
+            this.tabControl6.Hide();
+            tabControl5.Hide();
         }
 
         private void ToolStripMenuItemSort_Click(object sender, EventArgs e)
@@ -427,8 +427,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-            this.dataGridView10.Hide();
-            panel4.Hide();
+            this.tabControl6.Hide();
+            tabControl5.Hide();
         }
 
         private void ToolStripMenuItemOutput_Click(object sender, EventArgs e)
@@ -438,8 +438,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Show();
             tabControlHistory.Hide();
-            this.dataGridView10.Hide();
-            panel4.Hide();
+            this.tabControl6.Hide();
+            tabControl5.Hide();
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
@@ -448,8 +448,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-            this.dataGridView10.Hide();
-            panel4.Hide();
+            this.tabControl6.Hide();
+            tabControl5.Hide();
         }
         private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -458,26 +458,26 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Show();
-            this.dataGridView10.Hide();
-            panel4.Hide();
+            this.tabControl6.Hide();
+            tabControl5.Hide();
         }
         private void StatisticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int a = int.Parse(label11.Text);
             if (a >= 3)
             {
-                this.panel4.Hide();
-                this.dataGridView10.Hide();
+                this.tabControl5.Hide();
+                this.tabControl6.Hide();
             }
             else
             {
-                this.panel4.Show();
+                this.tabControl5.Show();
                 tabControl3.Hide();
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-                this.dataGridView10.Hide();
+                this.tabControl6.Hide();
             }
         }
 
@@ -486,18 +486,18 @@ namespace QuanLyKhoHang
             int a = int.Parse(label11.Text);
             if (a >= 3)
             {
-                this.panel4.Hide();
-                this.dataGridView10.Hide();
+                this.tabControl5.Hide();
+                this.tabControl6.Hide();
             }
             else
             {
-                this.panel4.Hide();
+                this.tabControl5.Hide();
                 tabControl3.Hide();
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-                this.dataGridView10.Show();
+                this.tabControl6.Show();
             }
         }
 
