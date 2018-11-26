@@ -17,17 +17,13 @@ namespace QuanLyKhoHang
 {
     public partial class DangNhap : Form
     {
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHang25.mdf;Integrated Security=True;");
+
         public DangNhap()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-
         LoginBus lgBUS;
-
-=======
-        LoginBus lgBUS;
->>>>>>> feature-backend
         public void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'khoHangCSDLDataSet.NguoiDung' table. You can move, or remove it, as needed.
@@ -43,22 +39,12 @@ namespace QuanLyKhoHang
             }
             else
             {
+                sqlcnn.Open();
+                string select = "SELECT Loai FROM NguoiDung WHERE TaiKhoan = '" + txt_username.Text + "'";
+                SqlCommand cmd = new SqlCommand(select, sqlcnn);
+                QLKhoHang.intLoai = cmd.ExecuteScalar().ToString();
+                sqlcnn.Close();
                 QLKhoHang.strUser = txt_username.Text;
-<<<<<<< HEAD
-                bool b = false;
-                try
-                {
-                    Account acc = new Account(name, pass);
-                    b = lgBUS.loginbus(acc);
-                }
-                catch (SqlException ex)
-                {
-
-                    MessageBox.Show("may ngu qua \n" + ex.Message);
-                }
-                if (b) // 
-                {
-=======
                 //if (txtUseName.Text == "admin" && txtPassWord.Text == "123")\
                 //if (name == "admin" && pass == "123")
                 bool b = false;
@@ -66,6 +52,7 @@ namespace QuanLyKhoHang
                 {
                     Account acc = new Account(name, pass);
                     b = lgBUS.loginbus(acc);
+                    //label2.DataBindings.Add()
                 }
                 catch (SqlException ex)
                 {
@@ -74,7 +61,6 @@ namespace QuanLyKhoHang
                 }
                 if (b) // 
                 {
->>>>>>> feature-backend
                     
                     this.DialogResult = DialogResult.Yes; // dong lenh nay dung de gan gia tri ok vo form 2
                     this.Close();
@@ -86,26 +72,8 @@ namespace QuanLyKhoHang
                     DialogResult result = MessageBox.Show("ban nhap sai tai khoan hoac mat khau !", "wrong", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                     if (result == DialogResult.Cancel)
                         Application.Exit();
-<<<<<<< HEAD
-                    else
-                        if (result == DialogResult.Retry)
-                        {
-                            txt_password.Text = "";
-                            txt_password.Focus();
-                        }
                 }
             }
         }
-
-        private void txt_password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-=======
-                }
-            }
-        }
->>>>>>> feature-backend
     }
 }

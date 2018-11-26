@@ -55,8 +55,6 @@
     <Compile Include="UnitTestQLKho.cs" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{93ceaba6-fb71-4775-9b40-3ad02896cddc}</Project>
       <Name>BUS</Name>
@@ -69,7 +67,6 @@
       <Project>{33997df7-97b8-45c5-9f3d-f733e8bfde99}</Project>
       <Name>DTO</Name>
     </ProjectReference>
->>>>>>> feature-backend
     <ProjectReference Include="..\QuanLyKhoHang\1QuanLyKhoHang.csproj">
       <Project>{e741036d-51b9-4324-98c6-19944db4593b}</Project>
       <Name>1QuanLyKhoHang</Name>

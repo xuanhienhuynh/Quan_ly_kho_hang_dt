@@ -100,10 +100,6 @@
             this.txt_password.Size = new System.Drawing.Size(319, 46);
             this.txt_password.TabIndex = 5;
             this.txt_password.UseSystemPasswordChar = true;
-<<<<<<< HEAD
-            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
-=======
->>>>>>> feature-backend
             // 
             // label1
             // 
@@ -140,7 +136,7 @@
             this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(319, 46);
-            this.txt_username.TabIndex = 8;
+            this.txt_username.TabIndex = 3;
             // 
             // DangNhap
             // 

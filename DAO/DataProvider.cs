@@ -20,7 +20,8 @@ namespace DAO
 
         public DataProvider()
         {
-            string cnn = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;";
+            //string cnn = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;";
+            string cnn = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHang25.mdf;Integrated Security=True;";
             sqlcnn = new SqlConnection(cnn);
         }
 
@@ -59,6 +60,30 @@ namespace DAO
                 int number = (int)cmd.ExecuteScalar();
                 return number;
                 
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                disConnect();
+            }
+        }
+
+        public string myExecuteScalar1(string sql)
+        {
+            connect();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sqlcnn;
+            cmd.CommandText = sql;
+            cmd.CommandType = CommandType.Text;
+            try
+            {
+                string number = (string)cmd.ExecuteScalar();
+                return number;
+
             }
             catch (SqlException ex)
             {

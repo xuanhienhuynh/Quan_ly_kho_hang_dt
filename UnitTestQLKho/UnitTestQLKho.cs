@@ -21,14 +21,8 @@ namespace UnitTestQLKho
         [TestInitialize] //phương thức thực thi trước khi chạy các test case.
         public void setUp()
         {
-<<<<<<< HEAD
-            Dn = new DangNhap();
-            ds = cn.GetData();
-
-=======
             daPro = new DataProvider();
             NHD = new NhapHangDAO();
->>>>>>> feature-backend
         }
 
         [TestMethod]
