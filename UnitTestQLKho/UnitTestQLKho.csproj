@@ -52,6 +52,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTestCatHang.cs" />
+    <Compile Include="UnitTestLayHang.cs" />
+    <Compile Include="UnitTestNhapHang.cs" />
     <Compile Include="UnitTestQLKho.cs" />
   </ItemGroup>
   <ItemGroup>
