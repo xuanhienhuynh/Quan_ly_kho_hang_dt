@@ -3,8 +3,11 @@ using System.Data;
 using System.Data.SqlClient;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QuanLyKhoHang;
+<<<<<<< HEAD
 using System.Data;
 using System.Data.SqlClient;
+=======
+>>>>>>> feature-fontend
 using DAO;
 using DTO;
 using BUS;
@@ -18,15 +21,27 @@ namespace UnitTestQLKho
         private NhapHangDAO NHD;
         private CatHangDAO CHD;
         private LayHangDAO LHD;
+<<<<<<< HEAD
+=======
+
+>>>>>>> feature-fontend
         [TestInitialize] //phương thức thực thi trước khi chạy các test case.
         public void setUp()
         {
             daPro = new DataProvider();
             NHD = new NhapHangDAO();
+<<<<<<< HEAD
+=======
+            CHD = new CatHangDAO();
+            LHD = new LayHangDAO();
+>>>>>>> feature-fontend
         }
 
+        /// <summary>
+        /// TestDangNhap
+        /// </summary>
         [TestMethod]
-        public void TestLogin()
+        public void TestDangNhap()
         {
             LoginBus lgBUS = new LoginBus();
             string user = "admin";
@@ -39,7 +54,11 @@ namespace UnitTestQLKho
         }
 
         [TestMethod]
+<<<<<<< HEAD
         public void TestLoginNull_Username()
+=======
+        public void TestDangNhap_Thieu_User()
+>>>>>>> feature-fontend
         {
             LoginBus lgBUS = new LoginBus();
             string user = "";
@@ -50,6 +69,7 @@ namespace UnitTestQLKho
             b = lgBUS.loginbus(acc);
             Assert.AreNotEqual(true, b);
         }
+<<<<<<< HEAD
 
         [TestMethod]
         public void TestLoginNull_Password()
@@ -533,5 +553,34 @@ namespace UnitTestQLKho
         }
     
       
+=======
+
+        [TestMethod]
+        public void TestDangNhap_Thieu_Pass()
+        {
+            LoginBus lgBUS = new LoginBus();
+            string user = "admin";
+            string pass = "";
+            bool b = true;
+            Account acc = new Account(user, pass);
+            LoginBus DN = new LoginBus();
+            b = lgBUS.loginbus(acc);
+            Assert.AreNotEqual(true, b);
+        }
+
+        [TestMethod]
+        public void TestDangNhap_Rong()
+        {
+            LoginBus lgBUS = new LoginBus();
+            string user = "";
+            string pass = "";
+            bool b = true;
+            Account acc = new Account(user, pass);
+            LoginBus DN = new LoginBus();
+            b = lgBUS.loginbus(acc);
+            Assert.AreEqual(false, b);
+        }
+   
+>>>>>>> feature-fontend
     }
 }
