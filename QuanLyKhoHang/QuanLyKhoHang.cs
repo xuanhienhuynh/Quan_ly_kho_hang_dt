@@ -46,15 +46,9 @@ namespace QuanLyKhoHang
                 tabControl3.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-<<<<<<< HEAD
                 this.dataGridView10.Hide();
                 label11.Hide();
                 panel4.Hide();
-=======
-                this.tabControl6.Hide();
-                label11.Hide();
-                tabControl5.Hide();
->>>>>>> feature-fontend
                 fm = new DangNhap();
                 result = fm.ShowDialog();
                 if (result == DialogResult.Yes)
@@ -348,13 +342,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-<<<<<<< HEAD
             panel4.Hide();
             dataGridView10.Hide();
-=======
-            tabControl5.Hide();
-            tabControl6.Hide();
->>>>>>> feature-fontend
         }
 
         private void btnLayHang_Click(object sender, EventArgs e)
@@ -427,13 +416,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-<<<<<<< HEAD
             this.dataGridView10.Hide();
             panel4.Hide();
-=======
-            this.tabControl6.Hide();
-            tabControl5.Hide();
->>>>>>> feature-fontend
         }
 
         private void ToolStripMenuItemSort_Click(object sender, EventArgs e)
@@ -443,13 +427,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-<<<<<<< HEAD
             this.dataGridView10.Hide();
             panel4.Hide();
-=======
-            this.tabControl6.Hide();
-            tabControl5.Hide();
->>>>>>> feature-fontend
         }
 
         private void ToolStripMenuItemOutput_Click(object sender, EventArgs e)
@@ -459,13 +438,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Show();
             tabControlHistory.Hide();
-<<<<<<< HEAD
             this.dataGridView10.Hide();
             panel4.Hide();
-=======
-            this.tabControl6.Hide();
-            tabControl5.Hide();
->>>>>>> feature-fontend
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
@@ -474,13 +448,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
-<<<<<<< HEAD
             this.dataGridView10.Hide();
             panel4.Hide();
-=======
-            this.tabControl6.Hide();
-            tabControl5.Hide();
->>>>>>> feature-fontend
         }
         private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -489,44 +458,26 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Show();
-<<<<<<< HEAD
             this.dataGridView10.Hide();
             panel4.Hide();
-=======
-            this.tabControl6.Hide();
-            tabControl5.Hide();
->>>>>>> feature-fontend
         }
         private void StatisticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int a = int.Parse(label11.Text);
             if (a >= 3)
             {
-<<<<<<< HEAD
                 this.panel4.Hide();
                 this.dataGridView10.Hide();
             }
             else
             {
                 this.panel4.Show();
-=======
-                this.tabControl5.Hide();
-                this.tabControl6.Hide();
-            }
-            else
-            {
-                this.tabControl5.Show();
->>>>>>> feature-fontend
                 tabControl3.Hide();
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-<<<<<<< HEAD
                 this.dataGridView10.Hide();
-=======
-                this.tabControl6.Hide();
->>>>>>> feature-fontend
             }
         }
 
@@ -535,31 +486,18 @@ namespace QuanLyKhoHang
             int a = int.Parse(label11.Text);
             if (a >= 3)
             {
-<<<<<<< HEAD
                 this.panel4.Hide();
                 this.dataGridView10.Hide();
             }
             else
             {
                 this.panel4.Hide();
-=======
-                this.tabControl5.Hide();
-                this.tabControl6.Hide();
-            }
-            else
-            {
-                this.tabControl5.Hide();
->>>>>>> feature-fontend
                 tabControl3.Hide();
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
-<<<<<<< HEAD
                 this.dataGridView10.Show();
-=======
-                this.tabControl6.Show();
->>>>>>> feature-fontend
             }
         }
 
