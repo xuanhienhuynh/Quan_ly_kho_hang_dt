@@ -51,5 +51,17 @@ namespace BUS
             }
         }
 
+        public int xoa(NhapHang NH)
+        {
+            try
+            {
+                return nhDAO.Xoa(NH);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }
