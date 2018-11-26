@@ -17,6 +17,8 @@ namespace QuanLyKhoHang
 {
     public partial class DangNhap : Form
     {
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHang25.mdf;Integrated Security=True;");
+
         public DangNhap()
         {
             InitializeComponent();
@@ -37,6 +39,11 @@ namespace QuanLyKhoHang
             }
             else
             {
+                sqlcnn.Open();
+                string select = "SELECT Loai FROM NguoiDung WHERE TaiKhoan = '" + txt_username.Text + "'";
+                SqlCommand cmd = new SqlCommand(select, sqlcnn);
+                QLKhoHang.intLoai = cmd.ExecuteScalar().ToString();
+                sqlcnn.Close();
                 QLKhoHang.strUser = txt_username.Text;
                 //if (txtUseName.Text == "admin" && txtPassWord.Text == "123")\
                 //if (name == "admin" && pass == "123")
@@ -45,6 +52,7 @@ namespace QuanLyKhoHang
                 {
                     Account acc = new Account(name, pass);
                     b = lgBUS.loginbus(acc);
+                    //label2.DataBindings.Add()
                 }
                 catch (SqlException ex)
                 {

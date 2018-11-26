@@ -18,11 +18,11 @@ namespace QuanLyKhoHang
 {
     public partial class QLKhoHang : Form
     {
-        //SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
-        DataTable productTable, CHTable, SPTable, pick; // khai báo producttable nhằm thêm dữ liệu vào datagridview
-        DataSet ds, ds1, ds2, ds3;
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHang25.mdf;Integrated Security=True;");
+        DataTable productTable, CHTable, SPTable, LHTable; // khai báo producttable nhằm thêm dữ liệu vào datagridview
+        DataSet ds;
         public static string strUser;
+        public static string intLoai;
         CungCapHam cc = new CungCapHam();
         DangNhap fm;
         DialogResult result;
@@ -46,6 +46,9 @@ namespace QuanLyKhoHang
                 tabControl3.Hide();
                 tabControl4.Hide();
                 tabControlHistory.Hide();
+                this.dataGridView10.Hide();
+                label11.Hide();
+                panel4.Hide();
                 fm = new DangNhap();
                 result = fm.ShowDialog();
                 if (result == DialogResult.Yes)
@@ -57,6 +60,7 @@ namespace QuanLyKhoHang
                     this.Hide();
                 }
 
+                label11.Text = intLoai;
                 lbgetUser.Text =strUser;
                 this.WindowState = FormWindowState.Maximized;
                 DateTime today = DateTime.Today;
@@ -67,6 +71,7 @@ namespace QuanLyKhoHang
                 productTable = ds.Tables[0];
                 dataGridView1.DataSource = productTable;
                 dataGridViewInPut.DataSource = productTable;
+                dataGridView8.DataSource = productTable;
 
                 ds = getCatHang();
                 CHTable = ds.Tables[0];
@@ -80,14 +85,20 @@ namespace QuanLyKhoHang
                 ds = getSanPham();
                 SPTable = ds.Tables[0];
                 dataGridView3.DataSource = SPTable;
+                dataGridView4.DataSource = SPTable;
                 dataGridView5.DataSource = SPTable;
+                dataGridView10.DataSource = SPTable;
                 //ds2 = SapXep();
                 //sapxep = ds2.Tables[0];
                 //dataGridView3.DataSource = sapxep;
                 //dataGridView4.DataSource = sapxep;
                 //dataGridView5.DataSource = sapxep;
+
+                ds = getLayHang();
+                LHTable = ds.Tables[0];
+                dataGridView7.DataSource = LHTable;
+                dataGridView9.DataSource = LHTable;
                 //dataGridView7.DataSource = pick;
-                
                 
             }
             else
@@ -124,13 +135,13 @@ namespace QuanLyKhoHang
             return ds;
         }
 
-        DataSet getPick()
+        DataSet getLayHang()
         {
-            ds3 = new DataSet();
-            string sql1 = "SELECT * FROM XuatHang";
-            SqlDataAdapter da3 = new SqlDataAdapter(sql1, sqlcnn);
-            int number = da3.Fill(ds3);
-            return ds3;
+            ds = new DataSet();
+            string sql = "SELECT * FROM XuatHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
         }
         private void btThem1_Click(object sender, EventArgs e)
         {
@@ -167,6 +178,7 @@ namespace QuanLyKhoHang
                 this.txtMaThung1.Focus();
             }
             sqlcnn.Close();
+            loadData();
         }
 
         private void btHuy1_Click(object sender, EventArgs e)
@@ -199,8 +211,12 @@ namespace QuanLyKhoHang
             string masp = this.txtMaSP2.Text;
             string tensp = this.txtTenSP2.Text;
             string soluong = this.txtSL2.Text;
-            string ngaycat = this.txtNgayCat.Text;
+            string ngaycat = (DateTime.Now).ToString();
             string nguoicat = this.lbgetUser.Text;
+            if (mathung == "" || masp == "" || tensp == "" || soluong == "" || ngaycat == "" || nguoicat == "" || make == "")
+            {
+                MessageBox.Show("Vui Lòng Nhập đầy đủ Các Ô");
+            }
             NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaycat, nguoicat);
             CatHang CH = new CatHang(mathung, make, masp, tensp, soluong, ngaycat, nguoicat);
             SanPham SP = new SanPham(masp, tensp, make, soluong);
@@ -223,6 +239,7 @@ namespace QuanLyKhoHang
             loadData();
             this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtNgayCat.Text = this.txtMaKe.Text = "";
             this.txtMaThung2.Focus();
+            loadData();
         }
         private void btSapXep_Click(object sender, EventArgs e)
         {
@@ -286,6 +303,7 @@ namespace QuanLyKhoHang
                     break;
                 }
             }
+            loadData();
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -301,9 +319,8 @@ namespace QuanLyKhoHang
                 tabControl1.Hide();
                 tabControl2.Hide();
                 tabControl3.Hide();
+                tabControl4.Hide();
                 tabControlHistory.Hide();
-                //fm = new DangNhap();
-                //result = fm.ShowDialog();
                 if (result == DialogResult.Yes)
                 {
                     this.Show();
@@ -312,92 +329,25 @@ namespace QuanLyKhoHang
                 {
                     this.Hide();
                 }
-
-                lbgetUser.Text = "Xin chào " + strUser;
-                this.WindowState = FormWindowState.Maximized;
-                DateTime today = DateTime.Today;
-                txtNgayNhap.Text = today.ToString();
-                txtNgayCat.Text = today.ToString();
-
-                ds = getNhapHang();
-                productTable = ds.Tables[0];
-                dataGridView1.DataSource = productTable;
-                dataGridViewInPut.DataSource = productTable;
-
-                ds = getCatHang();
-                CHTable = ds.Tables[0];
-                dataGridView2.DataSource = CHTable;
-                dataGridView6.DataSource = CHTable;
-                //ds1 = getLocationProduct();
-                //LocationProduct = ds1.Tables[0];
-                //dataGridView2.DataSource = LocationProduct;
-                //dataGridView6.DataSource = LocationProduct;
-
-                ds = getSanPham();
-                SPTable = ds.Tables[0];
-                dataGridView3.DataSource = SPTable;
-                //ds2 = SapXep();
-                //sapxep = ds2.Tables[0];
-                //dataGridView3.DataSource = sapxep;
-                //dataGridView4.DataSource = sapxep;
-                //dataGridView5.DataSource = sapxep;
-                //dataGridView7.DataSource = pick;
-
-
             }
             else
             {
                 MessageBox.Show("Chưa kết nối với CSDL");
             }
-
+            label11.Text = intLoai;
+            lbgetUser.Text = strUser;
+            this.WindowState = FormWindowState.Maximized;
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl3.Hide();
+            tabControl4.Hide();
+            tabControlHistory.Hide();
+            panel4.Hide();
+            dataGridView10.Hide();
         }
 
         private void btnLayHang_Click(object sender, EventArgs e)
         {
-            //sqlcnn.Open();
-            //String a;
-            //int total;
-            //String select = "SELECT SoLuong FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
-            //SqlCommand selectcmd = new SqlCommand(select, sqlcnn);
-            //a = selectcmd.ExecuteScalar().ToString();
-            //if (int.Parse(txtSL5.Text) < int.Parse(a))
-            //{
-            //    this.textBox3.Text = txtSL5.Text;
-            //    this.textBox4.Text = a;
-            //    int x = int.Parse(textBox3.Text);
-            //    int y = int.Parse(textBox4.Text);
-            //    total = y - x;
-            //    String update = "UPDATE SanPham SET SoLuong = '" + total.ToString() + "' WHERE MaSP = '" + txtMaSP5.Text + "';";
-            //    SqlCommand updatecmd = new SqlCommand(update, sqlcnn);
-            //    updatecmd.ExecuteNonQuery();
-            //    this.textBox1.Text = (DateTime.Now).ToString();
-            //    MessageBox.Show("Cap nhap thành công");
-            //    String insert = "INSERT INTO XuatHang (MaKe, MaSP, SoLuong, NgayLay, NguoiLay) "
-            //            + "VALUES('" + this.txtMaKe5.Text + "','" + this.txtMaSP5.Text + "','" + this.txtSL5.Text + "','"
-            //            + this.textBox1.Text + "','" + this.lbgetUser.Text + "');";
-            //    SqlCommand insertcmd = new SqlCommand(insert, sqlcnn);
-            //    insertcmd.ExecuteNonQuery();
-            //    loadData();
-            //}
-            //else if (int.Parse(txtSL5.Text) == int.Parse(a))
-            //{
-            //    String delete = "DELETE FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
-            //    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
-            //    deleteCmd.ExecuteNonQuery();
-            //    MessageBox.Show("Xóa thành công");
-            //    String insert = "INSERT INTO XuatHang (MaKe, MaSP, SoLuong, NgayLay, NguoiLay) "
-            //            + "VALUES('" + this.txtMaKe5.Text + "','" + this.txtMaSP5.Text + "','" + this.txtSL5.Text + "','"
-            //            + this.textBox1.Text + "','" + this.lbgetUser.Text + "');";
-            //    SqlCommand insertcmd = new SqlCommand(insert, sqlcnn);
-            //    insertcmd.ExecuteNonQuery();
-            //    loadData();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("số lượng cần lấy lớn hơn SP đang tồn");
-            //}
-            //sqlcnn.Close();
-
             sqlcnn.Open();
             String a;
             String select = "SELECT SoLuong FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
@@ -450,6 +400,13 @@ namespace QuanLyKhoHang
             dataGridView3.DataSource = SPTable;
             dataGridView4.DataSource = SPTable;
             dataGridView5.DataSource = SPTable;
+
+            dataGridViewInPut.DataSource = productTable;
+            dataGridView8.DataSource = productTable;
+            dataGridView6.DataSource = CHTable;
+            dataGridView10.DataSource = SPTable;
+            dataGridView7.DataSource = LHTable;
+            dataGridView9.DataSource = LHTable;
         }
 
         private void ToolStripMenuItemInput_Click(object sender, EventArgs e)
@@ -459,6 +416,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
 
         private void ToolStripMenuItemSort_Click(object sender, EventArgs e)
@@ -468,6 +427,8 @@ namespace QuanLyKhoHang
             tabControl3.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
 
         private void ToolStripMenuItemOutput_Click(object sender, EventArgs e)
@@ -477,6 +438,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Show();
             tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
@@ -485,6 +448,8 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
         private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -493,26 +458,47 @@ namespace QuanLyKhoHang
             tabControl2.Hide();
             tabControl4.Hide();
             tabControlHistory.Show();
+            this.dataGridView10.Hide();
+            panel4.Hide();
+        }
+        private void StatisticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(label11.Text);
+            if (a >= 3)
+            {
+                this.panel4.Hide();
+                this.dataGridView10.Hide();
+            }
+            else
+            {
+                this.panel4.Show();
+                tabControl3.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                this.dataGridView10.Hide();
+            }
         }
 
-        private void lbgetUser_Click(object sender, EventArgs e)
+        private void PrintReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridViewInPut_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
+            int a = int.Parse(label11.Text);
+            if (a >= 3)
+            {
+                this.panel4.Hide();
+                this.dataGridView10.Hide();
+            }
+            else
+            {
+                this.panel4.Hide();
+                tabControl3.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                this.dataGridView10.Show();
+            }
         }
 
 

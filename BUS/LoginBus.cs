@@ -14,12 +14,24 @@ namespace BUS
         {
             try
             {
-
                 return new LoginByDAO().login(acc);
             }
             catch (SqlException ex)
             {
 
+                throw ex;
+            }
+        }
+
+        public bool loginbusType(Account acc)
+        {
+            try
+            {
+                return new LoginByDAO().loginType(acc);
+            }
+            catch (SqlException ex)
+            {
+                
                 throw ex;
             }
         }

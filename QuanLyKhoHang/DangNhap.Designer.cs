@@ -136,7 +136,7 @@
             this.txt_username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(319, 46);
-            this.txt_username.TabIndex = 8;
+            this.txt_username.TabIndex = 3;
             // 
             // DangNhap
             // 
