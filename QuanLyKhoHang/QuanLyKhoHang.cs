@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using BUS;
+using DTO;
+using DAO;
 // Hi hien
 // M chịu khó đổi đường dẫn CSDL thành đường dẫn chứa CSDL máy m thì mới chạy được nha
 
@@ -16,64 +18,97 @@ namespace QuanLyKhoHang
 {
     public partial class QLKhoHang : Form
     {
-        //SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\Quan_ly_kho_hang_dt\QuanLyKhoHang\KhoHang.mdf;Integrated Security=True;");
-        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHangCSDL.mdf;Integrated Security=True;");
-        DataTable productTable, LocationProduct, sapxep; // khai báo producttable nhằm thêm dữ liệu vào datagridview
-        DataSet ds, ds1, ds2;
+        SqlConnection sqlcnn = new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\Programing\11. Tester (KTPM)\Ql\KhoHang25.mdf;Integrated Security=True;");
+        DataTable productTable, CHTable, SPTable, LHTable; // khai báo producttable nhằm thêm dữ liệu vào datagridview
+        DataSet ds;
         public static string strUser;
+        public static string intLoai;
         CungCapHam cc = new CungCapHam();
-        
-        
+        DangNhap fm;
+        DialogResult result;
+        DataProvider dapro = new DataProvider();
         public QLKhoHang()
         {
-            
+
             InitializeComponent();
         }
-        
-        
+
+
         private void QuanLyKhoHang_Load(object sender, EventArgs e)
         {
-            
-            this.Hide();
-            tabControl1.Hide();
-            tabControl2.Hide();
-            tabControl3.Hide();
-            tabControl4.Hide();
-            DangNhap fm = new DangNhap();
-            DialogResult result = fm.ShowDialog();
-            if (result == DialogResult.Yes)
+            this.Refresh();
+            this.txtNgayNhap.Text = this.txtNgayCat.Text = (DateTime.Now).ToString();
+            if (cc.KetNoi(sqlcnn) == true)
             {
-                this.Show();
-                this.Refresh();
+                this.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl3.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                this.dataGridView10.Hide();
+                label11.Hide();
+                panel4.Hide();
+                fm = new DangNhap();
+                result = fm.ShowDialog();
+                if (result == DialogResult.Yes)
+                {
+                    this.Show();
+                }
+                else
+                {
+                    this.Hide();
+                }
+
+                label11.Text = intLoai;
+                lbgetUser.Text =strUser;
+                this.WindowState = FormWindowState.Maximized;
+                DateTime today = DateTime.Today;
+                txtNgayNhap.Text = today.ToString();
+                txtNgayCat.Text = today.ToString();
+
+                ds = getNhapHang();
+                productTable = ds.Tables[0];
+                dataGridView1.DataSource = productTable;
+                dataGridViewInPut.DataSource = productTable;
+                dataGridView8.DataSource = productTable;
+
+                ds = getCatHang();
+                CHTable = ds.Tables[0];
+                dataGridView2.DataSource = CHTable;
+                dataGridView6.DataSource = CHTable;
+                //ds1 = getLocationProduct();
+                //LocationProduct = ds1.Tables[0];
+                //dataGridView2.DataSource = LocationProduct;
+                //dataGridView6.DataSource = LocationProduct;
+
+                ds = getSanPham();
+                SPTable = ds.Tables[0];
+                dataGridView3.DataSource = SPTable;
+                dataGridView4.DataSource = SPTable;
+                dataGridView5.DataSource = SPTable;
+                dataGridView10.DataSource = SPTable;
+                //ds2 = SapXep();
+                //sapxep = ds2.Tables[0];
+                //dataGridView3.DataSource = sapxep;
+                //dataGridView4.DataSource = sapxep;
+                //dataGridView5.DataSource = sapxep;
+
+                ds = getLayHang();
+                LHTable = ds.Tables[0];
+                dataGridView7.DataSource = LHTable;
+                dataGridView9.DataSource = LHTable;
+                //dataGridView7.DataSource = pick;
+                
             }
             else
             {
-                this.Hide();
+                MessageBox.Show("Chưa kết nối với CSDL");
             }
-
-            lbgetUser.Text = "Xin chào " + strUser;
-            this.WindowState = FormWindowState.Maximized;
-            DateTime today = DateTime.Today;
-            txtNgayNhap.Text = today.ToString();
-            txtNgayCat.Text = today.ToString();
-
-            ds = getProduct();
-            productTable = ds.Tables[0];
-            dataGridView1.DataSource = productTable;
-
-            ds1 = getLocationProduct();
-            LocationProduct = ds1.Tables[0];
-            dataGridView2.DataSource = LocationProduct;
-
-            ds2 = SapXep();
-            sapxep = ds2.Tables[0];
-            dataGridView3.DataSource = sapxep;
-            dataGridView4.DataSource = sapxep;
-            dataGridView5.DataSource = sapxep;
 
         }
 
-        DataSet getProduct()
+        DataSet getNhapHang()
         {
             ds = new DataSet();
             string sql = "SELECT * FROM NhapHang";
@@ -82,76 +117,73 @@ namespace QuanLyKhoHang
             return ds;
         }
 
-        DataSet getLocationProduct()
+        DataSet getCatHang()
         {
-            ds1 = new DataSet();
-            string sql1 = "SELECT * FROM CatHang";
-            SqlDataAdapter da1 = new SqlDataAdapter(sql1, sqlcnn);
-            int number = da1.Fill(ds1);
-            return ds1;
+            ds = new DataSet();
+            string sql = "SELECT * FROM CatHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
         }
 
-        DataSet SapXep()
+        DataSet getSanPham()
         {
-            ds2 = new DataSet();
-            string sql1 = "SELECT * FROM SanPham";
-            SqlDataAdapter da2 = new SqlDataAdapter(sql1, sqlcnn);
-            int number = da2.Fill(ds2);
-            return ds2;
+            ds = new DataSet();
+            string sql = "SELECT * FROM SanPham";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
         }
 
+        DataSet getLayHang()
+        {
+            ds = new DataSet();
+            string sql = "SELECT * FROM XuatHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
+        }
         private void btThem1_Click(object sender, EventArgs e)
         {
-            try
+            sqlcnn.Open();
+            object x, y;
+            string select = "SELECT * FROM NhapHang WHERE MaThung = '" + this.txtMaThung1.Text + "';";
+            string select1 = "SELECT * FROM NhapHang WHERE MaSP = '" + this.txtMaSP1.Text + "';";
+            SqlCommand cmd = new SqlCommand(select, sqlcnn);
+            SqlCommand cmd1 = new SqlCommand(select1, sqlcnn);
+            x = cmd.ExecuteScalar();
+            y = cmd1.ExecuteScalar();
+            if (x != null)
+                MessageBox.Show("Mã Thùng bị trùng");
+            else if (y != null)
+                MessageBox.Show("Mã SP bị trùng");
+            else
             {
-                sqlcnn.Open();
-                string sq = "select * from NhapHang WHERE MaThung ='" + txtMaThung1.Text + "'";
-                string sq1 = "SELECT * FROM NhapHang WHERE MaSP ='" + txtMaSP1.Text + "'";
-                SqlCommand kt1 = new SqlCommand(sq1, sqlcnn);
-                SqlCommand kt = new SqlCommand(sq, sqlcnn);
-                object o = kt.ExecuteScalar();
-                object y = kt1.ExecuteScalar();
-                if (cc.ktTrung(o) == true)
-                    MessageBox.Show("Mã thùng đã được sử dụng");
-                else if (txtTenSP1.Text == "" || txtMaSP1.Text == "" || txtSL1.Text == "")
+                string mathung = this.txtMaThung1.Text;
+                string masp = this.txtMaSP1.Text;
+                string tensp = this.txtTenSP1.Text;
+                string soluong = this.txtSL1.Text;
+                string ngaynhap = this.txtNgayNhap.Text;
+                string nguoinhap = this.lbgetUser.Text;
+                if(mathung == "" || masp == "" || tensp == "" || soluong == "" || ngaynhap == "" || nguoinhap == "")
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ các ô");
+                    MessageBox.Show("Vui Lòng Nhập đầy đủ Các Ô");
                 }
-                else if (cc.ktTrung(y) == true)
-                    MessageBox.Show("Mã sản phẩm bị trùng");
-                else
-                {
-                    txtNgayNhap.Text = (DateTime.Now).ToString();
-                    String sql1 = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap) "
-                        + "VALUES('" + this.txtMaThung1.Text + "','" + this.txtMaSP1.Text + "','" + this.txtTenSP1.Text + "','"
-                      + this.txtSL1.Text + "','" + this.txtNgayNhap.Text + "');";
-                    SqlCommand sqlcmd = new SqlCommand(sql1, sqlcnn);
-                    sqlcmd.ExecuteNonQuery();
-                    MessageBox.Show("Thanh cong");
-
-                    dataGridView1.DataSource = productTable;
-                    DataRow row = productTable.NewRow();
-                    row["MaThung"] = this.txtMaThung1.Text;
-                    row["MaSP"] = this.txtMaSP1.Text;
-                    row["TenSP"] = this.txtTenSP1.Text;
-                    row["SoLuong"] = this.txtSL1.Text;
-                    row["NgayNhap"] = this.txtNgayNhap.Text;
-
-                    productTable.Rows.Add(row);
-                    this.Refresh();
-                }
-                sqlcnn.Close();
+                NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaynhap, nguoinhap);
+                int SoDong = new NhapHangBUS().them(NH);
+                SoDong = new NhapHangBUS().themLS(NH);
+                MessageBox.Show("success");
+                loadData();
                 this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = this.txtNgayNhap.Text = "";
+                this.txtMaThung1.Focus();
             }
-            catch
-            {
-                MessageBox.Show("Lỗi kết nối");
-            }
+            sqlcnn.Close();
+            loadData();
         }
 
         private void btHuy1_Click(object sender, EventArgs e)
         {
-            this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text =  "";
+            this.txtMaThung1.Text = this.txtMaSP1.Text = this.txtTenSP1.Text = this.txtSL1.Text = "";
         }
 
         private void btnTimThung_Click(object sender, EventArgs e)
@@ -166,7 +198,7 @@ namespace QuanLyKhoHang
                     break;
                 }
             }
-            ds = getProduct();
+            ds = getNhapHang();
             txtMaSP2.Text = ds.Tables[0].Rows[rowIndex][1].ToString();
             txtTenSP2.Text = ds.Tables[0].Rows[rowIndex][2].ToString();
             txtSL2.Text = ds.Tables[0].Rows[rowIndex][3].ToString();
@@ -174,63 +206,40 @@ namespace QuanLyKhoHang
 
         private void btThem2_Click(object sender, EventArgs e)
         {
-            
-            try
+            string mathung = this.txtMaThung2.Text;
+            string make = this.txtMaKe.Text;
+            string masp = this.txtMaSP2.Text;
+            string tensp = this.txtTenSP2.Text;
+            string soluong = this.txtSL2.Text;
+            string ngaycat = (DateTime.Now).ToString();
+            string nguoicat = this.lbgetUser.Text;
+            if (mathung == "" || masp == "" || tensp == "" || soluong == "" || ngaycat == "" || nguoicat == "" || make == "")
             {
-                sqlcnn.Open();
-                if (txtTenSP2.Text == "" || txtMaSP2.Text == "" || txtSL2.Text == "" || txtMaKe.Text == "")
-                {
-                    MessageBox.Show("Vui lòng nhập đầy đủ các ô");
-                }
-                else
-                {
-                    this.txtNgayCat.Text = (DateTime.Now).ToString();
-                    String sql2 = "INSERT INTO CatHang (MaThung, MaKe, MaSP, TenSP, SoLuong, NgayCat) "
-                        + "VALUES('" + this.txtMaThung2.Text + "','" + this.txtMaKe.Text + "','" + this.txtMaSP2.Text.Trim() + "','"
-                        + this.txtTenSP2.Text + "','" + this.txtSL2.Text + "','" + this.txtNgayCat.Text + "');";
-                    SqlCommand cmd = new SqlCommand(sql2, sqlcnn);
-                    cmd.ExecuteNonQuery();
-
-                    String sql3 = "INSERT INTO SanPham (MaSP, TenSP, MaKe, SoLuong) " + "VALUES('" + this.txtMaSP2.Text + "','" + this.txtTenSP2.Text + "','" + this.txtMaKe.Text + "','" + this.txtSL2.Text + "');";
-                    SqlCommand cmd1 = new SqlCommand(sql3, sqlcnn);
-                    cmd1.ExecuteNonQuery();
-                    MessageBox.Show("Thanh cong");
-
-                    DataRow row = LocationProduct.NewRow();
-                    row["MaThung"] = this.txtMaThung2.Text;
-                    row["MaKe"] = this.txtMaKe.Text;
-                    row["MaSP"] = this.txtMaSP2.Text;
-                    row["TenSP"] = this.txtTenSP2.Text;
-                    row["SoLuong"] = this.txtSL2.Text;
-                    row["NgayCat"] = this.txtNgayCat.Text;
-                    LocationProduct.Rows.Add(row);
-
-                    String delete = "DELETE FROM NhapHang WHERE MaThung = '" + txtMaThung2.Text + "';";
-                    SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
-                    deleteCmd.ExecuteNonQuery();
-                    MessageBox.Show("Xóa thành công");
-                }
-                sqlcnn.Close();
-
-                int rowIndex = -1;
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    if (row.Cells[0].Value.ToString().Trim().Equals(txtMaThung2.Text.Trim()))
-                    {
-                        rowIndex = row.Index;
-                        MessageBox.Show("success");
-                        break;
-                    }
-                }
-
-                dataGridView1.Rows.RemoveAt(rowIndex);
-
-                this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtMaKe.Text = "";
+                MessageBox.Show("Vui Lòng Nhập đầy đủ Các Ô");
             }
-            catch
+            NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaycat, nguoicat);
+            CatHang CH = new CatHang(mathung, make, masp, tensp, soluong, ngaycat, nguoicat);
+            SanPham SP = new SanPham(masp, tensp, make, soluong);
+            int SoDong = new CatHangDAO().Them(CH);
+            SoDong = new CatHangDAO().ThemLS(CH);
+            SoDong = new SanPhamDAO().Them(SP);
+            SoDong = new NhapHangDAO().Xoa(NH);
+            MessageBox.Show("success");
+            int rowIndex = -1;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                MessageBox.Show("Lỗi Kết Nối");
+                if (row.Cells[0].Value.ToString().Trim().Equals(txtMaThung2.Text.Trim()))
+                {
+                    rowIndex = row.Index;
+                    MessageBox.Show("success");
+                    break;
+                }
             }
+            dataGridView1.Rows.RemoveAt(rowIndex);
+            loadData();
+            this.txtMaThung2.Text = this.txtMaSP2.Text = this.txtTenSP2.Text = this.txtSL2.Text = this.txtNgayCat.Text = this.txtMaKe.Text = "";
+            this.txtMaThung2.Focus();
+            loadData();
         }
         private void btSapXep_Click(object sender, EventArgs e)
         {
@@ -248,46 +257,45 @@ namespace QuanLyKhoHang
                         {
                             rowIndex2 = rows.Index;
                             MessageBox.Show("success");
-                            if (Convert.ToInt32(this.txtSL3.Text) < Convert.ToInt32(ds2.Tables[0].Rows[rowIndex2][3]))
+                            if (Convert.ToInt32(this.txtSL3.Text) < Convert.ToInt32(ds.Tables[0].Rows[rowIndex2][3]))
                             {
                                 MessageBox.Show("convert");
                                 textBox1.Text = this.txtSL3.Text;
-                                textBox2.Text = (ds2.Tables[0].Rows[rowIndex2][3]).ToString();
+                                textBox2.Text = (ds.Tables[0].Rows[rowIndex2][3]).ToString();
                                 int a = int.Parse(textBox1.Text);
                                 int b = int.Parse(textBox2.Text);
                                 int total = b - a;
-                                try
-                                {
-                                    sqlcnn.Open();
-                                    String update = "UPDATE SanPham SET SoLuong = '" + total.ToString() + "' WHERE MaSP = '" + ((ds2.Tables[0].Rows[rowIndex1][0]).ToString().Trim()) + "';";
-                                    SqlCommand updatecmd = new SqlCommand(update, sqlcnn);
-                                    updatecmd.ExecuteNonQuery();
-                                    MessageBox.Show("Cap nhap thành công");
-                                    sqlcnn.Close();
-                                }
-                                catch
-                                { 
-
-                                }
+                                string mathung = this.txtMaThung3.Text;
+                                string masp = this.txtMaSP3.Text;
+                                string tensp = this.txtTenSP3.Text;
+                                string make = this.txtMaKe3.Text;
+                                string soluong = a.ToString();
+                                string ngaylay = (DateTime.Now).ToString();
+                                string nguoilay = lbgetUser.Text;
+                                SanPham SP = new SanPham(masp, tensp, make, soluong);
+                                NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaylay, nguoilay);
+                                int SoDong = new SanPhamDAO().CapNhap(SP, total);
+                                SoDong = new NhapHangDAO().Them(NH);
+                                SoDong = new NhapHangDAO().ThemLS(NH);
+                                MessageBox.Show("Cap nhap thành công");
+                                loadData();
                             }
-                            else if (Convert.ToInt32(this.txtSL3.Text) > Convert.ToInt32(ds2.Tables[0].Rows[rowIndex2][3]))
+                            else if (Convert.ToInt32(this.txtSL3.Text) > Convert.ToInt32(ds.Tables[0].Rows[rowIndex2][3]))
                                 MessageBox.Show("Lỗi SP xuất ra lớn hơn SP tồn");
                             else
                             {
-                                sqlcnn.Open();                                
-                                String insert = "INSERT INTO NhapHang (MaThung, MaSP, TenSP, SoLuong, NgayNhap) "
-                        + "VALUES('" + textBox1.Text + "','" + this.txtMaSP3.Text + "','" + this.textBox2.Text + "','" 
-                        + this.txtSL3.Text + "','" + textBox2.Text + "');";
-                                SqlCommand insertcmd = new SqlCommand(insert, sqlcnn);
-                                insertcmd.ExecuteNonQuery();
-                                MessageBox.Show("insert thanh cong");
-
-                                String delete = "DELETE FROM SanPham WHERE MaSP = '" + ((ds2.Tables[0].Rows[rowIndex1][0]).ToString().Trim()) + "';";
-                                SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
-                                deleteCmd.ExecuteNonQuery();
-                                MessageBox.Show("Xóa thành công");
-                                sqlcnn.Close();
-                                
+                                string mathung = this.txtMaThung3.Text;
+                                string masp = this.txtMaSP3.Text;
+                                string tensp = this.txtTenSP3.Text;
+                                string make = this.txtMaKe3.Text;
+                                string soluong = this.txtSL3.Text;
+                                string ngaylay = (DateTime.Now).ToString();
+                                string nguoilay = lbgetUser.Text;
+                                NhapHang NH = new NhapHang(mathung, masp, tensp, soluong, ngaylay, nguoilay);
+                                SanPham SP = new SanPham(masp, tensp, make, soluong);
+                                int SoDong = new NhapHangDAO().Them(NH);
+                                SoDong = new NhapHangDAO().ThemLS(NH);
+                                SoDong = new SanPhamDAO().Xoa(SP);
                             }
                             break;
                         }
@@ -295,131 +303,204 @@ namespace QuanLyKhoHang
                     break;
                 }
             }
-        }
-
-        public void updatefrom ()
-        {
-            lbgetUser.Refresh();
+            loadData();
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DangNhap fm = new DangNhap();
+            this.Hide();
+            fm = new DangNhap();
+            result = fm.ShowDialog();
             this.Refresh();
-            DialogResult result = fm.ShowDialog();
-            lbgetUser.Refresh();
-            this.Refresh();
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
+            this.txtNgayNhap.Text = this.txtNgayCat.Text = (DateTime.Now).ToString();
+            if (cc.KetNoi(sqlcnn) == true)
+            {
+                this.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl3.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                if (result == DialogResult.Yes)
+                {
+                    this.Show();
+                }
+                else
+                {
+                    this.Hide();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa kết nối với CSDL");
+            }
+            label11.Text = intLoai;
+            lbgetUser.Text = strUser;
+            this.WindowState = FormWindowState.Maximized;
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl3.Hide();
+            tabControl4.Hide();
+            tabControlHistory.Hide();
+            panel4.Hide();
+            dataGridView10.Hide();
         }
 
         private void btnLayHang_Click(object sender, EventArgs e)
         {
             sqlcnn.Open();
             String a;
-            int total;
             String select = "SELECT SoLuong FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
             SqlCommand selectcmd = new SqlCommand(select, sqlcnn);
             a = selectcmd.ExecuteScalar().ToString();
-            if (int.Parse(txtSL5.Text) < int.Parse(a))
+            sqlcnn.Close();
+            int total;
+            this.textBox1.Text = this.txtSL5.Text;
+            string make = this.txtMaKe5.Text;
+            string masp = this.txtMaSP5.Text;
+            string tensp = this.txtTenSP5.Text;
+            string soluong = this.txtSL5.Text;
+            string ngaylay = (DateTime.Now).ToString();
+            string nguoilay = lbgetUser.Text;
+            LayHang LH = new LayHang(make, masp, tensp, soluong, ngaylay, nguoilay);
+            SanPham SP = new SanPham(masp, tensp, make, soluong);
+            int SoDong;
+            int y = int.Parse(a);
+            int x = int.Parse(textBox1.Text);
+            if( x < y)
             {
-                this.textBox3.Text = txtSL5.Text;
-                this.textBox4.Text = a;
-                int x = int.Parse(textBox3.Text);
-                int y = int.Parse(textBox4.Text);
                 total = y - x;
-                String update = "UPDATE SanPham SET SoLuong = '" + total.ToString() + "' WHERE MaSP = '" + txtMaSP5.Text + "';";
-                SqlCommand updatecmd = new SqlCommand(update, sqlcnn);
-                updatecmd.ExecuteNonQuery();
-                MessageBox.Show("Cap nhap thành công");
-                loadData();
+                SoDong = new SanPhamDAO().CapNhap(SP, total);
+                SoDong = new LayHangDAO().ThemLS(LH);
             }
-            else if (int.Parse(txtSL5.Text) == int.Parse(a))
+            else if (x == y)
             {
-                String delete = "DELETE FROM SanPham WHERE MaSP = '" + txtMaSP5.Text + "';";
-                SqlCommand deleteCmd = new SqlCommand(delete, sqlcnn);
-                deleteCmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công");
+                SoDong = new SanPhamDAO().Xoa(SP);
+                SoDong = new LayHangDAO().ThemLS(LH);
             }
             else
             {
-                MessageBox.Show("số lượng cần lấy lớn hơn SP đang tồn");
+                MessageBox.Show("SL lấy ra lớn hơn SL có trong kho");
             }
-            sqlcnn.Close();
+            loadData();
         }
 
         public void loadData()
         {
-            ds = getProduct();
+            ds = getNhapHang();
             productTable = ds.Tables[0];
             dataGridView1.DataSource = productTable;
 
-            ds1 = getLocationProduct();
-            LocationProduct = ds1.Tables[0];
-            dataGridView2.DataSource = LocationProduct;
+            ds = getCatHang();
+            CHTable = ds.Tables[0];
+            dataGridView2.DataSource = CHTable;
 
-            ds2 = SapXep();
-            sapxep = ds2.Tables[0];
-            dataGridView3.DataSource = sapxep;
-            dataGridView4.DataSource = sapxep;
-            dataGridView5.DataSource = sapxep;
+            ds = getSanPham();
+            SPTable = ds.Tables[0];
+            dataGridView3.DataSource = SPTable;
+            dataGridView4.DataSource = SPTable;
+            dataGridView5.DataSource = SPTable;
+
+            dataGridViewInPut.DataSource = productTable;
+            dataGridView8.DataSource = productTable;
+            dataGridView6.DataSource = CHTable;
+            dataGridView10.DataSource = SPTable;
+            dataGridView7.DataSource = LHTable;
+            dataGridView9.DataSource = LHTable;
         }
 
-        private void toolStripMenuItemInput_Click(object sender, EventArgs e)
+        private void ToolStripMenuItemInput_Click(object sender, EventArgs e)
         {
             tabControl1.Show();
             tabControl2.Hide();
             tabControl3.Hide();
             tabControl4.Hide();
+            tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
 
         private void ToolStripMenuItemSort_Click(object sender, EventArgs e)
         {
-            tabControl1.Hide();
             tabControl2.Show();
+            tabControl1.Hide();
             tabControl3.Hide();
             tabControl4.Hide();
+            tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
 
+        private void ToolStripMenuItemOutput_Click(object sender, EventArgs e)
+        {
+            tabControl3.Hide();
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl4.Show();
+            tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
+        }
         private void ToolStripMenuItemTonKho_Click(object sender, EventArgs e)
         {
-            tabControl1.Hide();
-            tabControl2.Hide();
             tabControl3.Show();
-            tabControl4.Hide();
-        }
-
-        private void toolStripMenuItemOutput_Click(object sender, EventArgs e)
-        {
             tabControl1.Hide();
             tabControl2.Hide();
+            tabControl4.Hide();
+            tabControlHistory.Hide();
+            this.dataGridView10.Hide();
+            panel4.Hide();
+        }
+        private void HistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             tabControl3.Hide();
-            tabControl4.Show();
+            tabControl1.Hide();
+            tabControl2.Hide();
+            tabControl4.Hide();
+            tabControlHistory.Show();
+            this.dataGridView10.Hide();
+            panel4.Hide();
         }
-
-        private void btHuy2_Click(object sender, EventArgs e)
+        private void StatisticalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(label11.Text);
+            if (a >= 3)
+            {
+                this.panel4.Hide();
+                this.dataGridView10.Hide();
+            }
+            else
+            {
+                this.panel4.Show();
+                tabControl3.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                this.dataGridView10.Hide();
+            }
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void PrintReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(label11.Text);
+            if (a >= 3)
+            {
+                this.panel4.Hide();
+                this.dataGridView10.Hide();
+            }
+            else
+            {
+                this.panel4.Hide();
+                tabControl3.Hide();
+                tabControl1.Hide();
+                tabControl2.Hide();
+                tabControl4.Hide();
+                tabControlHistory.Hide();
+                this.dataGridView10.Show();
+            }
         }
 
-        private void lbSL2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-       
-
-        
-
-        
-        
     }
 }

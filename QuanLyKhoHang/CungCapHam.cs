@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 
 namespace QuanLyKhoHang
@@ -12,6 +13,70 @@ namespace QuanLyKhoHang
     
     public class CungCapHam
     {
+        public SqlConnection sqlcnn;
+
+        public DataSet getProduct()
+        {
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM NhapHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
+        }
+        public DataSet getLocationProduct()
+        {
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM CatHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
+        }
+        public DataSet SapXep()
+        {
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM SanPham";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
+        }
+        public DataSet getPick()
+        {
+            DataSet ds = new DataSet();
+            string sql = "SELECT * FROM XuatHang";
+            SqlDataAdapter da = new SqlDataAdapter(sql, sqlcnn);
+            int number = da.Fill(ds);
+            return ds;
+        }
+
+        public void INSERTNhapHang (DataTable table, string mathung, string masp, string tensp, string soluong, string ngaynhap, string nguoinhap)
+        {
+            foreach(DataRow r in table.Rows)
+            {
+                if (string.Compare(r["MaThung"].ToString(),mathung) == 0)
+                {
+                    MessageBox.Show("Trùng mã thùng");
+                    return;
+                }
+            }
+            DataRow row = table.NewRow();
+            row["MaThung"] = mathung;
+            row["MaSP"] = masp;
+            row["TenSP"] = tensp;
+            row["SoLuong"] = soluong;
+            row["NgayNhap"] = ngaynhap;
+            table.Rows.Add(row);
+        }
+
+        public void INSERTCatHang (DataTable table, string mathung, string make, string masp, string tensp, int soluong, string ngaycat)
+        {
+            DataRow row = table.NewRow();
+            row["MaThung"] = mathung;
+            row["MaSP"] = masp;
+            row["TenSP"] = tensp;
+            row["SoLuong"] = soluong;
+            row["NgayNhap"] = ngaycat;
+            table.Rows.Add(row);
+        }
         
         public bool KetNoi(SqlConnection cnn)
         {
@@ -41,9 +106,6 @@ namespace QuanLyKhoHang
                 return false;
         }
 
-        public DateTime day(DateTime d)
-        {
-            return DateTime.Now;
-        }
+        
     }
 }
